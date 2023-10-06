@@ -5,13 +5,27 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  mode: "jit",
   theme: {
+
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        primary: "#11101d",
+        secondary: "#bab6e4",
+
       },
+      fontFamily: {
+
+        exo: ["Exo", "sans-serif"],
+        source: ["Source Code Pro", "sans-serif"],
+      },
+    },
+    screens: {
+      'sm': '640px', //small mobile devices such as smartphones in portrait mode.
+      'md': '768px', //larger smartphones or smaller tablets in portrait mode.
+      'lg': '1024px', //tablets in landscape mode, small laptops, and larger smartphones in landscape mode.
+      'xl': '1280px', //larger laptops and desktop monitors.
+      '2xl': '1536px', //high-resolution displays on larger desktop monitors or high-end laptops.
     },
   },
   plugins: [],
