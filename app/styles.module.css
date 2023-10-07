@@ -1,6 +1,8 @@
 /*ANIMATIONS*/
 
-@keyframes loading {
+/*Intro logo*/
+
+@keyframes loading-right {
   0% {
     transform: scaleX(0);
   }
@@ -9,9 +11,23 @@
   }
 }
 
-.line {
+.lineRight {
+  transform-origin: right;
+  animation: loading-right 1.3s ease-in-out 0s 1 normal forwards;
+}
+
+@keyframes loading-left {
+  100% {
+    transform: scaleX(1);
+  }
+  0% {
+    transform: scaleX(0);
+  }
+}
+
+.lineLeft {
   transform-origin: left;
-  animation: loading 1.5s ease-in-out 0s 1 normal forwards;
+  animation: loading-left 1.3s ease-in-out 0s 1 normal forwards;
 }
 
 @keyframes fade-out {
@@ -26,11 +42,13 @@
 .fadeOut {
   opacity: 1;
   animation-name: fade-out;
-  animation-duration: 1s;
-  animation-delay: 1.5s;
+  animation-duration: 0.9s;
+  animation-delay: 0.7s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
 }
+
+/*Intro home*/
 
 @keyframes fade-in {
   0% {
@@ -41,11 +59,94 @@
   }
 }
 
-.fadeIn {
+.fadeIn2 {
   opacity: 0;
   animation-name: fade-in;
   animation-duration: 1s;
-  animation-delay: 2s;
+  animation-delay: 0.8s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
+}
+
+.fadeIn1 {
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 1.5s;
+  animation-delay: 0.2;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes go-down {
+  0% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.goDown1 {
+  animation-name: go-down;
+  animation-duration: 0.5s;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.goDown2 {
+  animation-name: go-down;
+  animation-duration: 0.6s;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.goDown3 {
+  animation-name: go-down;
+  animation-duration: 0.7s;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.goDown4 {
+  animation-name: go-down;
+  animation-duration: 0.8s;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes go-up {
+  0% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.goUp {
+  animation-name: go-up;
+  animation-duration: 0.5s;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+/*Links home*/
+
+@keyframes loading-left {
+  100% {
+    transform: scaleX(1);
+  }
+  0% {
+    transform: scaleX(0);
+  }
+}
+
+.linklineLeft {
+  transform-origin: left;
+  animation: loading-left 1.3s ease-in-out 0s 1 normal forwards;
 }

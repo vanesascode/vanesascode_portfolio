@@ -8,46 +8,71 @@ const Intro = () => {
 
   const [intro, setIntro] = useState(true);
 
-  // const [rendered, setRendered] = useState(false);
-
+  // Important so the following content renders: 
   useEffect(() => {
     const timeout = setTimeout(() => {
       setIntro(false);
-    }, 2000);
+    }, 1200);
 
     return () => clearTimeout(timeout);
   }, []);
 
-  // useEffect(() => {
-  //   const hasRendered = sessionStorage.getItem('hasRendered');
-  //   if (!hasRendered) {
-  //     sessionStorage.setItem('hasRendered', true);
-  //     setRendered(true);
-  //   }
-  // }, []);
-
-
-  //rendered &&
-
+  //container 
 
   return (
     <>
       {intro && (
-        <div className={`flexCenter h-screen ${styles.fadeOut}`}  >
-          <div className='flex justify-between items-center'>
-            <div className="logo"><img src="/bracket-left.svg" alt="logo" className='h-20 cursor-pointer  ' /></div>
 
-            <div className="intro">
-              <span className='text-white'>vanesascode</span>  portfolio
+        <div className={`flexCenter items-center h-screen ${styles.fadeOut}`}>
+
+
+          <div>
+            {/*TOP LINE*/}
+
+            <div className={`${styles.lineRight}  bg-secondary w-full lg:h-[9.5px] sm:h-[8px] h-[6px] sm:me-[10px] mb-[-14px]`}>
             </div>
 
-            <div className="logo"><img src="/bracket-right.svg" alt="logo" className='h-20 cursor-pointer  ' /></div>
+            {/*LEFT BRACKET*/}
 
 
+
+            <div className='flex items-center'>
+              <div className="logo">
+                <img src="/bracket-left.svg" alt="logo" className='lg:h-[80px] sm:h-[68px] h-[48px] cursor-pointer  ' />
+
+              </div>
+
+              {/*INTRO TEXT*/}
+
+              <div className="intro lg:py-[14.5px] sm:pt-[17px] sm:pb-[18px] pt-[17px] pb-[18px]">
+                <span className='text-white'>vanesascode</span> portfolio
+              </div>
+
+              {/*RIGHT BRACKET*/}
+
+              <div className="logo">
+                <img src="/bracket-right.svg" alt="logo" className='lg:h-[80px] sm:h-[68px]  h-[48px] cursor-pointer  ' />
+              </div>
+
+            </div>
+
+
+            {/*BOTTOM LINE*/}
+
+            <div className={`${styles.lineLeft}  bg-secondary w-full lg:h-[9.5px] sm:h-[8px] h-[6px] sm:mt-[-14px] mt-[-14.5px]`}>
+            </div>
 
           </div>
-          <div className={`${styles.line}  bg-secondary w-full lg:h-[4px] md:h-[3px] h-[1px] rounded-full`}></div>
+
         </div>
+
+
+
+
+
+
+
+
 
 
       )};

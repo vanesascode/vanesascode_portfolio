@@ -27,6 +27,10 @@ color {
     @apply max-w-7xl min-h-screen mx-auto;
   }
 
+  .padding {
+    @apply xl:px-0 px-4;
+  }
+
   .flexCenter {
     @apply flex justify-center items-center;
   }
@@ -34,11 +38,11 @@ color {
   /*TEXT */
 
   .intro {
-    @apply font-source text-secondary lg:text-[60px] md:text-[40px] text-[20px] font-bold tracking-tighter;
+    @apply font-source text-secondary lg:text-[40px] md:text-[30px] text-[20px] font-bold tracking-tighter;
   }
 
   .logo {
-    @apply font-source  text-secondary text-[70px] font-semibold;
+    @apply font-source  text-white text-[80px] font-semibold;
   }
 
   .heading1 {
@@ -49,5 +53,56 @@ color {
     @apply font-source text-secondary text-[25px]  text-center leading-[30px] font-normal;
   }
 
-  /*NAVBAR  */
+  .links {
+    @apply font-source text-secondary text-[25px] text-center leading-[30px] font-bold;
+  }
+}
+
+/*Animation lines under the home links*/
+
+.linksUnderlines::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+  width: 90%;
+  height: 5px;
+  background-color: rgb(186 182 228);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+@keyframes loading-left {
+  100% {
+    transform: scaleX(1);
+  }
+  0% {
+    transform: scaleX(0);
+  }
+}
+
+.linksUnderlines:hover::after {
+  opacity: 1;
+  transform-origin: left;
+  animation: loading-left 0.8s ease-in-out 0s 1 normal forwards;
+}
+
+/*MOUSE BALL */
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.ball {
+  z-index: 10;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 0, 0, 0);
+  border: 1px solid rgb(186 182 228);
+  pointer-events: none;
+  transition: transform 0.2s ease-in-out;
 }

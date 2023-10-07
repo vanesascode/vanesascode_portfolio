@@ -1,5 +1,5 @@
 import './globals.css'
-import Intro from "./_components/Intro";
+
 
 export const metadata = {
   title: 'Create Next App',
@@ -10,11 +10,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body >
-        {/****I can put things here that are always seen****/}
-
-
-
-        {/********/}
 
         <main>{children}</main>
       </body>
