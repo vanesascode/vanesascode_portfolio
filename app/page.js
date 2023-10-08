@@ -6,20 +6,12 @@ import Menu from "./_components/Menu";
 import Intro from "./_components/Intro";
 import { useEffect, useState } from "react";
 
+
 export default function Home() {
 
-  // MOUSE BALL
 
-  // const [position, setPosition] = useState({
-  //   x: 0,
-  //   y: 0,
-  // });
 
-  // const handleMouseMove = (e) => {
-  //   setPosition({ x: e.clientX, y: e.clientY });
-  // };
-
-  // PARTICLES STUFF
+  // PARTICLES BACKGROUND
   const [showParticles, setShowParticles] = useState(false);
 
 
@@ -35,20 +27,11 @@ export default function Home() {
 
   return (
 
-    <div className="container"
-    // onMouseMove={handleMouseMove}
-    >
-      {/*Mouse Ball*/}
+    <div className="container">
 
-      {/**<div
-        // className="ball"
-        // style={{
-          // transform: `translate(${position.x}px, ${position.y}px)`,
-        // }}>
-      // </div> */}
-
-      {/*Intro*/}
       <Intro />
+
+
       {
         showParticles && (
           <>
@@ -59,11 +42,19 @@ export default function Home() {
             {/*Home elements*/}
             <div className={styles.fadeIn2}>
               <Menu />
+
             </div>
+
 
           </>
         )
       }
+
+
+
+
+
+
 
     </div >
   )

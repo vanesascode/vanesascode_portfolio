@@ -135,6 +135,8 @@
   animation-timing-function: ease-in-out;
 }
 
+/*HOME*/
+
 /*Links home*/
 
 @keyframes loading-left {
@@ -148,5 +150,21 @@
 
 .linklineLeft {
   transform-origin: left;
-  animation: loading-left 1.3s ease-in-out 0s 1 normal forwards;
+  animation: loading-left 0.5s ease-in-out 0s 1 normal forwards;
+}
+
+/*Hamburger*/
+
+@keyframes rotate-when-hovered {
+  100% {
+    transform: rotate(360deg);
+  }
+  0% {
+    transform: rotate(0deg);
+  }
+}
+
+.rotateWhenHovered:hover {
+  transform-origin: center;
+  animation: rotate-when-hovered 0.5s ease-in-out 0s 1 normal forwards;
 }

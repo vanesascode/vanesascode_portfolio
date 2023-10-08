@@ -14,6 +14,7 @@ body {
 
 * {
   scroll-behavior: smooth;
+  cursor: none;
 }
 
 color {
@@ -24,15 +25,27 @@ color {
   /*GENERAL */
 
   .container {
-    @apply max-w-7xl min-h-screen mx-auto;
+    @apply max-w-[1440px] min-h-screen mx-auto;
   }
 
-  .padding {
-    @apply xl:px-0 px-4;
+  .paddingXNavbar {
+    @apply px-[30px];
+  }
+
+  .paddingYNavbar {
+    @apply sm:pt-[10px] md:pt-[20px] lg:pt-[30px] xl:pt-[40px];
+  }
+
+  .paddingXBody {
+    @apply px-[25px];
   }
 
   .flexCenter {
     @apply flex justify-center items-center;
+  }
+
+  .flexCol {
+    @apply flex flex-col justify-center items-center;
   }
 
   /*TEXT */
@@ -42,19 +55,19 @@ color {
   }
 
   .logo {
-    @apply font-source  text-white text-[80px] font-semibold;
+    @apply font-source  text-secondary sm:text-[60px] text-[30px] font-semibold;
   }
 
   .heading1 {
-    @apply font-source text-secondary text-[45px] text-center leading-[40px] font-bold;
+    @apply font-source text-secondary xl:text-[45px] text-[30px] text-center xl:leading-[40px] leading-[35px] font-bold tracking-tight xl:tracking-normal;
   }
 
   .heading2 {
-    @apply font-source text-secondary text-[25px]  text-center leading-[30px] font-normal;
+    @apply font-source text-secondary xl:text-[25px] text-[15px] text-center xl:leading-[30px] leading-[20px] font-normal;
   }
 
   .links {
-    @apply font-source text-secondary text-[25px] text-center leading-[30px] font-bold;
+    @apply font-source text-secondary xl:text-[30px] text-[20px] text-center font-bold xl:tracking-normal tracking-tight;
   }
 }
 
@@ -64,9 +77,9 @@ color {
   content: "";
   position: absolute;
   right: 0;
-  bottom: -5px;
+  bottom: -1px;
   width: 90%;
-  height: 5px;
+  height: 4.5px;
   background-color: rgb(186 182 228);
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
@@ -87,6 +100,13 @@ color {
   animation: loading-left 0.8s ease-in-out 0s 1 normal forwards;
 }
 
+@media (min-width: 1280px) {
+  .linksUnderlines::after {
+    height: 6.5px;
+    bottom: -7px;
+  }
+}
+
 /*MOUSE BALL */
 
 .container {
@@ -95,14 +115,16 @@ color {
   height: 100vh;
 }
 
-.ball {
-  z-index: 10;
-  position: absolute;
-  width: 40px;
-  height: 40px;
+.cursor {
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
-  background-color: rgba(255, 0, 0, 0);
-  border: 1px solid rgb(186 182 228);
+  position: fixed;
+  top: 0;
+  left: 0;
   pointer-events: none;
-  transition: transform 0.2s ease-in-out;
+}
+
+color {
+  color: rgba(240, 248, 255, 0);
 }
