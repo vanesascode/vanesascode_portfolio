@@ -27,7 +27,7 @@ export default function HomeText() {
                     Hi, I'm <br className='block sm:hidden' /> Vanesa Juarez Paris</p></div>
                 <div className={`${styles.goDown3}`}> <p
                 // onMouseEnter={textEnter} onMouseLeave={textLeave}
-                ><span className='tracking-tighter xl:tracking-normal text-secondary'>but you can call me </span><span className="text-white">vanesascode</span></p></div>
+                ><span className='tracking-tighter xl:tracking-normal text-secondary'>but you can call me </span><span className="text-white dark:text-black">vanesascode</span></p></div>
 
               </div>
 

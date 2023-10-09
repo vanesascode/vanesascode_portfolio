@@ -23,7 +23,7 @@ const Intro = () => {
     <>
       {intro && (
 
-        <div className={`flexCenter items-center h-screen ${styles.fadeOut}`}>
+        <div className={`flexCenter items-center h-screen ${styles.fadeOut} bg-primary dark:bg-secondary`}>
 
 
           <div>

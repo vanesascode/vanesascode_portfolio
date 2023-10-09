@@ -67,6 +67,28 @@ To intall it and configure it find info [HERE](https://tailwindcss.com/docs/guid
 
 Find info [HERE](https://tailwindcss.com/docs/dark-mode)
 
+Steps (9-10-2023):
+
+- Add the option to the tailwind.config.js: `"darkMode": "class",`
+- Mark your dark classes like this: ` <p className="text-secondary dark:text-black">Home</p>`
+- Add the class dark to the DOM document using useState and useEffect. Also add the click action to a button:
+
+```
+  const [theme, setTheme] = useState("light");
+
+  useEffect(() => {
+    if (theme === "dark") {
+      document.querySelector("html").classList.add("dark");
+    } else {
+      document.querySelector("html").classList.remove("dark");
+    }
+  }, [theme]);
+
+  const handleChangeTheme = () => {
+    setTheme(prevTheme => (prevTheme === "light" ? "dark" : "light"))
+  };
+```
+
 ### 🔹TS PARTICLES LIBRARY:
 
 Find info [HERE](https://github.com/tsparticles)

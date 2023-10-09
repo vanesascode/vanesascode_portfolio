@@ -82,26 +82,27 @@ export default function Home() {
 
 
   return (
+    <>
 
-    <div className="container">
 
       <Intro />
-      <Navbar />
-      <HomeText />
+      <div className="container ">
+        <Navbar />
+        <HomeText />
 
-      {/*Particles Background*/}
-      {showParticles && <Particles id="tsparticles" />}
+        {/*Particles Background*/}
+        {showParticles && <Particles id="tsparticles" />}
 
-      {/*Mouse Ball*/}
-      < motion.div
-        className='cursor'
-        variants={variants}
-        animate={cursorVariant}
-
-
-      />
+        {/*Mouse Ball*/}
+        < motion.div
+          className='cursor'
+          variants={variants}
+          animate={cursorVariant}
 
 
-    </div >
-  )
+        />
+
+
+      </div >
+    </>)
 }

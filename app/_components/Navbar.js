@@ -2,14 +2,32 @@
 
 import Link from "next/link";
 import styles from "../styles.module.css";
+import DataContext from "../_context/DataContext.js";
 
-import { useState } from "react";
+import { useState, useContext, useEffect } from "react";
 
 
 
 export default function Navbar() {
+  const { showMenu, setShowMenu } = useContext(DataContext);
 
-  const [showMenu, setShowMenu] = useState(false);
+  // const [showMenu, setShowMenu] = useState(false);
+
+  //DARK MODE CONFIGURATION: 
+
+  const [theme, setTheme] = useState("light");
+
+  useEffect(() => {
+    if (theme === "dark") {
+      document.querySelector("html").classList.add("dark");
+    } else {
+      document.querySelector("html").classList.remove("dark");
+    }
+  }, [theme]);
+
+  const handleChangeTheme = () => {
+    setTheme(prevTheme => (prevTheme === "light" ? "dark" : "light"))
+  };
 
 
   return (
@@ -60,6 +78,8 @@ export default function Navbar() {
 
 
       {/*************************************************************************************************** */}
+
+
       {showMenu && (
 
 
@@ -116,15 +136,23 @@ export default function Navbar() {
             <div className="flexCenter flex-col">
 
 
-
-              <div className="heading1" onClick={() => setShowMenu(false)}>
-                <p className="text-secondary">Home</p>
-              </div>
-
+              <Link href="/">
+                <div className="heading1" onClick={() => {
+                  setTimeout(() => {
+                    setShowMenu(false);
+                  }, 900);
+                }}>
+                  <p className="text-secondary dark:text-black">Home</p>
+                </div>
+              </Link>
 
               <Link href="/projects">
-                <div className="menu-item">
-                  Projects
+                <div className="heading1" onClick={() => {
+                  setTimeout(() => {
+                    setShowMenu(false);
+                  }, 900);
+                }}>
+                  <p className="text-secondary dark:text-black"> Projects</p>
 
                 </div>
               </Link>
@@ -135,6 +163,8 @@ export default function Navbar() {
                 </div>
 
               </Link>
+
+              <button onClick={handleChangeTheme}> <img src="/sun.svg" alt="logo" /></button>
 
 
             </div>
