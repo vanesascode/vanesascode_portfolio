@@ -326,7 +326,7 @@ const ParticlesComponent = (props) => {
           },
           random: false,
           size: false,
-          speed: 0.1, ///////////////////////////////////////Speed
+          speed: 0.15, ///////////////////////////////////////Speed
           spin: {
             acceleration: 0,
             enable: false,
@@ -616,7 +616,7 @@ const ParticlesComponent = (props) => {
   }, []);
 
   // setting an id can be useful for identifying the right particles component, this is useful for multiple instances or reusable components
-  return <Particles id={props.id} init={particlesInit} options={options} />;
-};
+  return <Particles id={props.id} init={particlesInit} options={options} />
+}
 
 export default ParticlesComponent;

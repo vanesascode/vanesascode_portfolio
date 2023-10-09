@@ -8,11 +8,11 @@ const Intro = () => {
 
   const [intro, setIntro] = useState(true);
 
-  // Important so the following content renders: 
+  // Important:
   useEffect(() => {
     const timeout = setTimeout(() => {
       setIntro(false);
-    }, 1200);
+    }, 700); // this controls the time it takes for the home text to appear
 
     return () => clearTimeout(timeout);
   }, []);
