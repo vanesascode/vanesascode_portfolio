@@ -5,9 +5,16 @@ import { loadSlim } from "tsparticles-slim"; // loads tsparticles-slim
 //import { loadFull } from "tsparticles"; // loads tsparticles
 import { useCallback, useMemo } from "react";
 
+import { useContext } from "react";
+
+import DataContext from "../_context/DataContext";
+
 // tsParticles Repository: https://github.com/matteobruni/tsparticles
 // tsParticles Website: https://particles.js.org/
 const ParticlesComponent = (props) => {
+
+  const { lightMode } = useContext(DataContext);
+
   // using useMemo is not mandatory, but it's recommended since this value can be memoized if static
   const options = useMemo(() => {
     // using an empty options object will load the default options, which are static particles with no background and 3px radius, opacity 100%, white color
@@ -16,7 +23,7 @@ const ParticlesComponent = (props) => {
       autoPlay: true,
       background: {
         color: {
-          value: "#11101d",
+          value: "#fff",
         },
         image: "",
         position: "",
@@ -617,6 +624,6 @@ const ParticlesComponent = (props) => {
 
   // setting an id can be useful for identifying the right particles component, this is useful for multiple instances or reusable components
   return <Particles id={props.id} init={particlesInit} options={options} />
-}
+};
 
 export default ParticlesComponent;

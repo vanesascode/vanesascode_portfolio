@@ -53,6 +53,10 @@ I started by setting the root `color to transparent`, not to see it. That affect
 
 Also, when I created the menu and had to create a page from scratch in there, of course, `I had to add the annoying ";"symbol` at the top so I didn't have to repeat lots of general css settings I had for the navbar and rest.
 
+### INDEX.JS file for the components
+
+I have a lot of components of all kinds in the `_components` folder. However, instead of trying to organize them into different subfolders, which would of been a bit confusing too, I prefered to add an file in which I imported and exported them, and in which with only one glimpse you can see all of them, and `organized by sections` of the website. Also, makes `code cleaner` in the components in which they are imported.
+
 ## 🔧🔨 Tools I used:
 
 ### 🔹NEXT.JS
@@ -109,3 +113,9 @@ Find info [HERE](https://www.framer.com/motion/)
 [Installation (8-10-2023)](https://www.framer.com/motion/introduction/)
 
 - npm install framer-motion
+
+###
+
+https://www.react-spring.dev/
+
+`npm i @react-spring/web`

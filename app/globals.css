@@ -112,6 +112,42 @@ color {
   }
 }
 
+/*Animation lines under the menu links*/
+
+.linksUnderlinesMenu::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 700px;
+  height: 4.5px;
+  background-color: rgb(186 182 228);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+@keyframes loading-left {
+  100% {
+    transform: scaleX(1);
+  }
+  0% {
+    transform: scaleX(0);
+  }
+}
+
+.linksUnderlinesMenu:hover::after {
+  opacity: 1;
+  transform-origin: left;
+  animation: loading-left 0.4s ease-in-out 0s 1 normal forwards;
+}
+
+@media (min-width: 1280px) {
+  .linksUnderlinesMenu::after {
+    height: 8px;
+    bottom: -7px;
+  }
+}
+
 /*MOUSE BALL */
 
 @keyframes fade-in-ball {
@@ -159,11 +195,44 @@ color {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #11101d;
+
   z-index: 1;
   width: 100%;
 }
 
 .navbar-index {
   z-index: 2;
+}
+
+/***/
+
+/* I AM TRYING TO HAVE ANIMATION WHEN UNMOUNTING, JUST USING CSS */
+
+@keyframes logo-enter {
+  from {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes logo-exit {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+}
+
+.logo-enter {
+  animation: logo-enter 1000ms;
+}
+
+.logo-exit {
+  animation: logo-exit 1000ms;
 }

@@ -1,17 +1,24 @@
 "use client"
 
 import styles from "./styles.module.css";
-import Particles from "./_components/Particles";
+import { ParticlesBlack, ParticlesWhite } from "./_components";
 import HomeText from "./_components/HomeText";
 
 import Intro from "./_components/Intro";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import Navbar from "./_components/Navbar";
 
+//Mouse ball library: 
 import { motion } from 'framer-motion';
+
+import DataContext from "./_context/DataContext";
 
 
 export default function Home() {
+
+  // CONTEXT:
+
+  const { lightMode } = useContext(DataContext);
 
   // PARTICLES BACKGROUND DELAY:
 
@@ -91,7 +98,8 @@ export default function Home() {
         <HomeText />
 
         {/*Particles Background*/}
-        {showParticles && <Particles id="tsparticles" />}
+        {showParticles && lightMode === 'dark' && <ParticlesWhite id="tsparticles" />}
+        {showParticles && lightMode === 'light' && <ParticlesBlack id="tsparticles" />}
 
         {/*Mouse Ball*/}
         < motion.div
@@ -99,8 +107,7 @@ export default function Home() {
           variants={variants}
           animate={cursorVariant}
 
-
-        />
+        /> {/*I HAVE TO FULLY CONFIG THE MOUSE BALL VARIANTS IN ALL VIEWS */}
 
 
       </div >
