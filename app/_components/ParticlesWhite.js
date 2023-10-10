@@ -1,8 +1,7 @@
 "use client"
 
 import Particles from "react-tsparticles";
-import { loadSlim } from "tsparticles-slim"; // loads tsparticles-slim
-//import { loadFull } from "tsparticles"; // loads tsparticles
+import { loadSlim } from "tsparticles-slim";
 import { useCallback, useMemo } from "react";
 
 import { useContext } from "react";
@@ -23,7 +22,7 @@ const ParticlesComponent = (props) => {
       autoPlay: true,
       background: {
         color: {
-          value: "#fff",
+          value: "#bab6e4",
         },
         image: "",
         position: "",
@@ -564,7 +563,7 @@ const ParticlesComponent = (props) => {
         links: {
           blink: false,
           color: {
-            value: "#2d2d34", ////// color
+            value: "#8d83bb", ////// color
           },
           consent: false,
           distance: 200, /////////////////////// quantity of lines/triangles
@@ -574,7 +573,7 @@ const ParticlesComponent = (props) => {
           shadow: {
             blur: 10,
             color: {
-              value: "#2d2d34",
+              value: "#8d83bb",
             },
             enable: false,
           },

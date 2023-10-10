@@ -1,6 +1,10 @@
-/*ANIMATIONS*/
+/*ANIMATIONS 
 
-/*Intro logo*/
+(the ones that need hovering are in the globals.css) */
+
+/*********************************************** INTRO **************************************/
+
+/*Logo*/
 
 @keyframes loading-right {
   0% {
@@ -48,7 +52,9 @@
   animation-timing-function: ease-in-out;
 }
 
-/*HOME ELEMENTS APPEARING*/
+/********************************************** HOME ***************************************************/
+
+/*Elements appearing*/
 
 @keyframes go-down {
   0% {
@@ -117,9 +123,7 @@
   animation-timing-function: ease-in-out;
 }
 
-/*HOME*/
-
-/*Links home*/
+/*Links when hovered*/
 
 @keyframes loading-left {
   100% {
@@ -149,4 +153,44 @@
 .rotateWhenHovered:hover {
   transform-origin: center;
   animation: rotate-when-hovered 0.5s ease-in-out 0s 1 normal forwards;
+}
+
+/********************************************* MENU ****************************************************/
+
+/* Menu links appearing */
+
+.goDownMenu1 {
+  opacity: 0;
+  animation-name: go-down;
+  animation-duration: 0.8s;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.goDownMenu2 {
+  opacity: 0;
+  animation-name: go-down;
+  animation-duration: 1s;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.goDownMenu3 {
+  opacity: 0;
+  animation-name: go-down;
+  animation-duration: 1.2s;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.goDownMenu4 {
+  opacity: 0;
+  animation-name: go-down;
+  animation-duration: 1.4s;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
 }

@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17" width="18" height="17">
+	<title>menu3-svg</title>
+	<style>
+		.s0 { fill: none } 
+		.s1 { fill: #11101d } 
+	</style>
+	<g id="Layer">
+		<path id="Layer" fill-rule="evenodd" class="s0" d="m-3-4h24v24h-24z"/>
+		<path id="Layer" class="s1" d="m0 0h18v2h-18zm4 15h14v2h-14zm-4-5h18v2h-18zm4-5h14v2h-14z"/>
+	</g>
+</svg>

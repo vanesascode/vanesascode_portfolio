@@ -1,6 +1,5 @@
 "use client"
 
-import styles from "./styles.module.css";
 import { ParticlesBlack, ParticlesWhite } from "./_components";
 import HomeText from "./_components/HomeText";
 
@@ -36,17 +35,12 @@ export default function Home() {
 
   ///////////////////////////////////////////////////////////////////////////
 
-
   // MOUSE BALL:
-
 
   const [mousePosition, setMousePosition] = useState({
     x: 0,
     y: 0
   });
-  const [cursorVariant, setCursorVariant] = useState("default");
-
-
 
   useEffect(() => {
     const mouseMove = e => {
@@ -63,33 +57,23 @@ export default function Home() {
     }
   }, []);
 
-  const variants = {
+  const cursor = {
     default: {
-      height: 20,
-      width: 20,
+      height: 30,
+      width: 30,
 
-      x: mousePosition.x - 10,
-      y: mousePosition.y - 10,
-      backgroundColor: "#11101d",
-      border: "1px solid rgb(186 182 228)",
-    },
-    text: {
-      height: 60,
-      width: 60,
-
-      x: mousePosition.x - 30,
-      y: mousePosition.y - 30,
+      x: mousePosition.x - 15,
+      y: mousePosition.y - 15,
       backgroundColor: "rgb(186 182 228)",
       mixBlendMode: "difference"
     }
   }
 
-  const textEnter = () => setCursorVariant("text");
-  const textLeave = () => setCursorVariant("default");
+
 
 
   return (
-    <>
+    <div className="relative ">
 
 
       <Intro />
@@ -104,12 +88,11 @@ export default function Home() {
         {/*Mouse Ball*/}
         < motion.div
           className='cursor'
-          variants={variants}
-          animate={cursorVariant}
+          variants={cursor}
+          animate="default"
 
-        /> {/*I HAVE TO FULLY CONFIG THE MOUSE BALL VARIANTS IN ALL VIEWS */}
-
+        />
 
       </div >
-    </>)
+    </div>)
 }

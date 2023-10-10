@@ -1,15 +1,20 @@
 "use client"
 
-import styles from "../styles.module.css";
+import animations from "../animations.module.css";
+import { useContext } from "react";
+
+import DataContext from "../_context/DataContext";
 
 export default function CloseButton() {
+  const { lightMode } = useContext(DataContext);
+
   return (
     <>
 
       <img
-        src="/close.svg"
+        src={lightMode === "light" ? "/closebutton-white.svg" : "/closebutton-black.svg"}
         alt="logo"
-        className={`sm:h-[46px] h-[26px] md:h-[56px] ${styles.rotateWhenHovered} mt-[-8px]`}
+        className={`sm:h-[46px] h-[26px] md:h-[56px] ${animations.rotateWhenHovered} mt-[-8px]`}
       />
 
     </>

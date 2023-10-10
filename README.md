@@ -16,6 +16,10 @@ As for `other tools`, the idea of using them came when encountering the challeng
 
 ### Design decisions
 
+The dynamic particles background was one of my first decisions and the one that gave place to others after. The fact that the particles are `always different` when you start the site and that they `keep changing` in a way you cannot expect, describe, I think, `the job of the developer` that has to start from a different point everytime and doesn't know what challenges and obstacles he/she will encounter in every project.
+
+I sacrificed performance of the site, though, because the library that builds the particles is quite heavy, but couldn't find any other similar that worked well and was lighter. However, I did in this project because I know, it being a personal portfolio, won't need to be faster that it is now. It would be cool, though, if in the future I had more knowledge and experience in order to build my own library for building artistic tools like this that were more efficient.
+
 I chose the `blue color` becuase of its relation with 'serious' topics, and academic/work topics are. However, I didn't want it to be extremely serious, so I was quite flexible with the language I was using in the texts and the tone of colors choice, that would make it more creative.
 
 However, I was for sure that rounded forms wasn't going to define me. I am quite assertive, especially at work and making things happen, so I used `straight lines` in general, even for the SVG icons I was using across the project.

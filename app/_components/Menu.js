@@ -1,7 +1,7 @@
 import Link from "next/link";
 import DataContext from "../_context/DataContext";
 import { useContext } from "react";
-import styles from "../styles.module.css";
+import animations from "../animations.module.css";
 
 {/*MENU*/ }
 
@@ -9,16 +9,16 @@ import React from 'react'
 
 export default function Menu() {
 
-  const { showMenu, setShowMenu } = useContext(DataContext);
+  const { showMenu, setShowMenu, lightMode } = useContext(DataContext);
 
   return (
 
-    <div className="flex justify-start items-start flex-col gap-10">
+    <div className="flex justify-start items-start flex-col gap-10 ">
 
 
       <Link href="/">
 
-        <div className={`heading1 linksUnderlinesMenu relative ${styles.goDown4}`} onClick={() => {
+        <div className={`heading1 ${lightMode === "light" ? "linksUnderlinesMenuWhite" : "linksUnderlinesMenuBlack"} relative ${animations.goDownMenu4} cursor-crosshair`} onClick={() => {
           setTimeout(() => {
             setShowMenu(false);
 
@@ -31,7 +31,7 @@ export default function Menu() {
 
 
       <Link href="/projects">
-        <div className={`heading1 linksUnderlinesMenu relative ${styles.goDown3}`} onClick={() => {
+        <div className={`heading1 ${lightMode === "light" ? "linksUnderlinesMenuWhite" : "linksUnderlinesMenuBlack"} relative ${animations.goDownMenu3} cursor-crosshair`} onClick={() => {
           setTimeout(() => {
             setShowMenu(false);
 
@@ -45,7 +45,7 @@ export default function Menu() {
 
 
       <Link href="/about">
-        <div className={`heading1 linksUnderlinesMenu relative ${styles.goDown2}`} onClick={() => {
+        <div className={`heading1 ${lightMode === "light" ? "linksUnderlinesMenuWhite" : "linksUnderlinesMenuBlack"} relative ${animations.goDownMenu2} cursor-crosshair`} onClick={() => {
           setTimeout(() => {
             setShowMenu(false);
 
@@ -58,7 +58,7 @@ export default function Menu() {
 
 
       <Link href="/contact">
-        <div className={`heading1 linksUnderlinesMenu relative ${styles.goDown1}`} onClick={() => {
+        <div className={`heading1 ${lightMode === "light" ? "linksUnderlinesMenuWhite" : "linksUnderlinesMenuBlack"} relative ${animations.goDownMenu1} cursor-crosshair`} onClick={() => {
           setTimeout(() => {
             setShowMenu(false);
 
@@ -70,7 +70,7 @@ export default function Menu() {
       </Link>
 
       <Link href="/blog">
-        <div className="heading1 linksUnderlinesMenu relative" onClick={() => {
+        <div className={`heading1 ${lightMode === "light" ? "linksUnderlinesMenuWhite" : "linksUnderlinesMenuBlack"} relative ${animations.goDownMenu1} cursor-crosshair`} onClick={() => {
           setTimeout(() => {
             setShowMenu(false);
 

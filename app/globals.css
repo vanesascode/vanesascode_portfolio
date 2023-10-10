@@ -6,20 +6,18 @@
 
 :root {
   background-color: #11101d;
+  cursor: crosshair;
 }
 
 body {
   overflow: hidden;
+  cursor: crosshair;
 }
 
 * {
   scroll-behavior: smooth;
   /* cursor: none; */
   color: transparent;
-}
-
-color {
-  color: #bab6e4;
 }
 
 @layer utilities {
@@ -60,7 +58,7 @@ color {
   }
 
   .logo {
-    @apply font-source  text-secondary sm:text-[60px] text-[30px] font-semibold;
+    @apply font-source  text-secondary dark:text-primary sm:text-[70px] text-[40px] font-semibold;
   }
 
   .heading1 {
@@ -68,24 +66,42 @@ color {
   }
 
   .heading2 {
-    @apply font-source text-secondary xl:text-[25px] text-[15px] text-center xl:leading-[30px] leading-[20px] font-normal;
+    @apply font-source xl:text-[25px] text-[15px] text-center xl:leading-[30px] leading-[20px] font-normal;
   }
 
   .links {
-    @apply font-source text-secondary xl:text-[30px] text-[20px] text-center font-bold xl:tracking-normal tracking-tight;
+    @apply font-source text-secondary dark:text-primary xl:text-[30px] text-[20px] text-center font-bold xl:tracking-normal tracking-tight;
   }
 }
 
+/************************************************* ANIMATIONS *************************************************/
+
+/*The animations that don't need hovering are in animations.module.css*/
+
+/* HOME*/
+
 /*Animation lines under the home links*/
 
-.linksUnderlines::after {
+.linksUnderlinesBlack::after {
   content: "";
   position: absolute;
+  background-color: #11101d;
   right: 0;
   bottom: -1px;
   width: 90%;
   height: 4.5px;
-  background-color: rgb(186 182 228);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.linksUnderlinesWhite::after {
+  content: "";
+  position: absolute;
+  background-color: #bab6e4;
+  right: 0;
+  bottom: -1px;
+  width: 90%;
+  height: 3px;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
@@ -99,22 +115,31 @@ color {
   }
 }
 
-.linksUnderlines:hover::after {
+.linksUnderlinesWhite:hover::after {
+  opacity: 1;
+  transform-origin: left;
+  animation: loading-left 0.4s ease-in-out 0s 1 normal forwards;
+}
+
+.linksUnderlinesBlack:hover::after {
   opacity: 1;
   transform-origin: left;
   animation: loading-left 0.4s ease-in-out 0s 1 normal forwards;
 }
 
 @media (min-width: 1280px) {
-  .linksUnderlines::after {
-    height: 6.5px;
+  .linksUnderlinesWhite::after,
+  .linksUnderlinesBlack::after {
+    height: 5px;
     bottom: -7px;
   }
 }
 
+/*MENU*/
+
 /*Animation lines under the menu links*/
 
-.linksUnderlinesMenu::after {
+.linksUnderlinesMenuWhite::after {
   content: "";
   position: absolute;
   left: 0;
@@ -126,24 +151,29 @@ color {
   transition: opacity 0.3s ease-in-out;
 }
 
-@keyframes loading-left {
-  100% {
-    transform: scaleX(1);
-  }
-  0% {
-    transform: scaleX(0);
-  }
+.linksUnderlinesMenuBlack::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 700px;
+  height: 4.5px;
+  background-color: #11101d;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
-.linksUnderlinesMenu:hover::after {
+.linksUnderlinesMenuWhite:hover::after,
+.linksUnderlinesMenuBlack:hover::after {
   opacity: 1;
   transform-origin: left;
   animation: loading-left 0.4s ease-in-out 0s 1 normal forwards;
 }
 
 @media (min-width: 1280px) {
-  .linksUnderlinesMenu::after {
-    height: 8px;
+  .linksUnderlinesMenuWhite:hover::after,
+  .linksUnderlinesMenuBlack:hover::after {
+    height: 7px;
     bottom: -7px;
   }
 }

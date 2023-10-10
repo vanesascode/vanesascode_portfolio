@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "../styles.module.css";
+import animations from "../animations.module.css";
 import DataContext from "../_context/DataContext";
 import { Logo, Hamburger, CloseButton, LightMode } from "../_components";
 import Menu from "./Menu.js";
@@ -32,7 +32,7 @@ export default function Navbar() {
       {/***********************************NAVBAR WHEN COLLAPSED******************************************/}
 
       <div
-        className={`flex justify-between items-center  paddingXNavbar paddingYNavbar navbar-index ${styles.goDown1}`}
+        className={`flex justify-between items-center  paddingXNavbar paddingYNavbar navbar-index ${animations.goDown1}`}
       >
         <div>
           <Logo />
