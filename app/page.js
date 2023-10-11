@@ -23,6 +23,8 @@ export default function Home() {
 
   const [showParticles, setShowParticles] = useState(false);
 
+  const [showHome, setShowHome] = useState(false);
+
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -69,8 +71,14 @@ export default function Home() {
     }
   }
 
+  /////////////////////////////////////////////////////////////////////////
 
+  // Delay to load Home after the Intro: 
 
+  const timeoutId = setTimeout(() => {
+
+    setShowHome(true);
+  }, 700);
 
   return (
     <div className="relative ">
@@ -78,8 +86,8 @@ export default function Home() {
 
       <Intro />
       <div className="container ">
-        <Navbar />
-        <HomeText />
+        {showHome && <Navbar />}
+        {showHome && <HomeText />}
 
         {/*Particles Background*/}
         {showParticles && lightMode === 'dark' && <ParticlesWhite id="tsparticles" />}
@@ -90,7 +98,6 @@ export default function Home() {
           className='cursor'
           variants={cursor}
           animate="default"
-
         />
 
       </div >

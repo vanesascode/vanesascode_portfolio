@@ -5,7 +5,7 @@ import Navbar from "../_components/Navbar";
 
 export default function Projects() {
   return (
-    <div className="container ">
+    <div className="container granulated-background">
       <Navbar />
 
       {/*Particles Background*/}

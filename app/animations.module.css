@@ -46,7 +46,7 @@
 .fadeOut {
   opacity: 1;
   animation-name: fade-out;
-  animation-duration: 0.7s;
+  animation-duration: 1s;
   animation-delay: 0.5s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
@@ -71,7 +71,7 @@
   opacity: 0;
   animation-name: go-down;
   animation-duration: 1s;
-  animation-delay: 1s;
+  animation-delay: 0.6;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
 }
@@ -80,7 +80,7 @@
   opacity: 0;
   animation-name: go-down;
   animation-duration: 1.2s;
-  animation-delay: 1s;
+  animation-delay: 0.6;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
 }
@@ -89,7 +89,7 @@
   opacity: 0;
   animation-name: go-down;
   animation-duration: 1.4s;
-  animation-delay: 1s;
+  animation-delay: 0.6;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
 }
@@ -98,7 +98,7 @@
   opacity: 0;
   animation-name: go-down;
   animation-duration: 1.6s;
-  animation-delay: 1s;
+  animation-delay: 0.6;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
 }
@@ -118,7 +118,7 @@
   opacity: 0;
   animation-name: go-up;
   animation-duration: 1s;
-  animation-delay: 1s;
+  animation-delay: 0.6;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
 }
@@ -191,6 +191,84 @@
   animation-name: go-down;
   animation-duration: 1.4s;
   animation-delay: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.goUpMenu {
+  opacity: 0;
+  animation-name: go-up;
+  animation-duration: 1s;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+/* Menu Links disappearig */
+
+@keyframes leave-page {
+  0% {
+    transform: translateY(0px);
+    opacity: 100%;
+  }
+  100% {
+    transform: translateY(-90px);
+    opacity: 0;
+  }
+}
+
+.leavePage1 {
+  opacity: 100%;
+  animation-name: leave-page;
+  animation-duration: 0.8s;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.leavePage2 {
+  opacity: 100%;
+  animation-name: leave-page;
+  animation-duration: 1s;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.leavePage3 {
+  opacity: 100%;
+  animation-name: leave-page;
+  animation-duration: 1.2s;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.leavePage4 {
+  opacity: 100%;
+  animation-name: leave-page;
+  animation-duration: 1.4s;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes leave-page-down {
+  0% {
+    transform: translateY(0px);
+    opacity: 100%;
+  }
+  100% {
+    transform: translateY(90px);
+    opacity: 0;
+  }
+}
+
+.leavePageUp {
+  opacity: 100%;
+  animation-name: leave-page-down;
+  animation-duration: 1s;
+  animation-delay: 0.6;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
 }

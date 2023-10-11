@@ -6,23 +6,36 @@ import { Logo, Hamburger, CloseButton, LightMode } from "../_components";
 import Menu from "./Menu.js";
 import { useContext, useCallback } from "react";
 
+
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 export default function Navbar() {
 
   // CONTEXT: 
 
-  const { showMenu, setShowMenu } = useContext(DataContext);
+  const { showMenu, setShowMenu, leaveAnimation, setLeaveAnimation } = useContext(DataContext);
 
-  // USING CALLBACK TO AVOID RE-RENDERING THE COMPONENT WHEN THE STATE CHANGES ???
+  const handleOpenMenuButton = () => {
+    setLeaveAnimation(true)
+    setTimeout(() => {
+      setLeaveAnimation(false);
+    }, 1500);
+    setTimeout(() => {
+      setShowMenu(true)
+    }, 1500);
+  }
 
-  // const handleShowMenu = useCallback(() => {
-  //   setShowMenu(true);
-  // }, [setShowMenu]);
+  const handleCloseMenuButton = () => {
+    setLeaveAnimation(true)
+    setTimeout(() => {
+      setLeaveAnimation(false);
+    }, 1500);
+    setTimeout(() => {
+      setShowMenu(false)
+    }, 1500);
 
-  // const handleHideMenu = useCallback(() => {
-  //   setShowMenu(false);
-  // }, [setShowMenu]);
+  }
 
 
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -30,43 +43,44 @@ export default function Navbar() {
   return (
     <>
       {/***********************************NAVBAR WHEN COLLAPSED******************************************/}
+      {
+        !showMenu && (
 
-      <div
-        className={`flex justify-between items-center  paddingXNavbar paddingYNavbar navbar-index ${animations.goDown1}`}
-      >
-        <div>
-          <Logo />
-        </div>
+          <div
+            className={`flex justify-between items-center  paddingXNavbar paddingYNavbar navbar-index ${animations.goDown1} ${leaveAnimation ? animations.leavePage4 : ""}`}
+          >
+            <div>
+              <Logo />
+            </div>
 
-        <div className="md:mt-[20px] "
-          onClick={() => setShowMenu(true)}
-        // onClick={handleShowMenu}
-        >
-          <Hamburger />
-        </div>
+            <div className="md:mt-[20px] "
+              onClick={handleOpenMenuButton}
 
-      </div>
+            >
+              <Hamburger />
+            </div>
+
+          </div>)}
 
       {/***************************************NAVBAR WHEN OPEN ********************************************/}
 
       {
         showMenu && (
 
-          <div className="menu-expanded bg-primary dark:bg-secondary">
+          <div className="menu-expanded">
             ; {/*I have to add this ';' because there seems to be a bug in NEXT and makes it appear in the main page. Therefore, I have to compensate adding it here too*/}
 
             <div className="container">
 
               <div
-                className={`flex justify-between items-center  paddingXNavbar paddingYNavbar navbar-index `}
+                className={`flex justify-between items-center  paddingXNavbar paddingYNavbar navbar-index ${animations.goDownMenu1} ${leaveAnimation ? animations.leavePage4 : ""}`}
               >
                 <div>
                   <Logo />
                 </div>
 
-                <div className=" flexCenter"
-                  onClick={() => setShowMenu(false)}
-                // onClick={handleHideMenu}
+                <div className={`flexCenter `}
+                  onClick={handleCloseMenuButton}
                 >
                   <CloseButton />
                 </div>
@@ -84,6 +98,7 @@ export default function Navbar() {
 
               </div>
             </div>
+
           </div >
 
 

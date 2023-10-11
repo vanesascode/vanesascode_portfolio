@@ -10,6 +10,7 @@ export const DataProvider = ({ children }) => {
   // LIGHT MODE CONFIGURATION: 
 
   const [lightMode, setLightMode] = useState("light");
+  const [leaveAnimation, setLeaveAnimation] = useState(false);
 
   useEffect(() => {
     if (lightMode === "dark") {
@@ -21,7 +22,7 @@ export const DataProvider = ({ children }) => {
 
 
   return (
-    <DataContext.Provider value={{ showMenu, setShowMenu, lightMode, setLightMode }}>
+    <DataContext.Provider value={{ showMenu, setShowMenu, lightMode, setLightMode, leaveAnimation, setLeaveAnimation }}>
       {children}
     </DataContext.Provider>
   );

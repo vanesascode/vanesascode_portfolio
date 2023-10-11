@@ -4,7 +4,13 @@ import '../globals.css'
 import animations from "../animations.module.css";
 import { useEffect, useState } from "react";
 
+import { useContext } from "react";
+
+import DataContext from "../_context/DataContext";
+
 const Intro = () => {
+
+  const { lightMode } = useContext(DataContext);
 
   const [intro, setIntro] = useState(true);
 
@@ -38,7 +44,7 @@ const Intro = () => {
 
             <div className='flex items-center'>
               <div className="logo">
-                <img src="/bracket-left-white.svg" alt="logo" className='lg:h-[80px] sm:h-[68px] h-[48px]   ' />
+                <img src={lightMode === "light" ? "/bracket-left-white.svg" : "/bracket-left-black.svg"} alt="logo" className='lg:h-[80px] sm:h-[68px] h-[48px]   ' />
 
               </div>
 
@@ -51,7 +57,7 @@ const Intro = () => {
               {/*RIGHT BRACKET*/}
 
               <div className="logo">
-                <img src="/bracket-right-white.svg" alt="logo" className='lg:h-[80px] sm:h-[68px]  h-[48px]   ' />
+                <img src={lightMode === "light" ? "/bracket-right-white.svg" : "/bracket-right-black.svg"} alt="logo" className='lg:h-[80px] sm:h-[68px]  h-[48px]   ' />
               </div>
 
             </div>
