@@ -88,17 +88,20 @@ export default function Navbar() {
               </div>
 
               {/****************************************************************************************************/}
+              <div className='h-screen flexCenter mt-[-50px] sm:mt-[-110px] md:mt-[-120px] lg:mt-[-130px] xl:mt-[-140px]'>
+                <div>
+                  <div className="max-w-[900px] min-h-screen mx-auto paddingXBody ">
+                    <Menu />
 
-              <div className="max-w-[900px] min-h-screen mx-auto paddingXBody ">
-                <Menu />
+                    <div className="mt-[50px]">
+                      <LightMode />
+                    </div>
 
-                <div className="mt-[50px]">
-                  <LightMode />
+                  </div>
                 </div>
-
               </div>
-            </div>
 
+            </div>
           </div >
 
 

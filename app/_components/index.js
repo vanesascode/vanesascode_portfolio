@@ -1,6 +1,10 @@
 // INTRO: 
 
+import Intro from './Intro';
 
+// NAVBAR: 
+
+import Navbar from './Navbar';
 
 // HOME:
 import HomeText from './HomeText';
@@ -18,11 +22,9 @@ import LightMode from './LightMode';
 import ParticlesWhite from './ParticlesWhite';
 import ParticlesBlack from './ParticlesBlack';
 
-
-
-
-
 export {
+  Intro,
+  Navbar,
   HomeText,
   Menu,
   Logo,

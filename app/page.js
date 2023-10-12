@@ -1,11 +1,10 @@
 "use client"
 
-import { ParticlesBlack, ParticlesWhite } from "./_components";
+import { ParticlesBlack, ParticlesWhite, Intro, Navbar } from "./_components";
 import HomeText from "./_components/HomeText";
 
-import Intro from "./_components/Intro";
 import { useEffect, useState, useContext } from "react";
-import Navbar from "./_components/Navbar";
+
 
 //Mouse ball library: 
 import { motion } from 'framer-motion';
@@ -59,11 +58,11 @@ export default function Home() {
     }
   }, []);
 
-  const cursor = {
+  // the cursor disappears when the window is smaller than 640px:
+  const cursor = window.innerWidth <= 640 ? null : {
     default: {
       height: 30,
       width: 30,
-
       x: mousePosition.x - 15,
       y: mousePosition.y - 15,
       backgroundColor: "rgb(186 182 228)",

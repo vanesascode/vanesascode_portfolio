@@ -6,7 +6,6 @@
 
 :root {
   background-color: #11101d;
-  cursor: crosshair;
 }
 
 body {
@@ -16,7 +15,6 @@ body {
 
 * {
   scroll-behavior: smooth;
-  /* cursor: none; */
   color: transparent;
 }
 
@@ -203,18 +201,6 @@ body {
   top: 0;
   left: 0;
   pointer-events: none;
-  z-index: 3;
-}
-
-@media (max-width: 640px) {
-  .cursor {
-    height: 0px;
-    width: 0px;
-    border-radius: 0%;
-    display: hidden;
-    position: unset;
-    top: -100;
-  }
 }
 
 /*MENU */

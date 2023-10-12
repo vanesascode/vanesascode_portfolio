@@ -9,7 +9,12 @@ export const DataProvider = ({ children }) => {
 
   // LIGHT MODE CONFIGURATION: 
 
-  const [lightMode, setLightMode] = useState("light");
+  const [lightMode, setLightMode] = useState(() => {
+    // Load the initial lightMode value from local storage if it exists,
+    // otherwise default to "light"
+    return localStorage.getItem("lightMode") || "light";
+  });
+
   const [leaveAnimation, setLeaveAnimation] = useState(false);
 
   useEffect(() => {
@@ -18,6 +23,9 @@ export const DataProvider = ({ children }) => {
     } else {
       document.querySelector("html").classList.remove("dark");
     }
+
+    // Save the current lightMode value to local storage
+    localStorage.setItem("lightMode", lightMode);
   }, [lightMode]);
 
 
