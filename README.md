@@ -1,5 +1,7 @@
 # Welcome to my portfolio! 👨‍💻
 
+Portfolio in progress...
+
 Here you will find the tools and info about the process I followed in order to build this website.
 
 ## 📋 Process:
@@ -34,7 +36,7 @@ So when I had all my `configuration ready` and really started coding, I started 
 
 I was aware that, as the project went further, I would have to spend time cleaning the code and using a `state manager` such as `Context Api`, so I wouldn't have to repeat lots of code in different pages. But I wasn't too worry about it until I had what I wanted to be working, to be 'really' working. Of course, at the end of the project, I left the code as `readable and efficient` as possible.
 
-As for the CSS files, I organized them like this because.... etc.................
+As for the `CSS files`, I added all the animations that were not hovered at any time, which were quite a few, in the `animations.module.css` file. Otherwise, the globals.css file would be too long and confusing. Still, I am adding some of the animations I need in the globals.css file because I found working with the hover pseudo-class easier from there.
 
 ### Intro section
 
