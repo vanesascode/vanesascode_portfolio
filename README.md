@@ -2,7 +2,7 @@
 
 Here you will find the tools and info about the process I followed in order to build this website.
 
-## Process:
+## 📋 Process:
 
 ### Choosing the tools
 
@@ -109,17 +109,3 @@ Find info [HERE](https://github.com/tsparticles)
 - npm i tsparticles
 - npm i tsparticles-slim
 - npm i tsparticles-engine
-
-### 🔹FRAMER MOTION LIBRARY:
-
-Find info [HERE](https://www.framer.com/motion/)
-
-[Installation (8-10-2023)](https://www.framer.com/motion/introduction/)
-
-- npm install framer-motion
-
-###
-
-https://www.react-spring.dev/
-
-`npm i @react-spring/web`

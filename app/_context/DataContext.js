@@ -5,17 +5,25 @@ import { createContext, useState, useEffect } from "react";
 const DataContext = createContext();
 
 export const DataProvider = ({ children }) => {
+
+  // STATE FOR MENU:
+
   const [showMenu, setShowMenu] = useState(false);
+
+  // ANIMATIONS STATE (for elements that leave the page):
+
+  const [leaveAnimation, setLeaveAnimation] = useState(false);
+
 
   // LIGHT MODE CONFIGURATION: 
 
   const [lightMode, setLightMode] = useState(() => {
-    // Load the initial lightMode value from local storage if it exists,
-    // otherwise default to "light"
-    return localStorage.getItem("lightMode") || "light";
+    let initialLightMode = "light";
+    if (typeof localStorage !== "undefined") { // because some environments other than the browser, such as React Native, don't have local storage
+      initialLightMode = localStorage.getItem("lightMode") || "light";
+    }
+    return initialLightMode;
   });
-
-  const [leaveAnimation, setLeaveAnimation] = useState(false);
 
   useEffect(() => {
     if (lightMode === "dark") {

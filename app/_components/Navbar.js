@@ -2,19 +2,18 @@
 
 import animations from "../animations.module.css";
 import DataContext from "../_context/DataContext";
-import { Logo, Hamburger, CloseButton, LightMode } from "../_components";
-import Menu from "./Menu.js";
-import { useContext, useCallback } from "react";
+import { Logo, OpenMenuButton, CloseMenuButton } from "../_components";
+import { useContext } from "react";
 
 
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 export default function Navbar() {
 
   // CONTEXT: 
 
   const { showMenu, setShowMenu, leaveAnimation, setLeaveAnimation } = useContext(DataContext);
+
+  // BUTTON FUNCTIONS: 
 
   const handleOpenMenuButton = () => {
     setLeaveAnimation(true)
@@ -37,79 +36,35 @@ export default function Navbar() {
 
   }
 
-
-  /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
   return (
     <>
-      {/***********************************NAVBAR WHEN COLLAPSED******************************************/}
-      {
-        !showMenu && (
+      <div
+        className={`flex justify-between items-center paddingYNavbar navbar-index ${animations.goDown1} ${leaveAnimation ? animations.leavePage4 : ""} `}
+      >
+        <div>
+          <Logo />
+        </div>
 
-          <div
-            className={`flex justify-between items-center  paddingXNavbar paddingYNavbar navbar-index ${animations.goDown1} ${leaveAnimation ? animations.leavePage4 : ""}`}
-          >
-            <div>
-              <Logo />
-            </div>
-
+        {
+          !showMenu ? (
             <div className="md:mt-[20px] "
               onClick={handleOpenMenuButton}
 
             >
-              <Hamburger />
+              <OpenMenuButton />
             </div>
+          ) :
 
-          </div>)}
-
-      {/***************************************NAVBAR WHEN OPEN ********************************************/}
-
-      {
-        showMenu && (
-
-          <div className="menu-expanded">
-            ; {/*I have to add this ';' because there seems to be a bug in NEXT and makes it appear in the main page. Therefore, I have to compensate adding it here too*/}
-
-            <div className="container">
-
-              <div
-                className={`flex justify-between items-center  paddingXNavbar paddingYNavbar navbar-index ${animations.goDownMenu1} ${leaveAnimation ? animations.leavePage4 : ""}`}
+            (
+              <div className={`flexCenter `}
+                onClick={handleCloseMenuButton}
               >
-                <div>
-                  <Logo />
-                </div>
-
-                <div className={`flexCenter `}
-                  onClick={handleCloseMenuButton}
-                >
-                  <CloseButton />
-                </div>
-
+                <CloseMenuButton />
               </div>
+            )
+        }
 
-              {/****************************************************************************************************/}
-              <div className='h-screen flexCenter mt-[-50px] sm:mt-[-110px] md:mt-[-120px] lg:mt-[-130px] xl:mt-[-140px]'>
-                <div>
-                  <div className="max-w-[900px] min-h-screen mx-auto paddingXBody ">
-                    <Menu />
-
-                    <div className="mt-[50px]">
-                      <LightMode />
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div >
-
-
-        )
-      }
-
-
-
+      </div>
     </>
   )
 };

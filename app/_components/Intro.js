@@ -43,20 +43,20 @@ const Intro = () => {
 
 
             <div className='flex items-center'>
-              <div className="logo">
+              <div >
                 <img src={lightMode === "light" ? "/bracket-left-white.svg" : "/bracket-left-black.svg"} alt="logo" className='lg:h-[80px] sm:h-[68px] h-[48px]   ' />
 
               </div>
 
               {/*INTRO TEXT*/}
 
-              <div className="intro lg:py-[14.5px] sm:pt-[17px] sm:pb-[18px] pt-[17px] pb-[18px] dark:text-black">
+              <div className="intro lg:py-[14.5px] md:pt-[17px] md:pb-[18px] sm:py-[25px]     pt-[17px] pb-[18px] dark:text-black">
                 <span className='text-white dark:text-black'>vanesascode</span> portfolio
               </div>
 
               {/*RIGHT BRACKET*/}
 
-              <div className="logo">
+              <div >
                 <img src={lightMode === "light" ? "/bracket-right-white.svg" : "/bracket-right-black.svg"} alt="logo" className='lg:h-[80px] sm:h-[68px]  h-[48px]   ' />
               </div>
 

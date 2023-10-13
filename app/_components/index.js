@@ -1,22 +1,22 @@
 // INTRO: 
-
 import Intro from './Intro';
 
-// NAVBAR: 
-
+////// NAVBAR: 
+// main component:
 import Navbar from './Navbar';
+// inner components:
+import Logo from './Logo';
+import OpenMenuButton from './OpenMenuButton';
+import CloseMenuButton from './CloseMenuButton';
 
 // HOME:
-import HomeText from './HomeText';
+import HomeElements from './HomeElements';
 
-
-// MENU:
-import Menu from './Menu';
-import Logo from './Logo';
-import Hamburger from './Hamburger';
-import CloseButton from './CloseButton';
+////// MENU:
+// main component:
+import MenuElements from './MenuElements';
+// inner components:
 import LightMode from './LightMode';
-
 
 // PARTICLES: 
 import ParticlesWhite from './ParticlesWhite';
@@ -25,11 +25,11 @@ import ParticlesBlack from './ParticlesBlack';
 export {
   Intro,
   Navbar,
-  HomeText,
-  Menu,
+  HomeElements,
+  MenuElements,
   Logo,
-  Hamburger,
-  CloseButton,
+  OpenMenuButton,
+  CloseMenuButton,
   LightMode,
   ParticlesWhite,
   ParticlesBlack,

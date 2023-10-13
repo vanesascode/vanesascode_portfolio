@@ -6,7 +6,7 @@ import { useContext } from "react";
 
 import DataContext from "../_context/DataContext";
 
-export default function Hamburger() {
+export default function OpenMenuButton() {
 
   const { lightMode, leaveAnimation } = useContext(DataContext);
 
@@ -16,7 +16,7 @@ export default function Hamburger() {
       <img
         src={lightMode === "light" ? "/hamburger-white.svg" : "/hamburger-black.svg"}
         alt="logo"
-        className={`sm:h-[46px] h-[26px] md:h-[54px] ${animations.rotateWhenHovered} md:mt-[-30px] ${leaveAnimation ? animations.leavePage4 : ""}`}
+        className={` size-open-menu-button  ${animations.rotateWhenHovered}  ${leaveAnimation ? animations.leavePage4 : ""}`}
       />
 
 

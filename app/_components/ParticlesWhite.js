@@ -332,7 +332,7 @@ const ParticlesComponent = (props) => {
           },
           random: false,
           size: false,
-          speed: 0.15, ///////////////////////////////////////Speed
+          speed: 0.05, ///////////////////////////////////////Speed
           spin: {
             acceleration: 0,
             enable: false,

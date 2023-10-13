@@ -5,7 +5,7 @@ import { useContext } from "react";
 
 import DataContext from "../_context/DataContext";
 
-export default function CloseButton() {
+export default function CloseMenuButton() {
   const { lightMode } = useContext(DataContext);
 
   return (
@@ -14,7 +14,7 @@ export default function CloseButton() {
       <img
         src={lightMode === "light" ? "/closebutton-white.svg" : "/closebutton-black.svg"}
         alt="logo"
-        className={`sm:h-[46px] h-[26px] md:h-[56px] ${animations.rotateWhenHovered} mt-[-8px]`}
+        className={`size-close-menu-button  ${animations.rotateWhenHovered} `}
       />
 
     </>

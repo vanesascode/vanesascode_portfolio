@@ -14,7 +14,6 @@ body {
 }
 
 * {
-  scroll-behavior: smooth;
   color: transparent;
 }
 
@@ -22,23 +21,11 @@ body {
   /*GENERAL */
 
   .container {
-    @apply max-w-[1440px] min-h-screen mx-auto;
+    @apply max-w-[1740px] h-screen mx-auto;
   }
 
-  .paddingXNavbar {
-    @apply px-[30px];
-  }
-
-  .paddingYNavbar {
-    @apply sm:pt-[10px] md:pt-[20px] lg:pt-[30px] xl:pt-[40px];
-  }
-
-  .paddingYNavbarMenu {
-    @apply sm:pt-[0px] md:pt-[4px] lg:pt-[14px] xl:pt-[24px];
-  }
-
-  .paddingXBody {
-    @apply px-[25px];
+  .paddingX {
+    @apply px-[40px];
   }
 
   .flexCenter {
@@ -56,19 +43,45 @@ body {
   }
 
   .logo {
-    @apply font-source  text-secondary dark:text-primary sm:text-[70px] text-[40px] font-semibold;
+    @apply font-source  text-secondary dark:text-primary text-[45px] md:text-[65px] xl:text-[90px]  mb-[8px] xl:mb-[13px] font-semibold;
   }
 
   .heading1 {
-    @apply font-source xl:text-[45px] text-[30px] text-center xl:leading-[40px] leading-[30px] font-bold tracking-tight xl:tracking-normal;
+    @apply font-source xl:text-[55px] md:text-[45px] xs:text-[28px] text-[26px]  xl:leading-[50px] md:leading-[40px] leading-[30px] font-bold;
   }
 
   .heading2 {
-    @apply font-source xl:text-[25px] text-[15px] text-center xl:leading-[30px] leading-[20px] font-normal;
+    @apply font-source xl:text-[30px] sm:text-[19px] text-[15px] text-center xl:leading-[35px] sm:leading-[25px] leading-[20px] font-normal;
   }
 
   .links {
-    @apply font-source text-secondary dark:text-primary xl:text-[30px] text-[20px] text-center font-bold xl:tracking-normal tracking-tight;
+    @apply font-source text-secondary dark:text-primary xl:text-[40px] md:text-[30px] sm:text-[20px] text-[15px] text-center font-bold;
+  }
+
+  /*NAVBAR */
+
+  .size-brackets-logo {
+    @apply h-[35px] md:h-[55px]  xl:h-[70px];
+  }
+
+  .size-open-menu-button {
+    @apply h-[35px] md:h-[50px]  xl:h-[70px] md:mt-[-30px];
+  }
+
+  .size-close-menu-button {
+    @apply h-[35px] md:h-[50px] xl:h-[70px];
+  }
+
+  .sunSize {
+    @apply md:h-[40px] h-[20px];
+  }
+
+  .paddingXNavbar {
+    @apply px-[35px] lg:px-[90px];
+  }
+
+  .paddingYNavbar {
+    @apply py-[0px] lg:pt-[40px];
   }
 }
 
@@ -86,7 +99,7 @@ body {
   background-color: #11101d;
   right: 0;
   bottom: -1px;
-  width: 90%;
+  width: 85%;
   height: 4.5px;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
@@ -98,10 +111,17 @@ body {
   background-color: #bab6e4;
   right: 0;
   bottom: -1px;
-  width: 90%;
+  width: 85%;
   height: 3px;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .linksUnderlinesBlack::after,
+  .linksUnderlinesWhite::after {
+    width: 87%;
+  }
 }
 
 @keyframes loading-left {
@@ -142,8 +162,8 @@ body {
   position: absolute;
   left: 0;
   bottom: -1px;
-  width: 700px;
-  height: 4.5px;
+  width: 200px;
+  height: 4.2px;
   background-color: rgb(186 182 228);
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
@@ -154,7 +174,7 @@ body {
   position: absolute;
   left: 0;
   bottom: -1px;
-  width: 700px;
+  width: 200px;
   height: 4.5px;
   background-color: #11101d;
   opacity: 0;
@@ -168,11 +188,21 @@ body {
   animation: loading-left 0.4s ease-in-out 0s 1 normal forwards;
 }
 
-@media (min-width: 1280px) {
-  .linksUnderlinesMenuWhite:hover::after,
-  .linksUnderlinesMenuBlack:hover::after {
+@media (min-width: 768px) {
+  .linksUnderlinesMenuWhite::after,
+  .linksUnderlinesMenuBlack::after {
     height: 7px;
     bottom: -7px;
+    width: 500px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .linksUnderlinesMenuWhite::after,
+  .linksUnderlinesMenuBlack::after {
+    height: 7px;
+    bottom: -7px;
+    width: 1000px;
   }
 }
 
@@ -205,80 +235,6 @@ body {
 
 /*MENU */
 
-.menu-expanded {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-
-  z-index: 1;
-  width: 100%;
-}
-
 .navbar-index {
   z-index: 2;
-}
-
-/***/
-
-/* I AM TRYING TO HAVE ANIMATION WHEN UNMOUNTING, JUST USING CSS */
-
-@keyframes logo-enter {
-  from {
-    opacity: 0;
-    transform: translateX(-200px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-
-@keyframes logo-exit {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-    transform: translateX(-200px);
-  }
-}
-
-.logo-enter {
-  animation: logo-enter 1000ms;
-}
-
-.logo-exit {
-  animation: logo-exit 1000ms;
-}
-
-.granulated-background {
-  position: relative;
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.1) 0%,
-    rgba(0, 0, 0, 0.1) 1%,
-    transparent 1%,
-    transparent 100%
-  );
-  background-size: 20px 20px;
-}
-
-.granulated-background::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.1) 0%,
-    rgba(0, 0, 0, 0.1) 1%,
-    transparent 1%,
-    transparent 100%
-  );
-  background-size: 20px 20px;
-  pointer-events: none;
 }
