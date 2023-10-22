@@ -22,6 +22,10 @@ import LightMode from './LightMode';
 import ParticlesWhite from './ParticlesWhite';
 import ParticlesBlack from './ParticlesBlack';
 
+//PROJECTS: 
+import ProjectsElements from './ProjectsElements';
+import ProjectsList from './ProjectsList';
+
 export {
   Intro,
   Navbar,
@@ -33,4 +37,6 @@ export {
   LightMode,
   ParticlesWhite,
   ParticlesBlack,
+  ProjectsElements,
+  ProjectsList,
 }

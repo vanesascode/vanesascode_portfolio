@@ -56,8 +56,8 @@ export default function HomeElements() {
               <div className={` md:flexCenter max-md:flexCol md:gap-[50px] md:pt-[60px] pt-[50px] ${animations.goUp} paddingXBody ${leaveAnimation ? animations.leavePageUp : ""}`} >
 
 
-                <Link href="/" >
-                  <div className={`flex items-center relative ${lightMode === "light" ? "linksUnderlinesWhite" : "linksUnderlinesBlack"} cursor-crosshair `}
+                <Link href="/projects" >
+                  <div className={`flex items-center relative ${lightMode === "light" ? "linksUnderlinesHomeWhite" : "linksUnderlinesHomeBlack"} cursor-crosshair `}
 
                   >
                     <img src={lightMode === "light" ? "/arrow-white.svg" : "/arrow-black.svg"} alt="logo" className=' xl:h-[45px] md:h-[35px] sm:h-[28px] h-[20px] ' />
@@ -67,7 +67,7 @@ export default function HomeElements() {
 
 
                 <Link href="/" >
-                  <div className={`flex items-center relative ${lightMode === "light" ? "linksUnderlinesWhite" : "linksUnderlinesBlack"} cursor-crosshair max-md:mt-[10px]`}
+                  <div className={`flex items-center relative ${lightMode === "light" ? "linksUnderlinesHomeWhite" : "linksUnderlinesHomeBlack"} cursor-crosshair max-md:mt-[10px]`}
 
                   >
                     <img src={lightMode === "light" ? "/arrow-white.svg" : "/arrow-black.svg"} alt="logo" className=' xl:h-[45px] md:h-[35px] sm:h-[28px] h-[20px]' />

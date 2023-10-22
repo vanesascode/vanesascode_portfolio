@@ -4,15 +4,10 @@ import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 import { useCallback, useMemo } from "react";
 
-import { useContext } from "react";
-
-import DataContext from "../_context/DataContext";
-
 // tsParticles Repository: https://github.com/matteobruni/tsparticles
 // tsParticles Website: https://particles.js.org/
 const ParticlesComponent = (props) => {
 
-  const { lightMode } = useContext(DataContext);
 
   // using useMemo is not mandatory, but it's recommended since this value can be memoized if static
   const options = useMemo(() => {

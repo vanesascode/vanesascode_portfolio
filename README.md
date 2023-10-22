@@ -10,7 +10,7 @@ Here you will find the tools and info about the process I followed in order to b
 
 I started a [draft](https://www.figma.com/file/r7XnJWCM3NpFsQg2ummezz/Portfolio-vanesascode?type=design&node-id=0-1&mode=design&t=vmmyR1jeUsWMg7Bm-0) with `FIGMA`, in order to put on 'paper' the ideas I had been collecting over the previous days, and to start trying some visual structure. Also helped for the structured of pages the website was going to have. It was a basic draft though, since I am not a professional designer.
 
-Then I had to test the framework and languages that will help me build this project. I first wanted to use VITE and Typescript. However, even though I was not very familiar yet with `NEXT`, I prefered to use it best, because of its better performance and stability of the routes.
+Then I had to test the framework and languages that will help me build this project. I first wanted to use VITE and Typescript. However, even though I was not very familiar yet with `NEXT`, I prefered to use it best, because of its better configuration and performance, and its great `file based routing`, which is better that react-router.
 
 And also, in the end, I used `Javascript`. This is because I really wanted to use the TSparticles library for this project and it is not very well documented for Typescript, so I spent a lot of time trying to make it work with Typescript but gave up. Also, I thought that this being probably one of my biggest projects, I was going to be more comfortable with Javascript. I will have plenty of time later on to fill this portfolio with other projects using Typescript!
 

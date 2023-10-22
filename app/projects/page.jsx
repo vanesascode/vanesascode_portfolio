@@ -1,15 +1,37 @@
 "use client";
 
-import Particles from "../_components/ParticlesBlack";
-import Navbar from "../_components/Navbar";
+import {
+  ParticlesBlack,
+  ParticlesWhite,
+  Navbar,
+  MenuElements,
+  ProjectsElements,
+} from "../_components";
 
-export default function Projects() {
+import { useContext } from "react";
+
+import DataContext from "../_context/DataContext";
+
+import "../globals.css";
+
+export default function Home() {
+  // CONTEXT:
+
+  const { lightMode } = useContext(DataContext);
+
+  /////////////////////////////////////////////////////////////////////////
+
   return (
-    <div className="container granulated-background">
-      <Navbar />
+    <div className="relative ">
+      <div className="container paddingX">
+        <Navbar />
+        <ProjectsElements />
+        <MenuElements />
 
-      {/*Particles Background*/}
-      <Particles id="tsparticles" />
+        {/*Particles Background*/}
+        {lightMode === "dark" && <ParticlesWhite id="tsparticles" />}
+        {lightMode === "light" && <ParticlesBlack id="tsparticles" />}
+      </div>
     </div>
   );
 }

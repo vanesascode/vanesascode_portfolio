@@ -1,5 +1,5 @@
 "use client"
-
+import Image from "next/image";
 import animations from "../animations.module.css";
 import { useContext } from "react";
 

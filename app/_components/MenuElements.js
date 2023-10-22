@@ -39,10 +39,7 @@ export default function MenuElements() {
 
             <Link href="/projects">
               <div className={`heading1 ${lightMode === "light" ? "linksUnderlinesMenuWhite" : "linksUnderlinesMenuBlack"} relative ${animations.goDownMenu3} cursor-crosshair ${leaveAnimation ? animations.leavePage2 : ""}`} onClick={() => {
-                setTimeout(() => {
-                  setShowMenu(false);
-
-                }, 1000);
+                setShowMenu(false);
               }}>
 
                 <p className="text-secondary dark:text-black pb-3"> Projects</p>

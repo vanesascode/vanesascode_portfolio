@@ -40,7 +40,7 @@ export default function Home() {
   }, 700);
 
   return (
-    <div className="relative ">
+    <div className="relative">
 
       <Intro />
       <div className="container paddingX">

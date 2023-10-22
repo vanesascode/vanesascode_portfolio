@@ -1,5 +1,9 @@
+
+
 import './globals.css'
 import { DataProvider } from './_context/DataContext'
+import { useContext } from 'react'
+import DataContext from "./_context/DataContext";
 
 
 
@@ -9,9 +13,12 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+
+  // const { lightMode } = useContext(DataContext);
+
   return (
     <DataProvider>
-      <html lang="en">
+      <html lang="en" className='overflow-hidden'>
         <body>
           <main>{children}</main>
         </body>
