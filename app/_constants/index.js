@@ -2,38 +2,39 @@
 export const projectsPreviews = [
   {
     id: "pp-1",
-    content:
-      "Contact List",
-
-    img: "projects/cover1.jpg",
-    video: "/projects/video1.gif",
+    title:
+      "Dev School",
+    desc: "Educational & blog website",
+    img: "projects/cover-dev-school.jpg",
+    video: "/projects/video-dev-school.gif",
     frame: "/projects/thinkpadframepreview.png",
   },
   {
     id: "pp-2",
-    content:
-      "Another project",
-
-    img: "projects/cover2.jpg",
-    video: "/projects/video2.gif",
+    title:
+      "Lizz Boots",
+    desc: "Showcase landing page",
+    img: "projects/cover-lizz-boots.jpg",
+    video: "/projects/video-lizz-boots.gif",
     frame: "/projects/thinkpadframepreview.png",
   },
   {
     id: "pp-3",
-    content:
-      "Another project",
-
-    img: "projects/cover1.jpg",
-    video: "/projects/video1.gif",
+    title:
+      "Zen Todo List",
+    desc: "Todo list app",
+    img: "projects/cover-todo-list.jpg",
+    video: "/projects/video-todo-list.gif",
     frame: "/projects/thinkpadframepreview.png",
   },
   {
     id: "pp-4",
-    content:
-      "Another project",
-
-    img: "projects/cover2.jpg",
-    video: "/projects/video1.gif",
+    title:
+      "Contact List",
+    desc: "App using 4geeks restful api",
+    img: "projects/cover-contact-list.jpg",
+    video: "/projects/video-contact-list.gif",
     frame: "/projects/thinkpadframepreview.png",
   },
+
 ];

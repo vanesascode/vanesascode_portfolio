@@ -14,12 +14,14 @@ export default function HomeElements() {
 
   const { lightMode, showMenu, leaveAnimation } = useContext(DataContext);
 
+  //when navbar was not fixed: mt-[-50px] sm:mt-[-110px] md:mt-[-120px] lg:mt-[-130px] xl:mt-[-140px]
+
   return (
     <>
       {!showMenu && (
 
 
-        <div className='h-screen flexCenter mt-[-50px] sm:mt-[-110px] md:mt-[-120px] lg:mt-[-130px] xl:mt-[-140px]'>
+        <div className='h-screen flexCenter '>
           <div>
 
             {/*TEXT*/}
@@ -28,13 +30,13 @@ export default function HomeElements() {
               <div className='max-w-5xl text-center heading1 ' >
                 <div
                 >
-                  <div className={`${animations.goDown4} ${leaveAnimation ? animations.leavePage1 : ""}`}>
+                  <div className={`${animations.goDownHome4} ${leaveAnimation ? animations.leavePage1 : ""}`}>
                     <p
 
                       className='text-secondary dark:text-primary tracking-[-1px] sm:tracking-normal'
                     >
                       Hi, I'm <br className='block sm:hidden ' /> Vanesa Juarez Paris</p></div>
-                  <div className={`${animations.goDown3} ${leaveAnimation ? animations.leavePage2 : ""}`}> <p
+                  <div className={`${animations.goDownHome3} ${leaveAnimation ? animations.leavePage2 : ""}`}> <p
 
                   ><span className='tracking-[-1px] sm:tracking-normal text-secondary dark:text-primary '>but you can call me </span><br className='block sm:hidden' /><span className="text-white dark:text-accent tracking-[1px] md:tracking-normal">vanesascode</span></p></div>
 
@@ -45,15 +47,15 @@ export default function HomeElements() {
 
               >
                 <div className="heading2 ">
-                  <div className={`${animations.goDown2} ${leaveAnimation ? animations.leavePage3 : ""}`}> <p className='text-secondary dark:text-primary md:tracking-[-0.5px] tracking-tighter xl:tracking-[-0.95px]'>I'm a full stack developer</p></div>
-                  <div className={`${animations.goDown1} ${leaveAnimation ? animations.leavePage4 : ""}`}> <p className='text-secondary dark:text-primary md:tracking-[0.8px] tracking-[0.2px] xl:tracking-[1px]'>& an addict to learning</p></div>
+                  <div className={`${animations.goDownHome2} ${leaveAnimation ? animations.leavePage3 : ""}`}> <p className='text-secondary dark:text-primary md:tracking-[-0.5px] tracking-tighter xl:tracking-[-0.95px]'>I'm a full stack developer</p></div>
+                  <div className={`${animations.goDownHome1} ${leaveAnimation ? animations.leavePage4 : ""}`}> <p className='text-secondary dark:text-primary md:tracking-[0.8px] tracking-[0.2px] xl:tracking-[1px]'>& an addict to learning</p></div>
                 </div></div >
 
             </div>
 
             {/*BOTTONS*/}
             <div className='flexCenter'>
-              <div className={` md:flexCenter max-md:flexCol md:gap-[50px] md:pt-[60px] pt-[50px] ${animations.goUp} paddingXBody ${leaveAnimation ? animations.leavePageUp : ""}`} >
+              <div className={` md:flexCenter max-md:flexCol md:gap-[50px] md:pt-[60px] pt-[50px] ${animations.goUpHome} paddingXBody ${leaveAnimation ? animations.leavePageDown : ""}`} >
 
 
                 <Link href="/projects" >

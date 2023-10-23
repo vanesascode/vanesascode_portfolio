@@ -18,7 +18,7 @@ export default function HomeElements() {
       {!showMenu && (
 
 
-        <div className=' flexCenter flex-col gap-5'>
+        <div className=' flexCenter flex-col gap-5 lg:gap-10 xl:gap-20 pt-[80px]'>
           {/*TEXT*/}
 
           <div className="flex justify-start items-center flex-col gap-5 w-[200px] md:w-[500px] xl:w-[1000px]">
@@ -46,7 +46,7 @@ export default function HomeElements() {
 
               >
                 <div className="heading2 ">
-                  <div className={`${animations.goDown2} ${leaveAnimation ? animations.leavePage3 : ""}`}> <p className='text-secondary dark:text-primary md:tracking-[-0.5px] tracking-tighter xl:tracking-[-0.95px]'>Thank you for checking out my projects:</p></div>
+                  <div className={`${animations.goDown2} ${leaveAnimation ? animations.leavePage3 : ""}`}> <p className='text-secondary dark:text-primary md:tracking-[-0.5px] tracking-tighter xl:tracking-[-0.95px]'>Thank you for checking out my work:</p></div>
 
                 </div></div >
 
@@ -56,7 +56,9 @@ export default function HomeElements() {
           </div>
 
           {/*PROJECTS LIST*/}
-          <ProjectsList />
+          <div className={`${animations.goUp} ${leaveAnimation ? animations.leavePageDown : ""} pb-10 mx-auto`}>
+            <ProjectsList />
+          </div>
         </div>
 
       )}

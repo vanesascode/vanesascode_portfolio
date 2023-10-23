@@ -52,7 +52,7 @@
   animation-timing-function: ease-in-out;
 }
 
-/********************************************** HOME ***************************************************/
+/********************************************** HOME - Animations with delay ***************************************************/
 
 /*Elements appearing*/
 
@@ -67,7 +67,7 @@
   }
 }
 
-.goDown1 {
+.goDownHome1 {
   opacity: 0;
   animation-name: go-down;
   animation-duration: 1s;
@@ -76,7 +76,7 @@
   animation-timing-function: ease-in-out;
 }
 
-.goDown2 {
+.goDownHome2 {
   opacity: 0;
   animation-name: go-down;
   animation-duration: 1.2s;
@@ -85,7 +85,7 @@
   animation-timing-function: ease-in-out;
 }
 
-.goDown3 {
+.goDownHome3 {
   opacity: 0;
   animation-name: go-down;
   animation-duration: 1.4s;
@@ -94,7 +94,7 @@
   animation-timing-function: ease-in-out;
 }
 
-.goDown4 {
+.goDownHome4 {
   opacity: 0;
   animation-name: go-down;
   animation-duration: 1.6s;
@@ -114,7 +114,7 @@
   }
 }
 
-.goUp {
+.goUpHome {
   opacity: 0;
   animation-name: go-up;
   animation-duration: 1s;
@@ -155,11 +155,11 @@
   animation: rotate-when-hovered 0.5s ease-in-out 0s 1 normal forwards;
 }
 
-/********************************************* MENU ****************************************************/
+/********************************************* Animations without delay ****************************************************/
 
-/* Menu links appearing */
+/* Links appearing */
 
-.goDownMenu1 {
+.goDown1 {
   opacity: 0;
   animation-name: go-down;
   animation-duration: 0.8s;
@@ -168,7 +168,7 @@
   animation-timing-function: ease-in-out;
 }
 
-.goDownMenu2 {
+.goDown2 {
   opacity: 0;
   animation-name: go-down;
   animation-duration: 1s;
@@ -177,7 +177,7 @@
   animation-timing-function: ease-in-out;
 }
 
-.goDownMenu3 {
+.goDown3 {
   opacity: 0;
   animation-name: go-down;
   animation-duration: 1.2s;
@@ -186,7 +186,7 @@
   animation-timing-function: ease-in-out;
 }
 
-.goDownMenu4 {
+.goDown4 {
   opacity: 0;
   animation-name: go-down;
   animation-duration: 1.4s;
@@ -195,7 +195,7 @@
   animation-timing-function: ease-in-out;
 }
 
-.goUpMenu {
+.goUp {
   opacity: 0;
   animation-name: go-up;
   animation-duration: 1s;
@@ -204,9 +204,9 @@
   animation-timing-function: ease-in-out;
 }
 
-/* Menu Links disappearig */
+/* Links disappearig when clicking the menu button */
 
-@keyframes leave-page {
+@keyframes leave-page-up {
   0% {
     transform: translateY(0px);
     opacity: 100%;
@@ -219,7 +219,7 @@
 
 .leavePage1 {
   opacity: 100%;
-  animation-name: leave-page;
+  animation-name: leave-page-up;
   animation-duration: 0.8s;
   animation-delay: 0;
   animation-fill-mode: forwards;
@@ -228,7 +228,7 @@
 
 .leavePage2 {
   opacity: 100%;
-  animation-name: leave-page;
+  animation-name: leave-page-up;
   animation-duration: 1s;
   animation-delay: 0;
   animation-fill-mode: forwards;
@@ -237,7 +237,7 @@
 
 .leavePage3 {
   opacity: 100%;
-  animation-name: leave-page;
+  animation-name: leave-page-up;
   animation-duration: 1.2s;
   animation-delay: 0;
   animation-fill-mode: forwards;
@@ -246,7 +246,7 @@
 
 .leavePage4 {
   opacity: 100%;
-  animation-name: leave-page;
+  animation-name: leave-page-up;
   animation-duration: 1.4s;
   animation-delay: 0;
   animation-fill-mode: forwards;
@@ -264,7 +264,7 @@
   }
 }
 
-.leavePageUp {
+.leavePageDown {
   opacity: 100%;
   animation-name: leave-page-down;
   animation-duration: 1s;

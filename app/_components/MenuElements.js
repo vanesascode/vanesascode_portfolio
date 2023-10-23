@@ -11,7 +11,7 @@ export default function MenuElements() {
 
   const { setShowMenu, lightMode, leaveAnimation, showMenu } = useContext(DataContext);
 
-
+  //when navbar was not fixed:mt-[-50px] sm:mt-[-110px] md:mt-[-120px] lg:mt-[-130px] xl:mt-[-140px]
 
   return (
     <>
@@ -19,13 +19,13 @@ export default function MenuElements() {
       {showMenu && (
 
 
-        <div className='h-screen flexCenter mt-[-50px] sm:mt-[-110px] md:mt-[-120px] lg:mt-[-130px] xl:mt-[-140px]'>
+        <div className='h-screen flexCenter '>
 
 
           <div className="flex justify-start items-start flex-col gap-5 w-[200px] md:w-[500px] xl:w-[1000px]">
 
             <a href="/" >
-              <div className={`heading1 ${lightMode === "light" ? "linksUnderlinesMenuWhite" : "linksUnderlinesMenuBlack"} relative ${animations.goDownMenu4} cursor-crosshair ${leaveAnimation ? animations.leavePage1 : ""}`} onClick={() => {
+              <div className={`heading1 ${lightMode === "light" ? "linksUnderlinesMenuWhite" : "linksUnderlinesMenuBlack"} relative ${animations.goDown4} cursor-crosshair ${leaveAnimation ? animations.leavePage1 : ""}`} onClick={() => {
                 setTimeout(() => {
 
                   setShowMenu(false);
@@ -38,8 +38,10 @@ export default function MenuElements() {
             </a>
 
             <Link href="/projects">
-              <div className={`heading1 ${lightMode === "light" ? "linksUnderlinesMenuWhite" : "linksUnderlinesMenuBlack"} relative ${animations.goDownMenu3} cursor-crosshair ${leaveAnimation ? animations.leavePage2 : ""}`} onClick={() => {
-                setShowMenu(false);
+              <div className={`heading1 ${lightMode === "light" ? "linksUnderlinesMenuWhite" : "linksUnderlinesMenuBlack"} relative ${animations.goDown3} cursor-crosshair ${leaveAnimation ? animations.leavePage2 : ""}`} onClick={() => {
+                setTimeout(() => {
+                  setShowMenu(false);
+                }, 500);
               }}>
 
                 <p className="text-secondary dark:text-black pb-3"> Projects</p>
@@ -49,7 +51,7 @@ export default function MenuElements() {
 
 
             <Link href="/about">
-              <div className={`heading1 ${lightMode === "light" ? "linksUnderlinesMenuWhite" : "linksUnderlinesMenuBlack"} relative ${animations.goDownMenu2} cursor-crosshair ${leaveAnimation ? animations.leavePage3 : ""}`} onClick={() => {
+              <div className={`heading1 ${lightMode === "light" ? "linksUnderlinesMenuWhite" : "linksUnderlinesMenuBlack"} relative ${animations.goDown2} cursor-crosshair ${leaveAnimation ? animations.leavePage3 : ""}`} onClick={() => {
                 setTimeout(() => {
                   setShowMenu(false);
 
@@ -62,7 +64,7 @@ export default function MenuElements() {
 
 
             <Link href="/contact">
-              <div className={`heading1 ${lightMode === "light" ? "linksUnderlinesMenuWhite" : "linksUnderlinesMenuBlack"} relative ${animations.goDownMenu1} cursor-crosshair ${leaveAnimation ? animations.leavePage4 : ""}`} onClick={() => {
+              <div className={`heading1 ${lightMode === "light" ? "linksUnderlinesMenuWhite" : "linksUnderlinesMenuBlack"} relative ${animations.goDown1} cursor-crosshair ${leaveAnimation ? animations.leavePage4 : ""}`} onClick={() => {
                 setTimeout(() => {
                   setShowMenu(false);
 
@@ -74,7 +76,7 @@ export default function MenuElements() {
             </Link>
 
             <Link href="/blog">
-              <div className={`heading1 ${lightMode === "light" ? "linksUnderlinesMenuWhite" : "linksUnderlinesMenuBlack"} relative ${animations.goDownMenu1} cursor-crosshair ${leaveAnimation ? animations.leavePage4 : ""}`} onClick={() => {
+              <div className={`heading1 ${lightMode === "light" ? "linksUnderlinesMenuWhite" : "linksUnderlinesMenuBlack"} relative ${animations.goDown1} cursor-crosshair ${leaveAnimation ? animations.leavePage4 : ""}`} onClick={() => {
                 setTimeout(() => {
                   setShowMenu(false);
 
@@ -86,8 +88,8 @@ export default function MenuElements() {
             </Link>
 
             <div className="mt-3 flex items-center heading2 gap-4 ">
-              <div className={`${animations.goUpMenu}`}> <p className={`text-secondary dark:text-primary ${animations.rotateWhenHovered} ${leaveAnimation ? animations.leavePageUp : ""}`}>SP</p></div>
-              <div className={`${animations.goUpMenu}`}> <p className={`text-secondary dark:text-primary ${animations.rotateWhenHovered} ${leaveAnimation ? animations.leavePageUp : ""}`}>FR</p></div>
+              <div className={`${animations.goUp}`}> <p className={`text-secondary dark:text-primary ${animations.rotateWhenHovered} ${leaveAnimation ? animations.leavePageDown : ""}`}>SP</p></div>
+              <div className={`${animations.goUp}`}> <p className={`text-secondary dark:text-primary ${animations.rotateWhenHovered} ${leaveAnimation ? animations.leavePageDown : ""}`}>FR</p></div>
               <LightMode />
             </div>
           </div>

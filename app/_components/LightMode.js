@@ -20,8 +20,8 @@ export default function LightMode() {
 
   return (
     <>
-      <div className={` ${animations.goUpMenu}`}>
-        <button onClick={handleChangeLightMode} > <img src={lightMode === "light" ? "/sun-white.svg" : "/sun-black.svg"} alt="logo" className={`size-sun cursor-crosshair ${leaveAnimation ? animations.leavePageUp : ""} ${animations.rotateWhenHovered} mt-[6px]`} /></button>
+      <div className={` ${animations.goUp}`}>
+        <button onClick={handleChangeLightMode} > <img src={lightMode === "light" ? "/sun-white.svg" : "/sun-black.svg"} alt="logo" className={`size-sun cursor-crosshair ${leaveAnimation ? animations.leavePageDown : ""} ${animations.rotateWhenHovered} mt-[6px]`} /></button>
       </div>
     </>
   )

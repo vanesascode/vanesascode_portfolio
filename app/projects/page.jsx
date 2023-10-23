@@ -22,7 +22,7 @@ export default function Home() {
   /////////////////////////////////////////////////////////////////////////
 
   return (
-    <div className="relative ">
+    <div className="relative !overflow-auto">
       <div className="container paddingX">
         <Navbar />
         <ProjectsElements />

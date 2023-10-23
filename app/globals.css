@@ -40,7 +40,7 @@ body {
 }
 
 .logo {
-  @apply font-source  text-secondary dark:text-primary text-[45px] md:text-[65px] xl:text-[90px]  mb-[8px] xl:mb-[13px] font-semibold;
+  @apply font-source  text-secondary dark:text-primary text-[35px] md:text-[65px] xl:text-[90px]  mb-[4px] xl:mb-[13px] font-semibold mx-[-1.5px];
 }
 
 .heading1 {
@@ -58,15 +58,15 @@ body {
 /*NAVBAR */
 
 .size-brackets-logo {
-  @apply h-[35px] md:h-[55px]  xl:h-[70px];
+  @apply h-[32px] md:h-[55px]  xl:h-[70px];
 }
 
 .size-open-menu-button {
-  @apply h-[35px] md:h-[50px]  xl:h-[70px] md:mt-[-30px];
+  @apply h-[32px] md:h-[50px]  xl:h-[70px] md:mt-[-30px];
 }
 
 .size-close-menu-button {
-  @apply h-[35px] md:h-[50px] xl:h-[70px];
+  @apply h-[32px] md:h-[50px] xl:h-[70px];
 }
 
 .size-sun {
@@ -253,5 +253,5 @@ body {
 /*MENU */
 
 .navbar-index {
-  z-index: 2;
+  z-index: 600;
 }

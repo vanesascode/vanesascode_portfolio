@@ -3,26 +3,31 @@ import { projectsPreviews } from "../_constants";
 const ProjectsList = () => {
   return (
     <>
-      <div className="xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 grid gap-20">
+      <div className="2xl:grid-cols-3 xl:grid-cols-2 grid-cols-1 grid gap-10">
         {projectsPreviews.map((pp) => (
           <div key={pp.id}>
-            <div className="relative  h-[318px] w-[429px] ">
+            <div className="relative md:h-[318px] md:w-[429px] xs:h-[190px] xs:w-[260px] h-[145px]  w-[190px]">
               <img
                 src={pp.frame}
-                className="absolute top-0 left-0 h-[317px] w-[427px] z-20"
+                className="absolute top-0 left-0 md:h-[317px] md:w-[427px] xs:h-[190px] xs:w-[277px] z-20 h-[145px] w-[190px]"
               />
               {/* 1280px x 800px*/}
               <img
                 src={pp.img}
-                className=" absolute top-[33px] left-[15px] h-[261px] w-[395px] object-cover"
+                className=" absolute md:top-[33px] md:left-[15px] md:h-[261px] md:w-[395px] 
+                xs:left-[9px] xs:top-[18px] xs:h-[157px] xs:w-[240px] object-cover top-[14px] left-[6px] h-[120px] w-[180px]"
               />
               <img
                 src={pp.video}
-                className="hover:opacity-100 opacity-0 z-40 absolute top-[33px] left-[15px] h-[261px] w-[394.5px] object-cover transition-all duration-500"
+                className="hover:opacity-100 opacity-0 z-40 absolute md:top-[33px] md:left-[15px] md:h-[261px] md:w-[394.5px] 
+                xs:left-[9px] xs:top-[18px] xs:h-[157px] xs:w-[240px] object-cover transition-all duration-500 top-[14px] left-[6px] h-[120px] w-[176.5px]"
               />
             </div>
-            <p className="text-secondary dark:text-primary mt-10">
-              {pp.content}
+            <p className="text-secondary dark:text-primary md:mt-5 mt-2 font-bold md:text-[25px] text-[13px]">
+              {pp.title}
+            </p>
+            <p className="text-secondary dark:text-primary md:mt-2 mt-1 text-[10px] md:text-[20px]">
+              {pp.desc}
             </p>
           </div>
         ))}

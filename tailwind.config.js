@@ -24,7 +24,8 @@ module.exports = {
     },
     screens: {
       'xs': '375px', //small mobile devices such as smartphones in portrait mode.
-      'sm': '640px', //small mobile devices such as smartphones in portrait mode.
+      'xs2': '425px',
+      'sm': '640px', //mobile devices such as smartphones in portrait mode.
       'md': '768px', //larger smartphones or smaller tablets in portrait mode.
       'lg': '1024px', //tablets in landscape mode, small laptops, and larger smartphones in landscape mode.
       'xl': '1280px', //larger laptops and desktop monitors.
