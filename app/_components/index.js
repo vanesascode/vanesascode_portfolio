@@ -25,6 +25,7 @@ import ParticlesBlack from './ParticlesBlack';
 //PROJECTS: 
 import ProjectsElements from './ProjectsElements';
 import ProjectsList from './ProjectsList';
+import ProjectInfo from './ProjectInfo';
 
 export {
   Intro,
@@ -39,4 +40,5 @@ export {
   ParticlesBlack,
   ProjectsElements,
   ProjectsList,
+  ProjectInfo,
 }

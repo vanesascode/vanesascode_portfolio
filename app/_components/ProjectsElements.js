@@ -9,7 +9,7 @@ import DataContext from "../_context/DataContext";
 
 import { ProjectsList } from "../_components";
 
-export default function HomeElements() {
+export default function ProjectsElements() {
 
   const { lightMode, showMenu, leaveAnimation } = useContext(DataContext);
 
@@ -18,8 +18,8 @@ export default function HomeElements() {
       {!showMenu && (
 
 
-        <div className=' flexCenter flex-col gap-5 lg:gap-10 xl:gap-20 pt-[80px]'>
-          {/*TEXT*/}
+        <div className='flexCenter flex-col gap-5 lg:gap-10 xl:gap-20 pt-[80px]'>
+          {/*TITLE*/}
 
           <div className="flex justify-start items-center flex-col gap-5 w-[200px] md:w-[500px] xl:w-[1000px]">
 
