@@ -16,12 +16,10 @@ export default function LightMode() {
     setLightMode(prevTheme => (prevTheme === "light" ? "dark" : "light"))
   };
 
-
-
   return (
     <>
-      <div className={` ${animations.goUp}`}>
-        <button onClick={handleChangeLightMode} > <img src={lightMode === "light" ? "/sun-white.svg" : "/sun-black.svg"} alt="logo" className={`size-sun cursor-crosshair ${leaveAnimation ? animations.leavePageDown : ""} ${animations.rotateWhenHovered} mt-[6px]`} /></button>
+      <div className={` ${animations.goUp1}`}>
+        <button onClick={handleChangeLightMode} > <img src={lightMode === "light" ? "/sun-white.svg" : "/sun-black.svg"} alt="logo" className={`size-sun cursor-crosshair ${leaveAnimation ? animations.leavePageDown1 : ""} ${animations.rotateWhenHovered} mt-[6px]`} /></button>
       </div>
     </>
   )

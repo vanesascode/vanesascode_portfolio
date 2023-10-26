@@ -29,7 +29,7 @@ module.exports = {
       'md': '768px', //larger smartphones or smaller tablets in portrait mode.
       'lg': '1024px', //tablets in landscape mode, small laptops, and larger smartphones in landscape mode.
       'xl': '1280px', //larger laptops and desktop monitors.
-      '2xl': '1536px', //high-resolution displays on larger desktop monitors or high-end laptops.
+      '2xl': '1736px', //high-resolution displays on larger desktop monitors or high-end laptops.
     },
   },
   plugins: [],

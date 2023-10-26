@@ -195,10 +195,37 @@
   animation-timing-function: ease-in-out;
 }
 
-.goUp {
+.goUp1 {
+  opacity: 0;
+  animation-name: go-up;
+  animation-duration: 0.8s;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.goUp2 {
   opacity: 0;
   animation-name: go-up;
   animation-duration: 1s;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.goUp3 {
+  opacity: 0;
+  animation-name: go-up;
+  animation-duration: 1.2s;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.goUp4 {
+  opacity: 0;
+  animation-name: go-up;
+  animation-duration: 1.4s;
   animation-delay: 0;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
@@ -264,11 +291,36 @@
   }
 }
 
-.leavePageDown {
+.leavePageDown1 {
+  opacity: 100%;
+  animation-name: leave-page-down;
+  animation-duration: 0.8s;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.leavePageDown2 {
   opacity: 100%;
   animation-name: leave-page-down;
   animation-duration: 1s;
-  animation-delay: 0.6;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+.leavePageDown3 {
+  opacity: 100%;
+  animation-name: leave-page-down;
+  animation-duration: 1.2s;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+.leavePageDown4 {
+  opacity: 100%;
+  animation-name: leave-page-down;
+  animation-duration: 1.4s;
+  animation-delay: 0;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
 }

@@ -9,8 +9,16 @@ export const projectsPreviews = [
     img: "/projects/cover-promptgenius.jpg",
     video: "/projects/video-promptgenius.gif",
     link: "https://promptgenius-chi.vercel.app/",
-    icons: "/projects/icons-promptgenius.jpg",
-    info: "This project showcases a deep understanding of backend development using Next.js. Through the exploration of advanced Next.js concepts such as server/client components, app file router, and backend API routes, I gained valuable experience in building robust full-stack applications. Additionally, I successfully integrated Next-auth for Google authentication and utilized MongoDB with Mongoose for efficient database management.\n\nOne of the notable features of this project is the comprehensive search functionality. Users can effortlessly search for prompts based on prompt content, user, or tag, enhancing the overall user experience and facilitating prompt discovery.\n\nFurthermore, I have successfully implemented key features such as prompt editing and deletion, providing users with the flexibility to modify their prompts to suit their needs. This attention to detail and focus on user experience underscores my commitment to delivering seamless and user-friendly applications.\n\nIn conclusion, this project showcases my advanced knowledge of Next.js and my ability to develop scalable and feature-rich applications. The combination of backend Next.js expertise, robust search functionality, and prompt management features make this project a standout example of my skills as a versatile and competent developer."
+    code: "https://github.com/vanesascode/promptgenius-nextjs-nextauth-mongodb",
+    iconsLight: "/projects/icons-promptgenius-light.png",
+    iconsDark: "/projects/icons-promptgenius-dark.png",
+    paragraph1: "This project demonstrates my proficiency in backend development using Next.js. By exploring advanced Next.js concepts like server/client components, app file router, and backend API routes, I gained valuable experience in building robust full-stack applications. Additionally, I successfully integrated Next-auth for Google authentication and utilized MongoDB with Mongoose for efficient database management.",
+
+    paragraph2: "One of the notable features of this project is the comprehensive search functionality. Users can effortlessly search for prompts based on prompt content, user, or tag, enhancing the overall user experience and facilitating prompt discovery.",
+
+    paragraph3: "Furthermore, I have successfully implemented key features such as prompt editing and deletion, providing users with the flexibility to modify their prompts to suit their needs. This attention to detail and focus on user experience underscores my commitment to delivering seamless and user-friendly applications.",
+
+
   },
   {
     url: "dev-school",

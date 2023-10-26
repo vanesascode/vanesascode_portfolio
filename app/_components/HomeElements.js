@@ -26,7 +26,7 @@ export default function HomeElements() {
 
             {/*TEXT*/}
 
-            < div className='flexCenter  flex-col paddingXBody ' >
+            < div className='flexCenter flex-col paddingXBody ' >
               <div className='max-w-5xl text-center heading1 ' >
                 <div
                 >
@@ -36,9 +36,9 @@ export default function HomeElements() {
                       className='text-secondary dark:text-primary tracking-[-1px] sm:tracking-normal'
                     >
                       Hi, I'm <br className='block sm:hidden ' /> Vanesa Juarez Paris</p></div>
-                  <div className={`${animations.goDownHome3} ${leaveAnimation ? animations.leavePage2 : ""}`}> <p
-
-                  ><span className='tracking-[-1px] sm:tracking-normal text-secondary dark:text-primary '>but you can call me </span><br className='block sm:hidden' /><span className="text-white dark:text-accent tracking-[1px] md:tracking-normal">vanesascode</span></p></div>
+                  <div className={`${animations.goDownHome3} ${leaveAnimation ? animations.leavePage2 : ""}`}>
+                    <p><span className='tracking-[-1px] sm:tracking-normal text-secondary dark:text-primary '>but you can call me </span><br className='block sm:hidden' /><span className="text-accent dark:text-accent tracking-[1px] md:tracking-normal">vanesascode</span></p>
+                  </div>
 
                 </div>
 
@@ -55,14 +55,14 @@ export default function HomeElements() {
 
             {/*BOTTONS*/}
             <div className='flexCenter'>
-              <div className={` md:flexCenter max-md:flexCol md:gap-[50px] md:pt-[60px] pt-[50px] ${animations.goUpHome} paddingXBody ${leaveAnimation ? animations.leavePageDown : ""}`} >
+              <div className={` md:flexCenter max-md:flexCol md:gap-[50px] md:pt-[60px] pt-[50px] ${animations.goUpHome} paddingXBody ${leaveAnimation ? animations.leavePageDown1 : ""}`} >
 
 
                 <Link href="/projects" >
                   <div className={`flex items-center relative ${lightMode === "light" ? "linksUnderlinesHomeWhite" : "linksUnderlinesHomeBlack"} cursor-crosshair `}
 
                   >
-                    <img src={lightMode === "light" ? "/arrow-white.svg" : "/arrow-black.svg"} alt="logo" className=' xl:h-[45px] md:h-[35px] sm:h-[28px] h-[20px] ' />
+                    <img src={lightMode === "light" ? "/arrow-right-white.svg" : "/arrow-right-black.svg"} alt="logo" className=' xl:h-[45px] md:h-[35px] sm:h-[28px] h-[20px] ' />
                     <p className='links text-secondary dark:text-primary '>See my projects</p>
                   </div>
                 </Link>
@@ -72,10 +72,11 @@ export default function HomeElements() {
                   <div className={`flex items-center relative ${lightMode === "light" ? "linksUnderlinesHomeWhite" : "linksUnderlinesHomeBlack"} cursor-crosshair max-md:mt-[10px]`}
 
                   >
-                    <img src={lightMode === "light" ? "/arrow-white.svg" : "/arrow-black.svg"} alt="logo" className=' xl:h-[45px] md:h-[35px] sm:h-[28px] h-[20px]' />
+                    <img src={lightMode === "light" ? "/arrow-right-white.svg" : "/arrow-right-black.svg"} alt="logo" className=' xl:h-[45px] md:h-[35px] sm:h-[28px] h-[20px]' />
                     <p className='links text-secondary dark:text-primary '>More about me</p>
                   </div>
                 </Link>
+
               </div>
             </div>
           </div>

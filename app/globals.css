@@ -51,6 +51,14 @@ body {
   @apply font-source xl:text-[30px] sm:text-[19px] text-[15px] text-center xl:leading-[35px] sm:leading-[25px] leading-[20px] font-normal;
 }
 
+.heading3 {
+  @apply font-source xl:text-[35px] sm:text-[24px] text-[20px] text-center xl:leading-[35px] sm:leading-[25px] leading-[20px] font-bold;
+}
+
+.paragraph {
+  @apply font-source xl:text-[25px] sm:text-[16px] text-[15px]  xl:leading-[35px] sm:leading-[25px] leading-[20px] font-normal tracking-tight;
+}
+
 .links {
   @apply font-source text-secondary dark:text-primary xl:text-[40px] md:text-[30px] sm:text-[20px] text-[15px] text-center font-bold;
 }

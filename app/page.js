@@ -6,6 +6,8 @@ import { useEffect, useState, useContext } from "react";
 
 import DataContext from "./_context/DataContext";
 
+import animations from "./animations.module.css";
+
 export default function Home() {
 
 
@@ -32,6 +34,17 @@ export default function Home() {
 
   /////////////////////////////////////////////////////////////////////////
 
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+
   // Delay to load Home after the Intro: 
 
   const timeoutId = setTimeout(() => {
@@ -44,14 +57,20 @@ export default function Home() {
 
       <Intro />
       <div className="container paddingX">
-        {showHome && <Navbar />}
-        {showHome && <HomeElements />}
-        <MenuElements />
+        <div className="z-40">
+          {showHome && <Navbar />}
+          {showHome && <HomeElements />}
+          <MenuElements />
+        </div>
 
-        {/*Particles Background*/}
-        {showParticles && lightMode === 'dark' && <ParticlesWhite id="tsparticles" />}
+        <div className={`opacity-0 transition-opacity duration-[0.7s] ${isVisible ? 'opacity-100' : ''}`}>
+          {/*Particles Background*/}
+          {showParticles && lightMode === 'dark' && <ParticlesWhite id="tsparticles" />}
+        </div>
         {showParticles && lightMode === 'light' && <ParticlesBlack id="tsparticles" />}
+
 
       </div >
     </div>)
 }
+

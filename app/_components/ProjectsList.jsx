@@ -46,22 +46,22 @@ const ProjectsList = () => {
                   />
                 </div>
                 <div className="flex items-center md:mt-5 mt-2">
-                  <p className="text-secondary dark:text-primary  font-bold md:text-[25px] text-[13px]">
+                  <p className="text-secondary dark:text-primary  font-bold md:text-[25px] text-[18px]">
                     {pp.title}
                   </p>
                   <img
                     src={
                       lightMode === "light"
-                        ? "/up-arrow-white.svg"
-                        : "/up-arrow-black.svg"
+                        ? "/arrow-up-white.svg"
+                        : "/arrow-up-black.svg"
                     }
                     alt="arrow to go to website"
-                    className={`h-[25px] w-[25px] ml-3 mb-[-2px] ${
+                    className={`h-[20px] w-[20px] md:h-[30px] md:w-[30px] ml-3 mb-[-2px] ${
                       isHovered ? "opacity-100" : "opacity-0"
                     }`}
                   />
                 </div>
-                <p className="text-secondary dark:text-primary md:mt-2 mt-1 text-[10px] md:text-[20px]">
+                <p className="text-secondary dark:text-primary  text-[15px] md:text-[20px]">
                   {pp.desc}
                 </p>
               </div>

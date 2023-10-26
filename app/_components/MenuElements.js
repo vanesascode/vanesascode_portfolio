@@ -88,8 +88,8 @@ export default function MenuElements() {
             </Link>
 
             <div className="mt-3 flex items-center heading2 gap-4 ">
-              <div className={`${animations.goUp}`}> <p className={`text-secondary dark:text-primary ${animations.rotateWhenHovered} ${leaveAnimation ? animations.leavePageDown : ""}`}>SP</p></div>
-              <div className={`${animations.goUp}`}> <p className={`text-secondary dark:text-primary ${animations.rotateWhenHovered} ${leaveAnimation ? animations.leavePageDown : ""}`}>FR</p></div>
+              <div className={`${animations.goUp1}`}> <p className={`text-secondary dark:text-primary ${animations.rotateWhenHovered} ${leaveAnimation ? animations.leavePageDown1 : ""}`}>SP</p></div>
+              <div className={`${animations.goUp1}`}> <p className={`text-secondary dark:text-primary ${animations.rotateWhenHovered} ${leaveAnimation ? animations.leavePageDown1 : ""}`}>FR</p></div>
               <LightMode />
             </div>
           </div>
