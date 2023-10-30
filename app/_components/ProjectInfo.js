@@ -15,11 +15,11 @@ export default function ProjectInfo({ project }) {
       {!showMenu && (
 
         <div className='flexCenter pt-[80px] '>
-          <div className="flex items-center flex-col w-[220px] xs:w-[250px] md:w-[500px] xl:w-[1000px]  ">
+          <div className="flex items-center flex-col w-[220px] xs:w-[250px] md:w-[500px] xl:w-[1000px] 2xl:w-[1200px] ">
 
             {/*TITLE*/}
 
-            <div className=' heading1' >
+            <div className=' heading1 text-center' >
               <div>
                 <div className={`${animations.goDown4} ${leaveAnimation ? animations.leavePage1 : ""}`}>
                   <p className='text-secondary dark:text-primary tracking-[-1px] sm:tracking-normal pb-3'>

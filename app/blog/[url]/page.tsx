@@ -5,10 +5,10 @@ import {
   ParticlesWhite,
   Navbar,
   MenuElements,
-  ProjectInfo,
+  BlogPill,
 } from "../../_components";
 
-import { projectsPreviews } from "../../_constants";
+import { blogPills } from "../../_constants";
 
 import { useContext } from "react";
 
@@ -16,18 +16,19 @@ import DataContext from "../../_context/DataContext";
 
 import "../../globals.css";
 
-export default function Project({ params }) {
+export default function Pill({ params }) {
   const url = params.url;
 
-  // Find the project object with the matching URL
-  const project = projectsPreviews.find((project) => project.url === url);
+  // Find the pill object with the matching URL
+  const pill = blogPills.find((pill) => pill.url === url);
 
-  if (!project) {
-    // Handle case when project is not found
-    return <div>Project not found</div>;
+  if (!pill) {
+    // Handle case when pill is not found
+    return <div>Article not found</div>;
   }
 
-  console.log(project);
+  console.log(pill);
+
   // CONTEXT:
 
   const { lightMode } = useContext(DataContext);
@@ -39,7 +40,7 @@ export default function Project({ params }) {
       <div className="container paddingX">
         <Navbar />
         <MenuElements />
-        <ProjectInfo project={project} />
+        <BlogPill pill={pill} />
 
         {/*Particles Background*/}
         {lightMode === "dark" && <ParticlesWhite id="tsparticles" />}

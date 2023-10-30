@@ -27,6 +27,15 @@ import ProjectsElements from './ProjectsElements';
 import ProjectsList from './ProjectsList';
 import ProjectInfo from './ProjectInfo';
 
+//BLOG:
+
+import BlogElements from './BlogElements';
+import BlogPill from './BlogPill';
+import BlogList from './BlogList';
+
+
+
+
 export {
   Intro,
   Navbar,
@@ -41,4 +50,7 @@ export {
   ProjectsElements,
   ProjectsList,
   ProjectInfo,
+  BlogElements,
+  BlogPill,
+  BlogList,
 }

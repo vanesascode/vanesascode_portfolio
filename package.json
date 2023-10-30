@@ -11,9 +11,11 @@
   "dependencies": {
     "@react-spring/web": "^9.7.3",
     "framer-motion": "^10.16.4",
-    "next": "13.5.4",
+    "gist-react": "^1.0.2",
+    "next": "^14.0.0",
     "react": "^18",
     "react-dom": "^18",
+    "react-embed-gist": "^1.0.17",
     "react-tsparticles": "^2.12.2",
     "tsparticles": "^2.12.0",
     "tsparticles-slim": "^2.12.0"

@@ -22,9 +22,8 @@ const ProjectsList = () => {
           };
 
           return (
-            <Link href={`/projects/${pp.url}`}>
+            <Link href={`/projects/${pp.url}`} key={pp.url}>
               <div
-                key={pp.url}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
               >

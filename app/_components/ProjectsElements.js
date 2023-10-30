@@ -1,6 +1,6 @@
 "use client"
 
-import Link from 'next/link'
+
 import animations from "../animations.module.css";
 
 import { useContext } from "react";

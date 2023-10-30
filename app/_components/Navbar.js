@@ -40,7 +40,7 @@ export default function Navbar() {
 
 
   return (
-    <div className="fixed md:top-0 top-5 lg:left-20 lg:right-20 xs2:left-8 xs2:right-8 z-50 left-4 right-4">
+    <div className="fixed md:top-0 top-5 lg:left-20 lg:right-20 1xs:left-8 1xs:right-8 z-50 left-4 right-4">
       <div
         className={`flex justify-between items-center paddingYNavbar navbar-index ${animations.goDown1} ${leaveAnimation ? animations.leavePage4 : ""}`}
       >

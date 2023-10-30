@@ -111,3 +111,20 @@ Find info [HERE](https://github.com/tsparticles)
 - npm i tsparticles
 - npm i tsparticles-slim
 - npm i tsparticles-engine
+
+### 🔹 Embedding Gist snippets in the blog
+
+I tried many different libraries, but the only that really worked for me was [THIS ONE](https://www.npmjs.com/package/gist-react)
+
+- npm i gist-react
+
+```
+import { Gist } from 'gist-react';
+
+const gistId = 'abcdefg';
+
+const App = () => {
+  return <Gist gistId={gistId} />;
+};
+
+```
