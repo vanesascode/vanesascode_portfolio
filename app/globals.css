@@ -37,7 +37,7 @@ body {
 
 .custom-scrollbar-dark::-webkit-scrollbar,
 .custom-scrollbar-light::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
   height: 3px;
 }
 
@@ -68,10 +68,10 @@ body {
   background: #ffffff;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 640px) {
   .custom-scrollbar-dark::-webkit-scrollbar,
   .custom-scrollbar-light::-webkit-scrollbar {
-    width: 5px;
+    width: 0px;
     height: 3px;
   }
 }
@@ -140,6 +140,16 @@ body {
 
 .search_input {
   @apply w-full text-primary  border border-gray-200 bg-white py-2.5  pl-5 pr-12 text-sm shadow-lg font-medium focus:border-secondary focus:outline-none;
+}
+
+.search_input::placeholder {
+  @apply text-[16px];
+}
+
+@media screen and (max-width: 640px) {
+  .search_input::placeholder {
+    @apply text-[10px];
+  }
 }
 
 /************************************************* ANIMATIONS *************************************************/

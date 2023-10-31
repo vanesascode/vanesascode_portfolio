@@ -32,6 +32,9 @@ import ProjectInfo from './ProjectInfo';
 import BlogElements from './BlogElements';
 import BlogPill from './BlogPill';
 import BlogList from './BlogList';
+import SocialmediaShareIcons from './SocialmediaShareIcons';
+
+
 
 
 
@@ -53,4 +56,5 @@ export {
   BlogElements,
   BlogPill,
   BlogList,
+  SocialmediaShareIcons
 }

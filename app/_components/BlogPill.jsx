@@ -6,9 +6,9 @@ import { useContext, useState } from "react";
 
 import DataContext from "../_context/DataContext";
 
-import { blogPills } from "../_constants";
-
 import { Gist } from "gist-react";
+
+import { SocialmediaShareIcons } from "../_components";
 
 export default function BlogPill({ pill }) {
   const { lightMode, showMenu, leaveAnimation } = useContext(DataContext);
@@ -48,62 +48,35 @@ export default function BlogPill({ pill }) {
               </div>
             </div>
 
-            {/*IMAGE OUT*/}
-
-            <div
-              className={`
-              mt-[10px] md:mt-[20px] xl:mt-[40px] xl:w-[650px] 1md:w-[550px] md:w-[500px] w-full ${
-                animations.goDown1
-              } ${leaveAnimation ? animations.leavePage4 : ""}`}
-            >
-              <Gist gistId={pill.gistIdOut} />;
-            </div>
-
             {/*SOCIAL MEDIA ICONS*/}
 
-            <div className="border-b-2 border-secondary w-full flex justify-between items-center ">
-              <div className="px-[5px] flex items-center gap-[7px]">
-                <img
-                  src={
-                    lightMode === "light"
-                      ? "/blog/facebook-white.svg"
-                      : "/blog/facebook-black.svg"
-                  }
-                  alt="facebook share icon"
-                  className="h-[5px] md:h-[15px]  lg:h-[20px]  "
-                />
-                <img
-                  src={
-                    lightMode === "light"
-                      ? "/blog/twitterx-white.svg"
-                      : "/blog/twitterx-black.svg"
-                  }
-                  alt="facebook share icon"
-                  className="h-[5px] md:h-[15px]  lg:h-[20px]  "
-                />
-                <img
-                  src={
-                    lightMode === "light"
-                      ? "/blog/whatsapp-white.svg"
-                      : "/blog/whatsapp-black.svg"
-                  }
-                  alt="facebook share icon"
-                  className="h-[5px] md:h-[15px]  lg:h-[20px]  "
-                />
-                <img
-                  src={
-                    lightMode === "light"
-                      ? "/blog/email-white.svg"
-                      : "/blog/email-black.svg"
-                  }
-                  alt="facebook share icon"
-                  className="h-[5px] md:h-[15px]  lg:h-[20px]  "
-                />
-              </div>
-              <p className="text-secondary dark:text-primary paragraph px-[5px]">
+            <div
+              className={` ${animations.goDown2} ${
+                leaveAnimation ? animations.leavePage3 : ""
+              } border-b-2 border-secondary dark:border-primary w-full flex justify-between items-center mt-[50px] xl:mt-[70px] `}
+            >
+              <SocialmediaShareIcons pill={pill} />
+
+              {/*DATE*/}
+
+              <p className="text-secondary dark:text-primary paragraph px-[5px] max-xs:ml-[30px]">
                 {pill.date}
               </p>
             </div>
+
+            {/*IMAGE OUT*/}
+            {pill.gistIdOut ? (
+              <div
+                className={`
+              mt-[10px] md:mt-[20px] xl:mt-[40px] xl:w-[650px] 1md:w-[550px] md:w-[500px] w-full ${
+                animations.goDown1
+              } ${leaveAnimation ? animations.leavePage4 : ""}`}
+              >
+                <Gist gistId={pill.gistIdOut} />;
+              </div>
+            ) : (
+              ""
+            )}
 
             {/*INFO*/}
 

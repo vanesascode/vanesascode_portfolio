@@ -36,7 +36,13 @@ export default function Pill({ params }) {
   /////////////////////////////////////////////////////////////////////////
 
   return (
-    <div className="relative !overflow-auto">
+    <div
+      className={`relative !overflow-auto ${
+        lightMode === "light"
+          ? "custom-scrollbar-dark"
+          : "custom-scrollbar-light"
+      }`}
+    >
       <div className="container paddingX">
         <Navbar />
         <MenuElements />

@@ -27,7 +27,8 @@ export default function BlogElements() {
         regex.test(pill.paragraph1) ||
         regex.test(pill.paragraph2) ||
         regex.test(pill.paragraph3) ||
-        regex.test(pill.paragraph4)
+        regex.test(pill.paragraph4) ||
+        regex.test(pill.date)
     );
   };
 
@@ -88,7 +89,7 @@ export default function BlogElements() {
               >
                 <input
                   type="text"
-                  placeholder="Search for a topic or any keyword you like"
+                  placeholder="Search using keywords"
                   value={searchText}
                   onChange={handleSearchChange}
                   required
@@ -101,7 +102,7 @@ export default function BlogElements() {
           <div
             className={`${animations.goUp1} ${
               leaveAnimation ? animations.leavePageDown1 : ""
-            } pb-10 mx-auto mt-[20px] md:mt-[30px] xl:mt-[40px]`}
+            } pb-10 mx-auto my-[20px] md:my-[30px] xl:my-[40px]`}
           >
             {searchText ? (
               <BlogList blogPills={searchedResults} />
