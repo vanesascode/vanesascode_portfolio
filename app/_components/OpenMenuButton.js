@@ -16,7 +16,7 @@ export default function OpenMenuButton() {
       <img
         src={lightMode === "light" ? "/hamburger-white.svg" : "/hamburger-black.svg"}
         alt="logo"
-        className={` size-open-menu-button  ${animations.rotateWhenHovered}  ${leaveAnimation ? animations.leavePage4 : ""}`}
+        className={` size-open-menu-button cursor-pointer  ${animations.rotateWhenHovered}  ${leaveAnimation ? animations.leavePage4 : ""}`}
       />
 
 

@@ -138,6 +138,7 @@ export default function BlogPill({ pill }) {
               <p className="text-secondary dark:text-primary">
                 {pill.paragraph4}
               </p>
+              <br />
               <a href={pill.linkUrl}>
                 <p className="text-secondary dark:text-primary underline">
                   {pill.linkName}
@@ -148,7 +149,7 @@ export default function BlogPill({ pill }) {
 
             {/*BACK*/}
             <div
-              className={`flex items-center mb-[40px] md:mb-[50px] xl:mb-[80px] ${
+              className={`flex items-center mb-[40px] md:mb-[50px] xl:mb-[80px] cursor-pointer ${
                 animations.goUp4
               } ${leaveAnimation ? animations.leavePageDown1 : ""}`}
               onClick={() => history.back()}

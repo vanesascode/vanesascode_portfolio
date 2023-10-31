@@ -14,7 +14,7 @@ export default function CloseMenuButton() {
       <img
         src={lightMode === "light" ? "/closebutton-white.svg" : "/closebutton-black.svg"}
         alt="logo"
-        className={`size-close-menu-button  ${animations.rotateWhenHovered} `}
+        className={`size-close-menu-button cursor-pointer  ${animations.rotateWhenHovered} `}
       />
 
     </>

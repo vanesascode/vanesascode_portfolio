@@ -77,10 +77,24 @@ export const projectsPreviews = [
 
 export const blogPills = [
   {
+    url: "max-lines-text",
+    date: "Oct 31, 2023",
+    title: "How to limit the lines of a text",
+    subtitle: "How to limit the lines of a text having a final ellipsis (...) using CSS.",
+    paragraph1: "It was easier than I thought, just using the css property 'line-clamp', which specifies the maximum number of lines to display. Place the class in the same <p> tag.",
+    gistIdIn: "55ce52eddbaceb1208c72886650783eb",
+    paragraph2: "However, you also need to use 'display: -webkit-box' so the '-webkit-line-clamp' property is enabled. The '-webkit-box-orient' property is set to vertical to arrange the lines vertically, and the 'overflow: hidden' property hides any overflowing text.",
+    paragraph3: "Just so you know, the -webkit-line-clamp property is a special property that's not officially recognized by all browsers. It's mainly used in webkit-based browsers like Chrome and Safari. If you want to ensure better browser support, you might need to use JavaScript or other techniques to dynamically truncate the text based on the number of lines you want to display.",
+    paragraph4: "If you are using TailwindCSS, the tag is 'line-clamp-1' (from 1 to 6) or 'line-clamp-none'. ",
+    linkName: "Can I use -webkit-line-clamp?",
+    linkUrl: "https://caniuse.com/?search=%20-webkit-line-clamp"
+
+  },
+  {
     url: "disabled-inputs-react",
     date: "Oct 30, 2023",
     title: "Use of disabled form inputs in React",
-    subtitle: "How to Prevent User Interaction During Form Submission and Style Disabled Buttons with Tailwind CSS",
+    subtitle: "How to prevent user interaction during form submission and style disabled buttons with Tailwind CSS.",
     paragraph1: "Today I learned that the disabled attribute is used to disable form inputs. When an input is disabled, it cannot be interacted with by the user. This is useful when you want to prevent users from making changes to a form input while a form is being submitted. To achieve this, you can use the useState hook from React to manage the disabled state of the form inputs. The useState hook allows you to create and update state variables in functional components",
     gistIdIn: "db378e290fdf866d90d8ba1346e613ed",
     paragraph2: "In this example, the isSubmitting state variable is initially set to false. When the form is submitted, the handleSubmit function is called. Inside this function, the isSubmitting state is set to true, which disables the button. After the form submission logic is completed, the isSubmitting state is set back to false, enabling the button again.",
@@ -92,13 +106,25 @@ export const blogPills = [
     url: "embed-gist-react",
     date: "Oct 29, 2023",
     title: "How to embed Gists in React",
-    subtitle: "What library works to embed GitHub Gists in a React application",
+    subtitle: "What library works to embed GitHub Gists in a React application.",
     paragraph1: "Today I was trying to embed a Gist in my blog. I had done it in the past but in Vanilla Javascript. You just copy the script Github gives you and paste it in the page.",
     gistIdIn: "824d362c029b1f96604616a00682a402",
-    paragraph2: "However, in React it wasn't so easy, so I searched for a library that helped me. To my frustration, I tried several that were recommened in forums, such as 'react-gist' or 'react-gist-embed'. The second one finally made the Gist appear, but with lack of elements in it",
+    paragraph2: "However, in React it wasn't so easy, so I searched for a library that helped me. To my frustration, I tried several that were recommened in forums, such as 'react-gist' or 'react-gist-embed'. The second one finally made the Gist appear, but with lack of elements in it.",
     paragraph3: "I then made a search of less known libraries for this, and guess what, by changing the order of the words to 'gist-react' you can find one that works! You just have to follow the easy instructions to get it up and running. (See them above)",
     linkName: "gist-react",
     linkUrl: "https://www.npmjs.com/package/gist-react"
 
+  },
+
+  {
+    url: "use-state-inside-map-function",
+    date: "Oct 28, 2023",
+    title: "Individual states for mapped elements",
+    subtitle: "How to add individual states inside a map function with using the index.",
+    paragraph1: "I was working on my portfolio projects' preview page, and really wanted to add an arrow next to the title of each project when it was hovered.",
+    gistIdIn: "2d0a67975a788070901e2e29fa08c3cc",
+    paragraph2: "I used a useState to set it, but I encountered the problem that when hovering one project, all projects made their arrow appear, since I am rendering the projects from a constants js file with a map function.",
+    paragraph3: "So I solved it by adding a new state variable (in the example, called 'hoveredIndex') which keeps track of the index of the pill that is being hovered on. The handleMouseEnter and handleMouseLeave functions update such state accordingly.",
+    paragraph4: "Inside the map function, I added a new variable (called 'isHovered') which checks if the current index matches the 'hoveredIndex'. Based on this condition, the opacity of the arrow image is set to either 1 (visible) or 0 (hidden)."
   },
 ]

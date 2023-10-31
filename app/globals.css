@@ -33,6 +33,49 @@ body {
   @apply flex flex-col justify-center items-center;
 }
 
+/* To customize the appearance of the scrollbar for an element: */
+
+.custom-scrollbar-dark::-webkit-scrollbar,
+.custom-scrollbar-light::-webkit-scrollbar {
+  width: 10px;
+  height: 3px;
+}
+
+/*dark*/
+.custom-scrollbar-dark::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+.custom-scrollbar-dark::-webkit-scrollbar-thumb {
+  background: #bab6e4;
+}
+
+.custom-scrollbar-dark::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+
+/*Light*/
+
+.custom-scrollbar-light::-webkit-scrollbar-track {
+  background: #11101d;
+}
+
+.custom-scrollbar-light::-webkit-scrollbar-thumb {
+  background: #d6d6eb;
+}
+
+.custom-scrollbar-light::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .custom-scrollbar-dark::-webkit-scrollbar,
+  .custom-scrollbar-light::-webkit-scrollbar {
+    width: 5px;
+    height: 3px;
+  }
+}
+
 /*TEXT */
 
 .intro {
@@ -87,6 +130,16 @@ body {
 
 .paddingYNavbar {
   @apply py-[0px] lg:pt-[40px];
+}
+
+/*BLOG */
+
+.glassmorphism {
+  @apply rounded border-none  bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-4;
+}
+
+.search_input {
+  @apply w-full text-primary  border border-gray-200 bg-white py-2.5  pl-5 pr-12 text-sm shadow-lg font-medium focus:border-secondary focus:outline-none;
 }
 
 /************************************************* ANIMATIONS *************************************************/

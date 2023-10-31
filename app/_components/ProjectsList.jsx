@@ -27,6 +27,8 @@ const ProjectsList = () => {
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
               >
+                {/*IMAGE*/}
+
                 <div className="relative md:h-[318px] md:w-[429px] xs:h-[190px] xs:w-[260px] h-[145px]  w-[190px] ">
                   <img
                     src="/projects/thinkpadframepreview.png"
@@ -44,6 +46,9 @@ const ProjectsList = () => {
                 xs:left-[9px] xs:top-[18px] xs:h-[157px] xs:w-[240px] object-cover transition-all duration-500 top-[14px] left-[6px] h-[120px] w-[176.5px]"
                   />
                 </div>
+
+                {/*TITLE*/}
+
                 <div className="flex items-center md:mt-5 mt-2">
                   <p className="text-secondary dark:text-primary  font-bold md:text-[25px] text-[18px]">
                     {pp.title}
@@ -60,6 +65,9 @@ const ProjectsList = () => {
                     }`}
                   />
                 </div>
+
+                {/*DESCRIPTION*/}
+
                 <p className="text-secondary dark:text-primary  text-[15px] md:text-[20px]">
                   {pp.desc}
                 </p>

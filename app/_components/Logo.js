@@ -19,7 +19,7 @@ export default function Logo() {
 
       <a href="/">
         <div
-          className={`flex items-center ${animations.rotateWhenHovered} cursor-crosshair`}
+          className={`flex items-center ${animations.rotateWhenHovered} cursor-pointer`}
           onClick={() => {
             setTimeout(() => {
 
