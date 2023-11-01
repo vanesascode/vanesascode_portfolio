@@ -43,18 +43,7 @@ export default function SocialmediaShareIcons({ pill }) {
   };
 
   return (
-    <div className="px-[5px] flex items-center gap-[10px] xs:flex-row max-xs:grid grid-cols-3 max-xs:mb-1">
-      <button onClick={handleFacebookShare}>
-        <img
-          src={
-            lightMode === "light"
-              ? "/blog/facebook-white.svg"
-              : "/blog/facebook-black.svg"
-          }
-          alt="facebook share icon"
-          className="h-[10px] md:h-[15px]  xl:h-[20px]  "
-        />
-      </button>
+    <div className="px-[5px] flex items-center gap-[12px] xl:gap-[18px]  xs:flex-row max-xs:grid grid-cols-3 max-xs:mb-1">
       <button onClick={handleTwitterShare}>
         <img
           src={
@@ -62,7 +51,7 @@ export default function SocialmediaShareIcons({ pill }) {
               ? "/blog/twitterx-white.svg"
               : "/blog/twitterx-black.svg"
           }
-          alt="facebook share icon"
+          alt="Twitter share icon"
           className="h-[10px] md:h-[15px]  xl:h-[20px]  "
         />
       </button>
@@ -73,7 +62,7 @@ export default function SocialmediaShareIcons({ pill }) {
               ? "/blog/whatsapp-white.svg"
               : "/blog/whatsapp-black.svg"
           }
-          alt="facebook share icon"
+          alt=" share icon"
           className="h-[10px] md:h-[15px]  xl:h-[20px]  "
         />
       </button>
@@ -86,7 +75,34 @@ export default function SocialmediaShareIcons({ pill }) {
               : "/blog/linkedin-black.svg"
           }
           alt="linkedin share icon"
-          className="h-[12px] md:h-[16px]  xl:h-[23px] mb-[-0.7px] md:mb-[-2px] "
+          className="h-[14px]    mb-[0px] 
+
+          xs:mb-[0.5px] xs:h-[14px]
+
+          sm:mb-0 sm:h-[14px]
+          
+          md:mb-[-0.4px]  md:h-[19.5px]
+
+          xl:mb-[-1px] xl:h-[26px]"
+        />
+      </button>
+      <button onClick={handleEmailShare}>
+        <img
+          src={
+            lightMode === "light"
+              ? "/blog/email-white.svg"
+              : "/blog/email-black.svg"
+          }
+          alt="email share icon"
+          className="h-[10px]   mb-[-0.7px]
+
+          xs:mb-[0px] xs:h-[13px]
+
+          sm:mb-0 sm:h-[14px]
+
+          md:mb-[-1px] md:h-[18.5px] 
+
+          xl:h-[24px]  xl:mb-[-1.5px] "
         />
       </button>
     </div>

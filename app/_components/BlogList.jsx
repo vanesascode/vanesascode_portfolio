@@ -7,6 +7,8 @@ import Link from "next/link";
 
 import { Gist } from "gist-react";
 
+import animations from "../animations.module.css";
+
 const BlogList = ({ blogPills }) => {
   const { lightMode } = useContext(DataContext);
 
@@ -63,7 +65,7 @@ const BlogList = ({ blogPills }) => {
                       alt="arrow to go to website"
                       className={`h-[20px] w-[20px] md:h-[30px] md:w-[30px] mb-[-2px] ${
                         isHovered ? "opacity-100" : "opacity-0 "
-                      }`}
+                      } ${isHovered ? animations.arrowGoUp : ""} `}
                     />
 
                     {/*DATE*/}

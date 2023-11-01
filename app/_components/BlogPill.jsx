@@ -94,8 +94,8 @@ export default function BlogPill({ pill }) {
               <div
                 className={`
               mt-[10px] md:mt-[12px] xl:mt-[22px] xl:w-[650px] 1md:w-[550px] md:w-[500px] w-full mx-auto ${
-                animations.goDown1
-              } ${leaveAnimation ? animations.leavePage4 : ""}`}
+                animations.goUp4
+              } ${leaveAnimation ? animations.leavePageDown1 : ""}`}
               >
                 <Gist gistId={pill.gistIdIn} />;
               </div>
@@ -112,11 +112,19 @@ export default function BlogPill({ pill }) {
                 {pill.paragraph4}
               </p>
               <br />
-              <a href={pill.linkUrl}>
-                <p className="text-secondary dark:text-primary underline">
-                  {pill.linkName}
-                </p>
-              </a>
+              {pill.linkUrl ? (
+                <>
+                  <a href={pill.linkUrl}>
+                    <p className="text-secondary dark:text-primary underline">
+                      {pill.linkName}
+                    </p>
+                  </a>
+                  <br />
+                </>
+              ) : (
+                ""
+              )}
+
               <br />
             </div>
 
