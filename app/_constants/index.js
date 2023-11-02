@@ -77,6 +77,30 @@ export const projectsPreviews = [
 
 export const blogPills = [
   {
+    url: "placeholder-while-content-loading",
+    date: "Nov 2, 2023",
+    title: "Placeholder while content is loading",
+    subtitle: "How to add a nice and dynamic placeholder with Shadcn/iu while the content is loading in Next.js",
+    paragraph1: "The Shadcn/ui component you need for this is the 'Skeleton' one, and is very easy to use. After installing Shadcn/ui (npx shadcn-ui@latest init), and then the skeleton component (npx shadcn-ui@latest add skeleton), you create a Next.js 'loading' file. This file renders while the content is loading. And in there you just import the component 'skeleton' that was created while installing Shadcn/ui. Imagine you have 9 cards that must load. Then, in your loading page you render 9 cards too, that are going to fit the future content:",
+    gistIdIn: "c82888092a23cbb0941ca1d6c6f7236f",
+    paragraph2: "The idea is that you can use this component 'skeleton' as many times as you like, and give them the size and shape you want, in order to imitate the content shape that you are going show when loaded. You can do that in a different component, as a fake card:",
+    gistIdIn2: "7a1444e760c943ece89e6b1194594a48",
+    paragraph3: "This gives a very professional and natural feeling that the content is being baked before appearing",
+    linkName: "Shadcn/ui Skeleton",
+    linkUrl: "https://ui.shadcn.com/docs/components/skeleton"
+  },
+  {
+    url: "zod-server-validation",
+    date: "Nov 1, 2023",
+    title: "Adding server-side validation with Zod",
+    subtitle: "How to add server-side validation with Zod and having status responses in Next.js",
+    paragraph1: "First you have to validate the body you are sending to the endpoint against the Zod schema you created.",
+    gistIdIn2: "60a052c2f0a676b12a8fe8792ad3fe19",
+    gistIdIn: "dc7ae781e1b7b6c21e4648fdc910f67d",
+    paragraph2: "If the validation fails, make sure you assign the validation errors to the 'errors' variable (in this case 'zodErrors').",
+    paragraph3: "However, don't forget to return a JSON response with the zodErrors and a 400 status code, because that is something Zod is not going to do for you.",
+  },
+  {
     url: "max-lines-text",
     date: "Oct 31, 2023",
     title: "How to limit the lines of a text",
