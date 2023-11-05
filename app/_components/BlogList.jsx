@@ -42,20 +42,20 @@ const BlogList = ({ blogPills }) => {
                   {/*IMAGE*/}
 
                   <div className="h-[150px] overflow-hidden  object-none flex justify-center items-center mt-[10px] ">
-                    <Gist gistId={bp.gistIdIn || bp.gistIdOut} />;
+                    <Gist gistId={bp.gistIdIn || bp.gistIdIn2} />;
                   </div>
 
                   {/*SUBTITLE*/}
 
                   <p
-                    className={`text-secondary dark:text-primary text-[12px] md:text-[19px] md:line-clamp-2 mt-[10px] p-2`}
+                    className={`text-secondary dark:text-primary text-[12px] md:text-[19px] md:line-clamp-2 mt-[10px] px-2 pt-2`}
                   >
                     {bp.subtitle}
                   </p>
 
                   {/*ARROW*/}
 
-                  <div className="flex justify-between p-2">
+                  <div className="flex justify-between px-2 pb-2 pt-4">
                     <img
                       src={
                         lightMode === "light"

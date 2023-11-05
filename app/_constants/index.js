@@ -76,10 +76,36 @@ export const projectsPreviews = [
 ];
 
 export const blogPills = [
+
+  {
+    url: "optional-chaining-operator",
+    date: "Nov 5, 2023",
+    title: "The optional chaining operator",
+    subtitle: "What is and how to use the optional chaining operator in JavaScript",
+    paragraph1: "The '?' after 'userInfo' (see example below) is called the 'optional chaining operator' in JavaScript. It is used to safely access nested properties or methods of an object without causing an error if any of the properties or methods are undefined or null. ",
+
+    paragraph2: " In the example below, the code checks if the userInfo object exists and if the onboarded property is truthy. The thing is that when the user is created in the database, it then gets a boolean state of true in the onboarded property. ",
+    gistIdIn2: "6440171227c44672b9985d20f39ba8db",
+    paragraph3: "So, if userInfo is not onboarded, it means that userInfo itself is either undefined or null. In other words, it means that the userInfo object does not exist. Therefore, the condition if (!userInfo?.onboarded) is checking if the userInfo object does not exist or if the onboarded property of userInfo is falsy. If either of these conditions is true, it means that the user is not onboarded and the code will redirect the user to the '/onboarding' page. ",
+    paragraph4: "If the '?' chaining operator wasn't there in the example above, it would throw an error if the userInfo object was null or undefined, and the app could unfortunately crash.",
+  },
+  {
+    url: "authentication-clerk-nextjs",
+    date: "Nov 3, 2023",
+    title: "Authentication with Clerk",
+    subtitle: "How to easily add authentication to your Next.js application without the need to build and manage your own authentication system",
+    paragraph1: "Clerk provides a user-friendly interface for user registration, login, and password reset, and also for these user to create communities. It handles user sessions and provides secure authentication tokens for authenticated users. And the developer, as an administrator, has access to your users' data in a very easy and intuitive way. Once you create your account in their website, they give you some secret keys you add to your Next.js' .env.local file. Then you install the library in your project (npm install @clerk/nextjs). You then import it and wrap your app in the <ClerkProvider> component.",
+    gistIdIn: "c0e13bb4b9fe281c6ee32dca744e30bb",
+    paragraph2: "So you can decide what pages are private and which are public, you create a file in the root of your project called 'middleware', in which you can add the public paths",
+    gistIdIn2: "5789915f7fbd734579c514d1be0039cf",
+    paragraph3: "You have many other components you can use, such as the 'SignUp' or the 'SignIn' ones, to create your own sign in an sign up pages. Or the 'OrganizationSwitcher' to create a new organization. Find more info in the Docs.",
+    linkName: "Clerk.com",
+    linkUrl: "https://clerk.com/"
+  },
   {
     url: "placeholder-while-content-loading",
     date: "Nov 2, 2023",
-    title: "Placeholder while content is loading",
+    title: "Placeholders while content is loading",
     subtitle: "How to add a nice and dynamic placeholder with Shadcn/iu while the content is loading in Next.js",
     paragraph1: "The Shadcn/ui component you need for this is the 'Skeleton' one, and is very easy to use. After installing Shadcn/ui (npx shadcn-ui@latest init), and then the skeleton component (npx shadcn-ui@latest add skeleton), you create a Next.js 'loading' file. This file renders while the content is loading. And in there you just import the component 'skeleton' that was created while installing Shadcn/ui. Imagine you have 9 cards that must load. Then, in your loading page you render 9 cards too, that are going to fit the future content:",
     gistIdIn: "c82888092a23cbb0941ca1d6c6f7236f",
