@@ -77,7 +77,7 @@ export default function BlogPill({ pill }) {
               {/*IMAGE 1*/}
               <div
                 className={`
-              mt-[10px] md:mt-[12px] xl:mt-[22px] xl:w-[650px] 1md:w-[550px] md:w-[500px] w-full mx-auto ${
+              mt-[10px] md:mt-[12px] xl:mt-[22px] 2xl:w-[900px] 1xl:w-[800px] xl:w-[650px] 1md:w-[550px] md:w-[500px] w-full mx-auto ${
                 animations.goUp4
               } ${leaveAnimation ? animations.leavePageDown1 : ""}`}
               >
@@ -92,7 +92,7 @@ export default function BlogPill({ pill }) {
               {pill.gistIdIn2 ? (
                 <div
                   className={`
-              mt-[10px] md:mt-[20px] xl:mt-[40px] xl:w-[650px] 1md:w-[550px] md:w-[500px] w-full mx-auto ${
+              mt-[10px] md:mt-[20px] xl:mt-[40px] 2xl:w-[900px] 1xl:w-[800px] xl:w-[650px] 1md:w-[550px] md:w-[500px] w-full mx-auto ${
                 animations.goDown1
               } ${leaveAnimation ? animations.leavePage4 : ""}`}
                 >
@@ -101,22 +101,34 @@ export default function BlogPill({ pill }) {
               ) : (
                 ""
               )}
-
               {/*PARAGRAPH 3*/}
               <p className="text-secondary dark:text-primary">
                 {pill.paragraph3}
               </p>
-              <br />
+              {/*IMAGE 3*/}
+              {pill.gistIdIn3 && (
+                <div
+                  className={`
+              mt-[10px] md:mt-[20px] xl:mt-[40px] 2xl:w-[900px] 1xl:w-[800px] xl:w-[650px] 1md:w-[550px] md:w-[500px] w-full mx-auto ${
+                animations.goDown1
+              } ${leaveAnimation ? animations.leavePage4 : ""}`}
+                >
+                  <Gist gistId={pill.gistIdIn3} />;
+                </div>
+              )}
+              {!pill.gistIdIn3 && pill.paragraph4 && <br />}
               {/*PARAGRAPH 4*/}
-
-              <p className="text-secondary dark:text-primary">
-                {pill.paragraph4}
-              </p>
-              {pill.paragraph4 ? <br /> : ""}
-
+              {pill.paragraph4 && (
+                <>
+                  <p className="text-secondary dark:text-primary">
+                    {pill.paragraph4}
+                  </p>
+                  <br />
+                </>
+              )}
               {/*LINK*/}
-
-              {pill.linkUrl ? (
+              {pill.linkUrl && !pill.paragraph4 && !pill.gistIdIn3 && <br />}
+              {pill.linkUrl && (
                 <>
                   <a href={pill.linkUrl}>
                     <p className="text-secondary dark:text-primary underline">
@@ -125,8 +137,6 @@ export default function BlogPill({ pill }) {
                   </a>
                   <br />
                 </>
-              ) : (
-                ""
               )}
               <br />
             </div>
