@@ -158,7 +158,7 @@ body {
 
 /* HOME*/
 
-/*Animation lines under the home links*/
+/*Animation lines: GENERAL + HOME links*/
 
 .linksUnderlinesBlack::after {
   content: "";
@@ -189,9 +189,9 @@ body {
   position: absolute;
   background-color: #11101d;
   right: 0;
-  bottom: -1px;
-  width: 85%;
-  height: 4.5px;
+  bottom: -1.5px;
+  width: 87%;
+  height: 3px;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
@@ -201,8 +201,8 @@ body {
   position: absolute;
   background-color: #bab6e4;
   right: 0;
-  bottom: -1px;
-  width: 85%;
+  bottom: -1.5px;
+  width: 87%;
   height: 3px;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
@@ -211,7 +211,8 @@ body {
 @media (min-width: 768px) {
   .linksUnderlinesHomeBlack::after,
   .linksUnderlinesHomeWhite::after {
-    width: 87%;
+    width: 88%;
+    height: 4.5px;
   }
 }
 

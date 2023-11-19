@@ -25,7 +25,17 @@ export const projectsPreviews = [
     desc: "Educational & blog website",
     img: "/projects/cover-dev-school.jpg",
     video: "/projects/video-dev-school.gif",
-    link: "https://devschool-vanesascode.vercel.app/"
+    link: "https://devschool-vanesascode.vercel.app/",
+    code: "https://github.com/vanesascode/devschool-vanesascode",
+    iconsLight: "/projects/icons-light-devschool.png",
+    iconsDark: "/projects/icons-dark-devschool.png",
+    paragraph1: "This is a fictional school website, a platform to share real articles about programming, with a subwebsite for job applications. The website has both a backend and a frontend component using Flask full stack.",
+
+    paragraph2: "To store and retrieve data, I integrated MongoDB Atlas. For the frontend, I used Flask's Jinja2 templating engine and created templates to separate the structure of web pages from the Python logic. In the case of the job's page postions, I fetched data from MongoDB and displayed it dynamically using Jinja2's for loop. The blog articles are hardcoded because of the complexity of code teaching examples they required (they are about and use Javascript and Typescript).",
+
+    paragraph3: "To style the website I used CSS and Bootstrap. To customize Bootstrap further, I used SASS. I imported Bootstrap in my SASS file and compiled it into CSS using the Live Sass Compiler extension in VSCode. This allowed me to modify the Bootstrap styles and create a unique look. ",
+
+    paragraph4: "I implemented mailto links for job applications and for contact, which open the user's default email client with pre-filled email address, subject line, and body.",
   },
   {
     url: "lizz-boots",
@@ -77,6 +87,19 @@ export const projectsPreviews = [
 
 export const blogPills = [
   {
+    url: "how-to-use-JSDoc-comments",
+    date: "Nov 19, 2023",
+    title: "How to use JSDoc comments with VS Code",
+    subtitle: "Leverage the benefits of static type checking provided by TypeScript while still enjoying the flexibility and expressiveness of JavaScript.",
+    paragraph1: "JSDoc is a markup language used to annotate JavaScript code with documentation comments. It allows you to describe the purpose, parameters, return values, and other details of your functions, classes, and variables.",
+
+    gistIdIn: "983c4e20eecddeab80dfe401c37402c9",
+
+    paragraph2: "JSDoc is cool because it allows you to leverage the benefits of static type checking provided by TypeScript while still enjoying the flexibility and expressiveness of JavaScript. And the notes let you remember what your code was about when you completely forget.",
+
+
+  },
+  {
     url: "reusable-components-trick-React",
     date: "Nov 10, 2023",
     title: "Reusable components trick in React",
@@ -88,6 +111,11 @@ export const blogPills = [
     paragraph2: "Well, one way is to add a prop to the component (only when you want the modification) that you can add to its code as a condition. If the prop is true, then the changes apply. That simple. In the example, it is the prop ‘isComment’. So you just have to add a condition such as '${isComment && “mb-10}' (see below).",
 
     gistIdIn2: "1a082cba4ef72ab738f2ae2e89d763cf",
+    paragraph3: "JSDoc comments start with /** and end with */, and they can contain tags like @param, @returns, @typedef, and more. JSDoc comments can be used to generate API documentation using tools like JSDoc or typedoc. Then, you can add the line //@ts-check in the file you want (or have a configuration in your `jsconfig.json`file for the whole project), that makes the code complain when a rule you set, just as it would happen with Typescript.",
+
+    paragraph4: "To get automatic templates in VsCode, you just have to type /** before your code and click on the intelliSense suggestion.",
+    linkName: "JSDoc docs",
+    linkUrl: "https://jsdoc.app/",
   },
   {
     url: "understanding-nextjs-searchParams",
