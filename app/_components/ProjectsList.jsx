@@ -4,6 +4,8 @@ import { projectsPreviews } from "../_constants";
 import DataContext from "../_context/DataContext";
 import Link from "next/link";
 
+import animations from "../animations.module.css";
+
 const ProjectsList = () => {
   const { lightMode } = useContext(DataContext);
 
@@ -22,7 +24,11 @@ const ProjectsList = () => {
           };
 
           return (
-            <Link href={`/projects/${pp.url}`} key={pp.url}>
+            <Link
+              href={`/projects/${pp.url}`}
+              key={pp.url}
+              className="flex justify-center items-center"
+            >
               <div
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
@@ -47,30 +53,36 @@ const ProjectsList = () => {
                   />
                 </div>
 
-                {/*TITLE*/}
+                <div className="flex 2xs:justify-between justify-center items-center">
+                  <div className="flex flex-col max-2xs:items-center">
+                    {/*TITLE*/}
+                    <div className="flex items-center md:mt-5 mt-2">
+                      <p className="text-secondary dark:text-primary  font-bold md:text-[25px] text-[18px]">
+                        {pp.title}
+                      </p>
+                    </div>
 
-                <div className="flex items-center md:mt-5 mt-2">
-                  <p className="text-secondary dark:text-primary  font-bold md:text-[25px] text-[18px]">
-                    {pp.title}
-                  </p>
-                  <img
-                    src={
-                      lightMode === "light"
-                        ? "/arrow-up-white.svg"
-                        : "/arrow-up-black.svg"
-                    }
-                    alt="arrow to go to website"
-                    className={`h-[20px] w-[20px] md:h-[30px] md:w-[30px] ml-3 mb-[-2px] ${
-                      isHovered ? "opacity-100" : "opacity-0"
-                    }`}
-                  />
+                    {/*DESCRIPTION*/}
+
+                    <p className="text-secondary dark:text-primary  text-[10px] xs:text-[12px] 2xs:text-[15px] md:text-[20px]">
+                      {pp.desc}
+                    </p>
+                  </div>
+                  {/*ARROW*/}
+                  <div>
+                    <img
+                      src={
+                        lightMode === "light"
+                          ? "/arrow-up-white.svg"
+                          : "/arrow-up-black.svg"
+                      }
+                      alt="arrow to go to website"
+                      className={`h-[20px] w-[20px] md:h-[30px] md:w-[30px] max-2xs:hidden mb-[-2px] ${
+                        isHovered ? "opacity-100" : "opacity-0"
+                      } ${isHovered ? animations.arrowGoUp : ""}`}
+                    />
+                  </div>
                 </div>
-
-                {/*DESCRIPTION*/}
-
-                <p className="text-secondary dark:text-primary  text-[15px] md:text-[20px]">
-                  {pp.desc}
-                </p>
               </div>
             </Link>
           );
