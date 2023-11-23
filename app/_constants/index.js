@@ -85,7 +85,22 @@ export const projectsPreviews = [
 
 ];
 
+
+
 export const blogPills = [
+  {
+    url: "how-to-write-commits",
+    date: "Nov 23, 2023",
+    title: "How to write good commits in GitHub",
+    subtitle: "Tips to write good commits in GitHub so they follow best practices to ensure clear, concise, and meaningful commit messages.",
+    paragraph1: "Well-written commit messages not only help you and your team understand the changes made, but also make it easier for others to contribute and maintain the codebase. In the command line, instead of typing 'git commit -m 'message', you can simply type 'git commit' and press Enter. This way, GitHub will prompt you to write a commit longer message in a new window inside VSCode. You then close and save, and you can continue with the next steps in the command line. Here you have some tips that can help you write good commit messages:",
+
+    gistIdIn: "e983a2406fde27214d779809fa662b11",
+
+    paragraph2: "Start with a concise subject line (up to 50 characters) that summarizes the purpose of the commit. Separate the subject from the body with a blank line. Then, in the commit body, provide more details about the changes made, explaining why they were necessary. Include any relevant context, such as issue numbers or references to related commits.",
+    paragraph3: "Write commit messages in the present tense to describe what the commit does, rather than what it did. For example, use 'Add feature' instead of 'Added feature'. In fact, starting the subject line with an imperative verb, such as 'Add', 'Fix', 'Update', or 'Remove', helps to convey the intention of the commit.",
+    paragraph4: "Each commit should have a clear and specific purpose. Avoid making unrelated changes in a single commit. If you have multiple changes, consider splitting them into separate commits. And finally,  think of following a consistent style and format for commit messages within your project. This makes it easier for others to understand and review your commits."
+  },
   {
     url: "how-to-use-JSDoc-comments",
     date: "Nov 19, 2023",

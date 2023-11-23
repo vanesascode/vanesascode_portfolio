@@ -155,10 +155,10 @@ export default function BlogPill({ pill }) {
                     : "/arrow-left-black.svg"
                 }
                 alt="arrow to go to projects"
-                className={`h-[20px] w-[20px] md:h-[30px] md:w-[30px] `}
+                className={`h-[16px] w-[18px] md:h-[23px] md:w-[25px] md:me-2 me-1`}
               />
 
-              <p className="text-secondary dark:text-primary  font-source font-bold md:text-[20px] text-[14px]">
+              <p className="text-secondary dark:text-primary font-source font-bold md:text-[20px] text-[14px] hover:text-[18px] hover:md:text-[24px] transition-all">
                 {" "}
                 Back to pills
               </p>
