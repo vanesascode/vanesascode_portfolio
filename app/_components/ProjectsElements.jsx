@@ -15,7 +15,7 @@ export default function ProjectsElements() {
     <>
       {!showMenu && (
         <div className="flexCenter flex-col pt-[80px]">
-          <div className="flex  items-center flex-col w-[200px] md:w-[500px] xl:w-[1000px] mx-auto">
+          <div className="flex items-center flex-col w-[200px] md:w-[500px] xl:w-[1000px] mx-auto">
             {/*TITLE*/}
             <div className="heading1">
               <div

@@ -34,7 +34,9 @@ export default function MenuElements() {
                   }, 1000);
                 }}
               >
-                <p className="text-secondary dark:text-black pb-3">Home</p>
+                <p className="text-secondary dark:text-black pb-3 hover:text-accent dark:hover:text-accent">
+                  Home
+                </p>
               </div>
             </a>
 
@@ -53,7 +55,10 @@ export default function MenuElements() {
                   }, 500);
                 }}
               >
-                <p className="text-secondary dark:text-black pb-3"> Projects</p>
+                <p className="text-secondary dark:text-black pb-3  hover:text-accent dark:hover:text-accent">
+                  {" "}
+                  Projects
+                </p>
               </div>
             </Link>
 
@@ -72,7 +77,9 @@ export default function MenuElements() {
                   }, 1000);
                 }}
               >
-                <p className="text-secondary dark:text-black pb-3">About</p>
+                <p className="text-secondary dark:text-black pb-3  hover:text-accent dark:hover:text-accent">
+                  About
+                </p>
               </div>
             </Link>
 
@@ -91,7 +98,9 @@ export default function MenuElements() {
                   }, 1000);
                 }}
               >
-                <p className="text-secondary dark:text-black pb-3">Contact</p>
+                <p className="text-secondary dark:text-black pb-3  hover:text-accent dark:hover:text-accent">
+                  Contact
+                </p>
               </div>
             </Link>
 
@@ -110,7 +119,9 @@ export default function MenuElements() {
                   }, 1000);
                 }}
               >
-                <p className="text-secondary dark:text-black pb-3">Blog</p>
+                <p className="text-secondary dark:text-black pb-3  hover:text-accent dark:hover:text-accent">
+                  Blog
+                </p>
               </div>
             </Link>
 

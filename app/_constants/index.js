@@ -31,7 +31,7 @@ export const projectsPreviews = [
     iconsDark: "/projects/icons-devschool-dark.png",
     paragraph1: "This is a fictional school website, a platform to share real articles about programming, with a subwebsite for job applications. The website has both a backend and a frontend component using Flask full stack.",
 
-    paragraph2: "To store and retrieve data, I integrated MongoDB Atlas. For the frontend, I used Flask's Jinja2 templating engine and created templates to separate the structure of web pages from the Python logic. In the case of the job's page postions, I fetched data from MongoDB and displayed it dynamically using Jinja2's for loop. The blog articles are hardcoded because of the complexity of code teaching examples they required (they are about and use Javascript and Typescript).",
+    paragraph2: "I used Flask's Jinja2 templating engine and created templates to separate the structure of web pages from the Python logic. In the case of the job's page postions, I fetched data from MongoDB and displayed it dynamically using Jinja2's for loop. The blog articles are hardcoded because of the complexity of code teaching examples they required (they are about and use Javascript and Typescript languages).",
 
     paragraph3: "To style the website I used CSS and Bootstrap. To customize Bootstrap further, I used SASS. I imported Bootstrap in my SASS file and compiled it into CSS using the Live Sass Compiler extension in VSCode. This allowed me to modify the Bootstrap styles and create a unique look. ",
 
@@ -69,7 +69,7 @@ export const projectsPreviews = [
     iconsLight: "/projects/icons-zentodolist.png",
     iconsDark: "/projects/icons-zentodolist.png",
 
-    paragraph1: "This is basically a ZEN themed todo-list to practice Typescript. It is esentially using classes, so it was also a good revision of object-oriented programming (OOP). The code follows the principles of encapsulation, singleton pattern, and separation of concerns between different components (Each class is responsible for one specific task, and it does not depend on the other classes. This makes the code more modular and easier to maintain).",
+    paragraph1: "This is basically a zen themed todo-list to practice Typescript. It is esentially using classes, so it was also a good revision of object-oriented programming (OOP). The code follows the principles of encapsulation, singleton pattern, and separation of concerns between different components (Each class is responsible for one specific task, and it does not depend on the other classes. This makes the code more modular and easier to maintain).",
 
     paragraph2: "The Todo List is created using three classes: ListItem, FullList, ListTemplate. The ListItem class has three properties: id, item, and checked. The id property is a unique identifier for the item, the item property is the text of the item, and the checked property indicates whether the item is checked or not. ",
 

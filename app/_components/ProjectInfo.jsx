@@ -13,7 +13,7 @@ export default function ProjectInfo({ project }) {
     <>
       {!showMenu && (
         <div className="flexCenter pt-[80px] ">
-          <div className="flex items-center flex-col w-[220px] xs:w-[250px] md:w-[500px] xl:w-[1000px] 2xl:w-[1200px] ">
+          <div className="flex items-center flex-col w-[150px] xxxxs:w-[10px] xxxs:w-[180px] xxs:w-[220px] xs:w-[240px] 1xs:w-[250px] 2xs:w-[360px] sm:w-[450px] md:w-[490px] 1md:w-[540px] 2md:w-[600px] 3md:w-[650px] lg:w-[650px]  2lg:w-[700px] xl:w-[800px] 1xl:w-[1000px] 2xl:w-[1200px] ">
             {/*TITLE*/}
 
             <div className=" heading1 text-center">
@@ -86,20 +86,24 @@ export default function ProjectInfo({ project }) {
 
             <div
               className={`
+              flexCenter
             mt-[20px] md:mt-[30px] xl:mt-[40px]
-            
-            relative xl:h-[580px] xl:w-[650px] 
+            relative 
+            xl:h-[580px] xl:w-[650px] 
             md:h-[490px] md:w-[550px] 
             xs:h-[240px] xs:w-[260px] 
-            h-[202px]  w-[225px]  ${animations.goDown1} ${
+            h-[202px]  w-[225px]  
+            ${animations.goDown1} ${
                 leaveAnimation ? animations.leavePage4 : ""
               }`}
             >
               <img
                 src="/projects/thinkpad.png"
-                className="absolute top-0 left-0 xl:h-[580px] xl:w-[650px] 
+                className="absolute top-0 xxs:left-0 xl:h-[580px] xl:w-[650px] 
                 md:h-[490px] md:w-[550px] xs:h-[240px] xs:w-[277px] 
-                z-20 h-[202px] w-[225px]"
+                xxs:z-20 xxs:h-[202px] xxs:w-[225px] 
+                xxxs:left-[20px] xxxs:z-20 xxxs:h-[170px] xxxs:w-[190px]
+                left-[20px] z-20 h-[170px] w-[190px]"
               />
               <img
                 src={project.video}
@@ -109,11 +113,15 @@ export default function ProjectInfo({ project }) {
 
                 xs:left-[30px] xs:top-[20px] xs:h-[140px] xs:w-[200px] object-cover  
                 
-                top-[18px] left-[22px] h-[115px] w-[175px]"
+                xxs:top-[18px] xxs:left-[22px] xxs:h-[115px] xxs:w-[175px]
+                
+                xxxs:top-[14.5px] xxxs:left-[42px] xxxs:h-[100px] xxxs:w-[150px]
+                
+                top-[14.5px] left-[42px] h-[100px] w-[150px]"
               />
             </div>
 
-            {/*TITLE ICONS*/}
+            {/*TITLE PROGRAMS ICONS*/}
 
             <div className=" heading3 mt-[40px] md:mt-[50px] xl:mt-[80px] ">
               <div>
