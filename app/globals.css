@@ -83,15 +83,23 @@ body {
 }
 
 .logo {
-  @apply font-source  text-secondary dark:text-primary text-[35px] md:text-[65px] xl:text-[90px]  mb-[4px] xl:mb-[13px] font-semibold mx-[-1.5px];
+  @apply font-source  text-secondary dark:text-primary text-[35px] md:text-[65px] xl:text-[90px]  mb-[4px] xl:mb-[13px] font-semibold mx-[-1.2px] 2lg:mt-[-2px] md:mt-[-5px] mt-[-1px];
 }
 
 .heading1 {
   @apply font-source xl:text-[55px] md:text-[45px] xs:text-[28px] text-[26px]  xl:leading-[50px] md:leading-[40px] leading-[30px] font-bold;
 }
 
+.heading1Menu {
+  @apply font-source xl:text-[55px] md:text-[45px] xs:text-[38px] xxxs:text-[31px] xxxxs:text-[28px] text-[26px]  xl:leading-[50px] md:leading-[40px] leading-[30px] font-semibold;
+}
+
 .heading2 {
   @apply font-source xl:text-[30px] sm:text-[19px] text-[15px] text-center xl:leading-[35px] sm:leading-[25px] leading-[20px] font-normal;
+}
+
+.heading2Menu {
+  @apply font-source xl:text-[30px]  text-[25px] text-center xl:leading-[35px] sm:leading-[25px] leading-[20px] font-normal;
 }
 
 .heading3 {
@@ -121,7 +129,7 @@ body {
 }
 
 .size-sun {
-  @apply md:h-[40px] h-[20px];
+  @apply h-[28px] mb-1 sm:mb-0;
 }
 
 .paddingXNavbar {
@@ -156,33 +164,9 @@ body {
 
 /*The animations that don't need hovering are in animations.module.css*/
 
-/* HOME*/
+/*HOME*/
 
-/*Animation lines: GENERAL + HOME links*/
-
-.linksUnderlinesBlack::after {
-  content: "";
-  position: absolute;
-  background-color: #11101d;
-  right: 0;
-  bottom: -1px;
-  width: 100%;
-  height: 4.5px;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.linksUnderlinesWhite::after {
-  content: "";
-  position: absolute;
-  background-color: #bab6e4;
-  right: 0;
-  bottom: -1px;
-  width: 100%;
-  height: 3px;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
+/*Animation lines under the home links*/
 
 .linksUnderlinesHomeBlack::after {
   content: "";
@@ -190,9 +174,8 @@ body {
   background-color: #11101d;
   right: 0;
   bottom: -1.5px;
-  width: 87%;
+  width: 100%;
   height: 3px;
-  opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
 
@@ -202,44 +185,38 @@ body {
   background-color: #bab6e4;
   right: 0;
   bottom: -1.5px;
-  width: 87%;
+  width: 100%;
   height: 3px;
-  opacity: 0;
   transition: opacity 0.3s ease-in-out;
+}
+
+@media (min-width: 425px) {
+  .linksUnderlinesHomeBlack::after,
+  .linksUnderlinesHomeWhite::after {
+    height: 3px;
+  }
 }
 
 @media (min-width: 768px) {
   .linksUnderlinesHomeBlack::after,
   .linksUnderlinesHomeWhite::after {
-    width: 88%;
-    height: 4.5px;
+    height: 4px;
   }
 }
 
-@keyframes loading-left {
+@keyframes loading-right {
   100% {
-    transform: scaleX(1);
-  }
-  0% {
     transform: scaleX(0);
   }
+  0% {
+    transform: scaleX(1);
+  }
 }
 
-.linksUnderlinesWhite:hover::after,
-.linksUnderlinesBlack:hover::after,
 .linksUnderlinesHomeWhite:hover::after,
 .linksUnderlinesHomeBlack:hover::after {
-  opacity: 1;
   transform-origin: left;
-  animation: loading-left 0.4s ease-in-out 0s 1 normal forwards;
-}
-
-@media (min-width: 1280px) {
-  .linksUnderlinesWhite::after,
-  .linksUnderlinesBlack::after {
-    height: 5px;
-    bottom: -7px;
-  }
+  animation: loading-right 0.4s ease-in-out 0s 1 normal forwards;
 }
 
 /*MENU*/
@@ -251,8 +228,8 @@ body {
   position: absolute;
   left: 0;
   bottom: -1px;
-  width: 200px;
-  height: 4.2px;
+  width: 100%;
+  height: 3px;
   background-color: rgb(186 182 228);
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
@@ -263,8 +240,8 @@ body {
   position: absolute;
   left: 0;
   bottom: -1px;
-  width: 200px;
-  height: 4.5px;
+  width: 100%;
+  height: 3px;
   background-color: #11101d;
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
@@ -273,63 +250,45 @@ body {
 .linksUnderlinesMenuWhite:hover::after,
 .linksUnderlinesMenuBlack:hover::after {
   transform-origin: left;
-  animation: loading-right 0.8s ease-in-out 0s 1 normal forwards;
+  animation: loading-right 0.4s ease-in-out 0s 1 normal forwards;
 }
 
-@keyframes loading-right {
-  100% {
-    transform: scaleX(0);
-    /* opacity: 0; */
-  }
-  0% {
-    transform: scaleX(1);
-    /* opacity: 1; */
+@media (min-width: 550px) {
+  .linksUnderlinesMenuWhite::after,
+  .linksUnderlinesMenuBlack::after {
+    height: 4.5px;
+    bottom: -7px;
+    width: 300px;
+    opacity: 1;
   }
 }
 
 @media (min-width: 768px) {
   .linksUnderlinesMenuWhite::after,
   .linksUnderlinesMenuBlack::after {
-    height: 7px;
+    height: 4.5px;
     bottom: -7px;
     width: 500px;
+    opacity: 1;
   }
 }
 
 @media (min-width: 1280px) {
   .linksUnderlinesMenuWhite::after,
   .linksUnderlinesMenuBlack::after {
-    height: 7px;
+    height: 5.5px;
+    bottom: -7px;
+    width: 800px;
+  }
+}
+
+@media (min-width: 1460px) {
+  .linksUnderlinesMenuWhite::after,
+  .linksUnderlinesMenuBlack::after {
+    height: 5.5px;
     bottom: -7px;
     width: 1000px;
   }
-}
-
-/*MOUSE BALL */
-
-@keyframes fade-in-ball {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.cursor {
-  opacity: 0;
-  animation-name: fade-in-ball;
-  animation-duration: 1.6s;
-  animation-delay: 1s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in-out;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  pointer-events: none;
 }
 
 /*MENU */

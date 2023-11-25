@@ -207,7 +207,7 @@ export default function ProjectInfo({ project }) {
 
             {/*BACK*/}
             <div
-              className={`flex items-center mb-[40px] md:mb-[50px] xl:mb-[80px] ${
+              className={`flex items-center mb-[40px] md:mb-[50px] xl:mb-[80px] cursor-pointer ${
                 animations.goUp4
               } ${leaveAnimation ? animations.leavePageDown1 : ""}`}
               onClick={() => history.back()}

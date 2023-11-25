@@ -6,6 +6,28 @@ const DataContext = createContext();
 
 export const DataProvider = ({ children }) => {
 
+  // LANGUAGE CONFIGURATION:
+
+  const [language, setLanguage] = useState(() => {
+    let initialLanguageMode = "english";
+    if (typeof localStorage !== "undefined") { // because some environments other than the browser, such as React Native, don't have local storage
+      initialLanguageMode = localStorage.getItem("languageMode") || "language";
+    }
+    return initialLanguageMode;
+  });
+
+  useEffect(() => {
+    if (language === "english") {
+      document.querySelector("html").classList.add("english");
+    } else {
+      document.querySelector("html").classList.remove("english");
+    }
+
+    // Save the current language value to local storage
+    localStorage.setItem("languageMode", language);
+  }, [language]);
+
+
   // STATE FOR MENU:
 
   const [showMenu, setShowMenu] = useState(false);
@@ -38,7 +60,7 @@ export const DataProvider = ({ children }) => {
 
 
   return (
-    <DataContext.Provider value={{ showMenu, setShowMenu, lightMode, setLightMode, leaveAnimation, setLeaveAnimation }}>
+    <DataContext.Provider value={{ showMenu, setShowMenu, lightMode, setLightMode, leaveAnimation, setLeaveAnimation, language, setLanguage }}>
       {children}
     </DataContext.Provider>
   );

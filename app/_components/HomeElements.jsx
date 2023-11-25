@@ -93,9 +93,9 @@ export default function HomeElements() {
                       lightMode === "light"
                         ? "linksUnderlinesHomeWhite"
                         : "linksUnderlinesHomeBlack"
-                    } cursor-crosshair `}
+                    }  `}
                   >
-                    <img
+                    {/* <img
                       src={
                         lightMode === "light"
                           ? "/arrow-right-white.svg"
@@ -103,8 +103,8 @@ export default function HomeElements() {
                       }
                       alt="logo"
                       className=" xl:h-[45px] md:h-[35px] sm:h-[28px] h-[20px] "
-                    />
-                    <p className="links text-secondary dark:text-primary ">
+                    /> */}
+                    <p className="links text-secondary dark:text-primary hover:text-accent dark:hover:text-accent mb-1">
                       See my projects
                     </p>
                   </div>
@@ -126,9 +126,9 @@ export default function HomeElements() {
                       lightMode === "light"
                         ? "linksUnderlinesHomeWhite"
                         : "linksUnderlinesHomeBlack"
-                    } cursor-crosshair max-md:mt-[10px]`}
+                    }  max-md:mt-[10px]`}
                   >
-                    <img
+                    {/* <img
                       src={
                         lightMode === "light"
                           ? "/arrow-right-white.svg"
@@ -136,8 +136,8 @@ export default function HomeElements() {
                       }
                       alt="logo"
                       className=" xl:h-[45px] md:h-[35px] sm:h-[28px] h-[20px]"
-                    />
-                    <p className="links text-secondary dark:text-primary ">
+                    /> */}
+                    <p className="links text-secondary dark:text-primary hover:text-accent dark:hover:text-accent mb-1">
                       More about me
                     </p>
                   </div>

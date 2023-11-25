@@ -1,6 +1,6 @@
 import Link from "next/link";
 import DataContext from "../_context/DataContext";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import animations from "../animations.module.css";
 import { LightMode } from "../_components";
 
@@ -9,8 +9,22 @@ import { LightMode } from "../_components";
 }
 
 export default function MenuElements() {
-  const { setShowMenu, lightMode, leaveAnimation, showMenu } =
-    useContext(DataContext);
+  const {
+    setShowMenu,
+    lightMode,
+    leaveAnimation,
+    showMenu,
+    language,
+    setLanguage,
+  } = useContext(DataContext);
+
+  const HandleChangeLanguage = () => {
+    if (language === "english") {
+      setLanguage("spanish");
+    } else {
+      setLanguage("english");
+    }
+  };
 
   //when navbar was not fixed:mt-[-50px] sm:mt-[-110px] md:mt-[-120px] lg:mt-[-130px] xl:mt-[-140px]
 
@@ -18,10 +32,10 @@ export default function MenuElements() {
     <>
       {showMenu && (
         <div className="h-screen flexCenter ">
-          <div className="flex justify-start items-start flex-col gap-5 w-[200px] md:w-[500px] xl:w-[1000px]">
+          <div className="flex justify-start 2xs:items-start items-center flex-col gap-5 w-[200px] 2xs:w-[300px] md:w-[500px] xl:w-[800px] 1xl:w-[1000px]">
             <a href="/">
               <div
-                className={`heading1 ${
+                className={`heading1Menu ${
                   lightMode === "light"
                     ? "linksUnderlinesMenuWhite"
                     : "linksUnderlinesMenuBlack"
@@ -42,7 +56,7 @@ export default function MenuElements() {
 
             <Link href="/projects">
               <div
-                className={`heading1 ${
+                className={`heading1Menu ${
                   lightMode === "light"
                     ? "linksUnderlinesMenuWhite"
                     : "linksUnderlinesMenuBlack"
@@ -64,7 +78,7 @@ export default function MenuElements() {
 
             <Link href="/about">
               <div
-                className={`heading1 ${
+                className={`heading1Menu ${
                   lightMode === "light"
                     ? "linksUnderlinesMenuWhite"
                     : "linksUnderlinesMenuBlack"
@@ -85,7 +99,7 @@ export default function MenuElements() {
 
             <Link href="/contact">
               <div
-                className={`heading1 ${
+                className={`heading1Menu ${
                   lightMode === "light"
                     ? "linksUnderlinesMenuWhite"
                     : "linksUnderlinesMenuBlack"
@@ -106,7 +120,7 @@ export default function MenuElements() {
 
             <Link href="/blog">
               <div
-                className={`heading1 ${
+                className={`heading1Menu ${
                   lightMode === "light"
                     ? "linksUnderlinesMenuWhite"
                     : "linksUnderlinesMenuBlack"
@@ -125,27 +139,19 @@ export default function MenuElements() {
               </div>
             </Link>
 
-            <div className="mt-3 flex items-center heading2 gap-4 ">
+            <div className="mt-3 flex items-center heading2Menu gap-5 ">
               <div className={`${animations.goUp1}`}>
                 {" "}
                 <p
-                  className={`text-secondary dark:text-primary ${
+                  className={`text-secondary dark:text-primary cursor-pointer ${
                     animations.rotateWhenHovered
                   } ${leaveAnimation ? animations.leavePageDown1 : ""}`}
+                  onClick={HandleChangeLanguage}
                 >
-                  SP
+                  {language === "english" ? "SP" : "EN"}
                 </p>
               </div>
-              <div className={`${animations.goUp1}`}>
-                {" "}
-                <p
-                  className={`text-secondary dark:text-primary ${
-                    animations.rotateWhenHovered
-                  } ${leaveAnimation ? animations.leavePageDown1 : ""}`}
-                >
-                  FR
-                </p>
-              </div>
+
               <LightMode />
             </div>
           </div>
