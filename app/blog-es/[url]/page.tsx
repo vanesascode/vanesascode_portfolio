@@ -5,16 +5,30 @@ import {
   ParticlesWhite,
   Navbar,
   MenuElements,
-  BlogElementsEN,
-} from "../_components";
+  BlogPill,
+} from "../../_components";
+
+import { blogPills } from "../../_constantsEN";
 
 import { useContext } from "react";
 
-import DataContext from "../_context/DataContext";
+import DataContext from "../../_context/DataContext";
 
-import "../globals.css";
+import "../../globals.css";
 
-export default function Blogs() {
+export default function Pill({ params }) {
+  const url = params.url;
+
+  // Find the pill object with the matching URL
+  const pill = blogPills.find((pill) => pill.url === url);
+
+  if (!pill) {
+    // Handle case when pill is not found
+    return <div>Article not found</div>;
+  }
+
+  console.log(pill);
+
   // CONTEXT:
 
   const { lightMode } = useContext(DataContext);
@@ -31,8 +45,8 @@ export default function Blogs() {
     >
       <div className="container paddingX">
         <Navbar />
-        <BlogElementsEN />
         <MenuElements />
+        <BlogPill pill={pill} />
 
         {/*Particles Background*/}
         {lightMode === "dark" && <ParticlesWhite id="tsparticles" />}

@@ -31,7 +31,7 @@ export const projects = [
     iconsDark: "/projects/icons-devschool-dark.png",
     paragraph1: "This is a fictional school website, a platform to share real articles about programming, with a subwebsite for job applications. The website has both a backend and a frontend component using Flask full stack.",
 
-    paragraph2: "I used Flask's Jinja2 templating engine and created templates to separate the structure of web pages from the Python logic. In the case of the job's page postions, I fetched data from MongoDB and displayed it dynamically using Jinja2's for loop. The blog articles are hardcoded because of the complexity of code teaching examples they required (they are about and use Javascript and Typescript languages).",
+    paragraph2: "I used Flask's Jinja2 templating engine and created templates to separate the structure of web pages from the Python logic. In the case of the article's comments, they are created and obtained from MongoDB and displayed dynamically using Jinja2's 'for' loop. The blog articles are hardcoded because of the complexity of code examples they teach (they are about and use Javascript and Typescript languages).",
 
     paragraph3: "To style the website I used CSS and Bootstrap. To customize Bootstrap further, I used SASS. I imported Bootstrap in my SASS file and compiled it into CSS using the Live Sass Compiler extension in VSCode. This allowed me to modify the Bootstrap styles and create a unique look. ",
 

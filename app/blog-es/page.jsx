@@ -5,7 +5,7 @@ import {
   ParticlesWhite,
   Navbar,
   MenuElements,
-  BlogElementsEN,
+  BlogElementsES,
 } from "../_components";
 
 import { useContext } from "react";
@@ -14,7 +14,7 @@ import DataContext from "../_context/DataContext";
 
 import "../globals.css";
 
-export default function Blogs() {
+export default function BlogsES() {
   // CONTEXT:
 
   const { lightMode } = useContext(DataContext);
@@ -31,7 +31,7 @@ export default function Blogs() {
     >
       <div className="container paddingX">
         <Navbar />
-        <BlogElementsEN />
+        <BlogElementsES />
         <MenuElements />
 
         {/*Particles Background*/}

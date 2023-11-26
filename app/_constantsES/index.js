@@ -12,9 +12,9 @@ export const proyectos = [
     iconsDark: "/projects/icons-promptgenius-dark.png",
     paragraph1: "Este proyecto demuestra mi habilidad en el desarrollo backend usando Next.js y MongoDB. A través de la exploración de conceptos avanzados de Next.js, como los componentes de servidor/cliente, el app file router y las rutas API de backend, obtuve una valiosa experiencia y construí con éxito esta aplicación full-stack. Además, también aprendí a agregar la autenticación de Google usando Next-auth.",
 
-    paragraph2: "This app includes a powerful search feature that allows users to easily find prompts based on content, user, or tag. This search functionality improves the overall user experience and makes it easier for users to discover prompts. Additionally, users have the ability to copy prompts to their clipboard for convenient pasting, as well as share prompts on social media platforms.",
+    paragraph2: "Esta aplicación incluye una poderosa función de búsqueda que permite a los usuarios encontrar fácilmente prompts basados en contenido, usuario o etiqueta. Esta funcionalidad de búsqueda mejora la experiencia general del usuario y les facilita descubrir prompts. Además, los usuarios tienen la capacidad de copiar prompts a su portapapeles para pegarlos cómodamente, así como compartir prompts en plataformas de redes sociales.",
 
-    paragraph3: "Furthermore, prompts can be quickly edited or erased, providing users with the flexibility to modify their prompts to suit their needs. They can do it in their own profile, and also, they can visit other peoples prompts. I prioritize creating applications that are easy to use and provide a positive experience for the user. By doing this, I aim to deliver applications that are smooth and user-friendly.",
+    paragraph3: "Además, los prompts se pueden editar o borrar rápidamente, lo que brinda a los usuarios la flexibilidad de modificar sus prompts para adaptarlos a sus necesidades. Pueden hacerlo en su propio perfil y también pueden visitar los prompts de otras personas. Priorizo la creación de aplicaciones que sean fáciles de usar y brinden una experiencia positiva al usuario. Al hacer esto, mi objetivo es ofrecer aplicaciones que sean fluidas y fáciles de usar.",
 
 
   },
@@ -29,13 +29,13 @@ export const proyectos = [
     code: "https://github.com/vanesascode/devschool-vanesascode",
     iconsLight: "/projects/icons-devschool-light.png",
     iconsDark: "/projects/icons-devschool-dark.png",
-    paragraph1: "This is a fictional school website, a platform to share real articles about programming, with a subwebsite for job applications. The website has both a backend and a frontend component using Flask full stack.",
+    paragraph1: "Web ficticia de una escuela online: una plataforma para compartir artículos reales sobre programación, con una subpágina para solicitudes de empleo. El sitio web tiene tanto un componente backend como frontend utilizando Flask full stack.",
 
-    paragraph2: "I used Flask's Jinja2 templating engine and created templates to separate the structure of web pages from the Python logic. In the case of the job's page postions, I fetched data from MongoDB and displayed it dynamically using Jinja2's for loop. The blog articles are hardcoded because of the complexity of code teaching examples they required (they are about and use Javascript and Typescript languages).",
+    paragraph2: "Utilicé el motor de plantillas Jinja2 de Flask y creé plantillas para separar la estructura de las páginas web de la lógica en Python. En el caso de los comentarios del blog, los datos se crean y obtienen de MongoDB y se muestran dinámicamente utilizando el loop 'for' de Jinja2. Los artículos del blog están codificados de forma estática debido a la complejidad de los ejemplos de código que estos enseñan (tratan sobre y utilizan los lenguajes de Javascript y Typescript).",
 
-    paragraph3: "To style the website I used CSS and Bootstrap. To customize Bootstrap further, I used SASS. I imported Bootstrap in my SASS file and compiled it into CSS using the Live Sass Compiler extension in VSCode. This allowed me to modify the Bootstrap styles and create a unique look. ",
+    paragraph3: "Para estilizar el sitio web, utilicé CSS y Bootstrap. Para personalizar Bootstrap aún más, utilicé SASS. Importé Bootstrap en mi archivo SASS y lo compilé en CSS utilizando la extensión Live Sass Compiler en VSCode. Esto me permitió modificar los estilos de Bootstrap y crear un aspecto único.",
 
-    paragraph4: "I implemented mailto links for job applications and for contact, which open the user's default email client with pre-filled email address, subject line, and body.",
+    paragraph4: "Implementé enlaces de 'mailto' para solicitudes de empleo y para contacto, los cuales abren el cliente de correo electrónico predeterminado del usuario con la dirección de correo electrónico, asunto y cuerpo prellenados.",
   },
   {
     url: "lizz-boots-es",

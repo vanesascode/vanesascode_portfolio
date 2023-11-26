@@ -79,7 +79,7 @@ export default function ProjectInfoES({ proyecto }) {
                     alt="code icon"
                     className={`h-[35px] md:h-[45px] ${animations.rotateWhenHovered}`}
                   />
-                  <p className="text-secondary dark:text-primary">Code</p>
+                  <p className="text-secondary dark:text-primary">Código</p>
                 </div>
               </a>
             </div>
@@ -133,7 +133,7 @@ export default function ProjectInfoES({ proyecto }) {
                   }`}
                 >
                   <p className="text-secondary dark:text-primary tracking-[-1px] sm:tracking-normal pb-3">
-                    Technologies used:
+                    Technología utilizada:
                   </p>
                 </div>
               </div>
@@ -169,7 +169,7 @@ export default function ProjectInfoES({ proyecto }) {
                   }`}
                 >
                   <p className="text-secondary dark:text-primary tracking-[-1px] sm:tracking-normal pb-3">
-                    Description:
+                    Descripción:
                   </p>
                 </div>
               </div>

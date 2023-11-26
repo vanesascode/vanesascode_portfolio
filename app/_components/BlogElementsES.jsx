@@ -6,12 +6,12 @@ import { useContext, useState } from "react";
 
 import DataContext from "../_context/DataContext";
 
-import { BlogList } from "../_components";
+import { BlogList } from ".";
 
 import { blogPills } from "../_constantsEN";
 
-export default function BlogElements() {
-  const { lightMode, showMenu, leaveAnimation } = useContext(DataContext);
+export default function BlogElementsES() {
+  const { showMenu, leaveAnimation } = useContext(DataContext);
   const [searchText, setSearchText] = useState("");
   const [searchTimeout, setSearchTimeout] = useState(null);
   const [searchedResults, setSearchedResults] = useState([]);
@@ -58,7 +58,7 @@ export default function BlogElements() {
                 }`}
               >
                 <p className="text-secondary dark:text-primary tracking-[-1px] sm:tracking-normal pb-3">
-                  Blog Pills
+                  Píldoras de Blog
                 </p>
               </div>
             </div>
@@ -73,7 +73,7 @@ export default function BlogElements() {
               >
                 {" "}
                 <p className="text-secondary dark:text-primary md:tracking-[-0.5px] tracking-tighter xl:tracking-[-0.95px]">
-                  Here I write down little learnings:
+                  Aquí anoto pequeños aprendizajes:
                 </p>
               </div>
             </div>
@@ -90,7 +90,7 @@ export default function BlogElements() {
                 >
                   <input
                     type="text"
-                    placeholder="Search using keywords"
+                    placeholder="Busca utilizando una palabra clave"
                     value={searchText}
                     onChange={handleSearchChange}
                     required
