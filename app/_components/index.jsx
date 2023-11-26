@@ -1,43 +1,41 @@
-// INTRO: 
-import Intro from './Intro';
+// INTRO:
+import Intro from "./Intro";
 
-////// NAVBAR: 
+////// NAVBAR:
 // main component:
-import Navbar from './Navbar';
+import Navbar from "./Navbar";
 // inner components:
-import Logo from './Logo';
-import OpenMenuButton from './OpenMenuButton';
-import CloseMenuButton from './CloseMenuButton';
+import Logo from "./Logo";
+import OpenMenuButton from "./OpenMenuButton";
+import CloseMenuButton from "./CloseMenuButton";
 
 // HOME:
-import HomeElements from './HomeElements';
+import HomeElements from "./HomeElements";
 
 ////// MENU:
 // main component:
-import MenuElements from './MenuElements';
+import MenuElements from "./MenuElements";
 // inner components:
-import LightMode from './LightMode';
+import LightMode from "./LightMode";
 
-// PARTICLES: 
-import ParticlesWhite from './ParticlesWhite';
-import ParticlesBlack from './ParticlesBlack';
+// PARTICLES:
+import ParticlesWhite from "./ParticlesWhite";
+import ParticlesBlack from "./ParticlesBlack";
 
-//PROJECTS: 
-import ProjectsElements from './ProjectsElements';
-import ProjectsList from './ProjectsList';
-import ProjectInfo from './ProjectInfo';
+//PROJECTS:
+import ProjectsElementsEN from "./ProjectsElementsEN";
+import ProjectsElementsES from "./ProjectsElementsES";
+import ProjectsListEN from "./ProjectsListEN";
+import ProjectsListES from "./ProjectsListES";
+import ProjectInfoEN from "./ProjectInfoEN";
+import ProjectInfoES from "./ProjectInfoES";
 
 //BLOG:
 
-import BlogElements from './BlogElements';
-import BlogPill from './BlogPill';
-import BlogList from './BlogList';
-import SocialmediaShareIcons from './SocialmediaShareIcons';
-
-
-
-
-
+import BlogElements from "./BlogElements";
+import BlogPill from "./BlogPill";
+import BlogList from "./BlogList";
+import SocialmediaShareIcons from "./SocialmediaShareIcons";
 
 export {
   Intro,
@@ -50,11 +48,14 @@ export {
   LightMode,
   ParticlesWhite,
   ParticlesBlack,
-  ProjectsElements,
-  ProjectsList,
-  ProjectInfo,
+  ProjectsElementsEN,
+  ProjectsElementsES,
+  ProjectsListEN,
+  ProjectsListES,
+  ProjectInfoEN,
+  ProjectInfoES,
   BlogElements,
   BlogPill,
   BlogList,
-  SocialmediaShareIcons
-}
+  SocialmediaShareIcons,
+};

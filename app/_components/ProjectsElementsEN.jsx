@@ -6,10 +6,10 @@ import { useContext } from "react";
 
 import DataContext from "../_context/DataContext";
 
-import { ProjectsList } from "../_components";
+import { ProjectsListEN } from "../_components";
 
 export default function ProjectsElements() {
-  const { lightMode, showMenu, leaveAnimation } = useContext(DataContext);
+  const { showMenu, leaveAnimation } = useContext(DataContext);
 
   return (
     <>
@@ -23,9 +23,9 @@ export default function ProjectsElements() {
                   leaveAnimation ? animations.leavePage1 : ""
                 }`}
               >
-                <p className="text-secondary dark:text-primary tracking-[-1px] sm:tracking-normal pb-3">
+                <div className="text-secondary dark:text-primary tracking-[-1px] sm:tracking-normal pb-3">
                   Projects
-                </p>
+                </div>
               </div>
             </div>
 
@@ -38,9 +38,9 @@ export default function ProjectsElements() {
                 }`}
               >
                 {" "}
-                <p className="text-secondary dark:text-primary md:tracking-[-0.5px] tracking-tighter xl:tracking-[-0.95px]">
+                <div className="text-secondary dark:text-primary md:tracking-[-0.5px] tracking-tighter xl:tracking-[-0.95px]">
                   Thank you for checking out my work:
-                </p>
+                </div>
               </div>
             </div>
           </div>
@@ -51,7 +51,7 @@ export default function ProjectsElements() {
               leaveAnimation ? animations.leavePageDown1 : ""
             } pb-10 mx-auto mt-[20px] md:mt-[30px] xl:mt-[40px]`}
           >
-            <ProjectsList />
+            <ProjectsListEN />
           </div>
         </div>
       )}

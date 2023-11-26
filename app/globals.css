@@ -99,7 +99,7 @@ body {
 }
 
 .heading2Menu {
-  @apply font-source xl:text-[30px]  text-[25px] text-center xl:leading-[35px] sm:leading-[25px] leading-[20px] font-normal;
+  @apply font-source xl:text-[32px]  text-[25px] text-center xl:leading-[35px] sm:leading-[25px] leading-[20px] font-semibold;
 }
 
 .heading3 {
@@ -129,7 +129,7 @@ body {
 }
 
 .size-sun {
-  @apply h-[28px] mb-1 sm:mb-0;
+  @apply h-[30px] mb-1 sm:mb-0;
 }
 
 .paddingXNavbar {

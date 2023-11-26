@@ -12,7 +12,7 @@
     "@react-spring/web": "^9.7.3",
     "framer-motion": "^10.16.4",
     "gist-react": "^1.0.2",
-    "next": "^14.0.0",
+    "next": "^14.0.3",
     "react": "^18",
     "react-dom": "^18",
     "react-embed-gist": "^1.0.17",

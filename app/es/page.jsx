@@ -1,10 +1,10 @@
 "use client"
 
-import { ParticlesBlack, ParticlesWhite, Intro, Navbar, HomeElements, MenuElements } from "./_components";
+import { ParticlesBlack, ParticlesWhite, Intro, Navbar, HomeElements, MenuElements } from "../_components";
 
 import { useEffect, useState, useContext } from "react";
 
-import DataContext from "./_context/DataContext";
+import DataContext from "../_context/DataContext";
 
 export default function Home() {
 
@@ -71,4 +71,3 @@ export default function Home() {
       </div >
     </div>)
 }
-

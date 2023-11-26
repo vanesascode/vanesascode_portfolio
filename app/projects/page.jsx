@@ -5,7 +5,7 @@ import {
   ParticlesWhite,
   Navbar,
   MenuElements,
-  ProjectsElements,
+  ProjectsElementsEN,
 } from "../_components";
 
 import { useContext } from "react";
@@ -31,7 +31,7 @@ export default function Projects() {
     >
       <div className="container paddingX">
         <Navbar />
-        <ProjectsElements />
+        <ProjectsElementsEN />
         <MenuElements />
 
         {/*Particles Background*/}

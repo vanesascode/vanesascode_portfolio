@@ -5,10 +5,10 @@ import {
   ParticlesWhite,
   Navbar,
   MenuElements,
-  ProjectInfo,
+  ProjectInfoEN,
 } from "../../_components";
 
-import { projectsPreviews } from "../../_constants";
+import { projects } from "../../_constantsEN";
 
 import { useContext } from "react";
 
@@ -20,7 +20,7 @@ export default function Project({ params }) {
   const url = params.url;
 
   // Find the project object with the matching URL
-  const project = projectsPreviews.find((project) => project.url === url);
+  const project = projects.find((project) => project.url === url);
 
   if (!project) {
     // Handle case when project is not found
@@ -45,7 +45,7 @@ export default function Project({ params }) {
       <div className="container paddingX">
         <Navbar />
         <MenuElements />
-        <ProjectInfo project={project} />
+        <ProjectInfoEN project={project} />
 
         {/*Particles Background*/}
         {lightMode === "dark" && <ParticlesWhite id="tsparticles" />}

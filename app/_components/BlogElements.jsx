@@ -8,7 +8,7 @@ import DataContext from "../_context/DataContext";
 
 import { BlogList } from "../_components";
 
-import { blogPills } from "../_constants";
+import { blogPills } from "../_constantsEN";
 
 export default function BlogElements() {
   const { lightMode, showMenu, leaveAnimation } = useContext(DataContext);
