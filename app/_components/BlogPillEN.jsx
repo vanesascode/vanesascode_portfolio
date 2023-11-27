@@ -2,15 +2,15 @@
 
 import animations from "../animations.module.css";
 
-import { useContext, useState } from "react";
+import { useContext } from "react";
 
 import DataContext from "../_context/DataContext";
 
 import { Gist } from "gist-react";
 
-import { SocialmediaShareIcons } from "../_components";
+import { SocialmediaShareIcons } from ".";
 
-export default function BlogPill({ pill }) {
+export default function BlogPillEN({ pill }) {
   const { lightMode, showMenu, leaveAnimation } = useContext(DataContext);
 
   return (

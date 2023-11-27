@@ -8,7 +8,7 @@ import {
   ProjectInfoEN,
 } from "../../_components";
 
-import { projects } from "../../_constantsEN";
+import { projects } from "../../_constantsProjectsEN";
 
 import { useContext } from "react";
 

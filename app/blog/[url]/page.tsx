@@ -5,10 +5,10 @@ import {
   ParticlesWhite,
   Navbar,
   MenuElements,
-  BlogPill,
+  BlogPillEN,
 } from "../../_components";
 
-import { blogPills } from "../../_constantsEN";
+import { blogPillsEN } from "../../_constantsPillsEN";
 
 import { useContext } from "react";
 
@@ -20,7 +20,7 @@ export default function Pill({ params }) {
   const url = params.url;
 
   // Find the pill object with the matching URL
-  const pill = blogPills.find((pill) => pill.url === url);
+  const pill = blogPillsEN.find((pill) => pill.url === url);
 
   if (!pill) {
     // Handle case when pill is not found
@@ -46,7 +46,7 @@ export default function Pill({ params }) {
       <div className="container paddingX">
         <Navbar />
         <MenuElements />
-        <BlogPill pill={pill} />
+        <BlogPillEN pill={pill} />
 
         {/*Particles Background*/}
         {lightMode === "dark" && <ParticlesWhite id="tsparticles" />}

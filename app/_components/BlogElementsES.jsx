@@ -6,9 +6,9 @@ import { useContext, useState } from "react";
 
 import DataContext from "../_context/DataContext";
 
-import { BlogList } from ".";
+import { BlogListES } from "../_components";
 
-import { blogPills } from "../_constantsEN";
+import { blogPillsES } from "../_constantsPillsES";
 
 export default function BlogElementsES() {
   const { showMenu, leaveAnimation } = useContext(DataContext);
@@ -20,7 +20,7 @@ export default function BlogElementsES() {
 
   const filterPills = (searchtext) => {
     const regex = new RegExp(searchtext, "i"); // 'i' flag for case-insensitive search
-    return blogPills.filter(
+    return blogPillsES.filter(
       (pill) =>
         regex.test(pill.title) ||
         regex.test(pill.subtitle) ||
@@ -58,7 +58,7 @@ export default function BlogElementsES() {
                 }`}
               >
                 <p className="text-secondary dark:text-primary tracking-[-1px] sm:tracking-normal pb-3">
-                  Píldoras de Blog
+                  Blog en Píldoras
                 </p>
               </div>
             </div>
@@ -106,9 +106,9 @@ export default function BlogElementsES() {
               } pb-10 mx-auto my-[20px] md:my-[30px] xl:my-[40px]`}
             >
               {searchText ? (
-                <BlogList blogPills={searchedResults} />
+                <BlogListES blogPills={searchedResults} />
               ) : (
-                <BlogList blogPills={blogPills} />
+                <BlogListES blogPills={blogPillsES} />
               )}
             </div>
           </div>

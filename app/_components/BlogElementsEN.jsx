@@ -6,9 +6,9 @@ import { useContext, useState } from "react";
 
 import DataContext from "../_context/DataContext";
 
-import { BlogList } from ".";
+import { BlogListEN } from "../_components";
 
-import { blogPills } from "../_constantsEN";
+import { blogPillsEN } from "../_constantsPillsEN";
 
 export default function BlogElementsEN() {
   const { showMenu, leaveAnimation } = useContext(DataContext);
@@ -20,7 +20,7 @@ export default function BlogElementsEN() {
 
   const filterPills = (searchtext) => {
     const regex = new RegExp(searchtext, "i"); // 'i' flag for case-insensitive search
-    return blogPills.filter(
+    return blogPillsEN.filter(
       (pill) =>
         regex.test(pill.title) ||
         regex.test(pill.subtitle) ||
@@ -90,7 +90,7 @@ export default function BlogElementsEN() {
                 >
                   <input
                     type="text"
-                    placeholder="Search using keywords"
+                    placeholder="Search using a keyword"
                     value={searchText}
                     onChange={handleSearchChange}
                     required
@@ -106,9 +106,9 @@ export default function BlogElementsEN() {
               } pb-10 mx-auto my-[20px] md:my-[30px] xl:my-[40px]`}
             >
               {searchText ? (
-                <BlogList blogPills={searchedResults} />
+                <BlogListEN blogPills={searchedResults} />
               ) : (
-                <BlogList blogPills={blogPills} />
+                <BlogListEN blogPills={blogPillsEN} />
               )}
             </div>
           </div>

@@ -1,6 +1,6 @@
 "use client";
 import { useContext, useState } from "react";
-import { projects } from "../_constantsEN";
+import { projects } from "../_constantsProjectsEN";
 import DataContext from "../_context/DataContext";
 import Link from "next/link";
 

@@ -34,8 +34,10 @@ import ProjectInfoES from "./ProjectInfoES";
 
 import BlogElementsEN from "./BlogElementsEN";
 import BlogElementsES from "./BlogElementsES";
-import BlogPill from "./BlogPill";
-import BlogList from "./BlogList";
+import BlogPillEN from "./BlogPillEN";
+import BlogPillES from "./BlogPillES";
+import BlogListEN from "./BlogListEN";
+import BlogListES from "./BlogListES";
 import SocialmediaShareIcons from "./SocialmediaShareIcons";
 
 export {
@@ -57,7 +59,9 @@ export {
   ProjectInfoES,
   BlogElementsEN,
   BlogElementsES,
-  BlogPill,
-  BlogList,
+  BlogPillEN,
+  BlogPillES,
+  BlogListEN,
+  BlogListES,
   SocialmediaShareIcons,
 };

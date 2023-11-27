@@ -8,7 +8,7 @@ import {
   ProjectInfoES,
 } from "../../_components";
 
-import { proyectos } from "../../_constantsES";
+import { proyectos } from "../../_constantsProjectsES";
 
 import { useContext } from "react";
 
