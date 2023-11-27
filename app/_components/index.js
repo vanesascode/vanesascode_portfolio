@@ -40,6 +40,13 @@ import BlogListEN from "./BlogListEN";
 import BlogListES from "./BlogListES";
 import SocialmediaShareIcons from "./SocialmediaShareIcons";
 
+//CONTACT: 
+
+import ContactElements from "./ContactElements";
+
+// ABOUT:
+import AboutElements from "./AboutElements";
+
 export {
   Intro,
   Navbar,
@@ -64,4 +71,6 @@ export {
   BlogListEN,
   BlogListES,
   SocialmediaShareIcons,
+  ContactElements,
+  AboutElements,
 };

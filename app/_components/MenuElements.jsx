@@ -36,241 +36,171 @@ export default function MenuElements() {
   return (
     <>
       {showMenu && (
-        <div className="h-screen flexCenter ">
-          <div className="flex justify-start 2xs:items-start items-center flex-col gap-5 w-[200px] 2xs:w-[300px] md:w-[500px] xl:w-[800px] 1xl:w-[1000px]">
+        <div className="h-screen flexCenter">
+          <div className="flex justify-start 2xs:items-start items-center flex-col gap-7 2xs:gap-5 w-[250px] 2xs:w-[300px] md:w-[500px] xl:w-[800px] 1xl:w-[1000px]">
             {/*HOME LINK*/}
 
-            {language === "english" ? (
-              <Link href="/">
-                <div
-                  className={`heading1Menu ${
+            <Link href={language === "english" ? "/" : "/es"}>
+              <div
+                className={`heading1Menu ${
+                  lightMode === "light"
+                    ? "linksUnderlinesMenuWhite"
+                    : "linksUnderlinesMenuBlack"
+                } relative ${animations.goDown4} cursor-pointer ${
+                  leaveAnimation ? animations.leavePage1 : ""
+                } flex items-end `}
+                onClick={() => {
+                  setTimeout(() => {
+                    setShowMenu(false);
+                  }, 1000);
+                }}
+              >
+                <p className="text-secondary dark:text-black 2xs:pb-3 pb-[2px] hover:text-accent dark:hover:text-accent">
+                  {language === "english" ? "Home" : "Inicio"}
+                </p>
+                <img
+                  src={
                     lightMode === "light"
-                      ? "linksUnderlinesMenuWhite"
-                      : "linksUnderlinesMenuBlack"
-                  } relative ${animations.goDown4} cursor-pointer ${
-                    leaveAnimation ? animations.leavePage1 : ""
-                  }`}
-                  onClick={() => {
-                    setTimeout(() => {
-                      setShowMenu(false);
-                    }, 1000);
-                  }}
-                >
-                  <p className="text-secondary dark:text-black pb-3 hover:text-accent dark:hover:text-accent">
-                    Home
-                  </p>
-                </div>
-              </Link>
-            ) : (
-              <Link href="/es">
-                <div
-                  className={`heading1Menu ${
-                    lightMode === "light"
-                      ? "linksUnderlinesMenuWhite"
-                      : "linksUnderlinesMenuBlack"
-                  } relative ${animations.goDown4} cursor-pointer ${
-                    leaveAnimation ? animations.leavePage1 : ""
-                  }`}
-                  onClick={() => {
-                    setTimeout(() => {
-                      setShowMenu(false);
-                    }, 1000);
-                  }}
-                >
-                  <p className="text-secondary dark:text-black pb-3 hover:text-accent dark:hover:text-accent">
-                    Inicio
-                  </p>
-                </div>
-              </Link>
-            )}
+                      ? "/arrow-right-white.svg"
+                      : "/arrow-right-black.svg"
+                  }
+                  alt="arrow"
+                  className="2xs:opacity-0 h-[28px] "
+                />
+              </div>
+            </Link>
 
             {/*PROJECTS LINK*/}
 
-            {language === "english" ? (
-              <Link href="/projects">
-                <div
-                  className={`heading1Menu ${
+            <Link href={language === "english" ? "/projects" : "/projects-es"}>
+              <div
+                className={`heading1Menu ${
+                  lightMode === "light"
+                    ? "linksUnderlinesMenuWhite"
+                    : "linksUnderlinesMenuBlack"
+                } relative ${animations.goDown3} cursor-pointer ${
+                  leaveAnimation ? animations.leavePage2 : ""
+                } flex items-end`}
+                onClick={() => {
+                  setTimeout(() => {
+                    setShowMenu(false);
+                  }, 500);
+                }}
+              >
+                <p className="text-secondary dark:text-black 2xs:pb-3 pb-[2px]  hover:text-accent dark:hover:text-accent">
+                  {" "}
+                  {language === "english" ? "Projects" : "Proyectos"}
+                </p>
+                <img
+                  src={
                     lightMode === "light"
-                      ? "linksUnderlinesMenuWhite"
-                      : "linksUnderlinesMenuBlack"
-                  } relative ${animations.goDown3} cursor-pointer ${
-                    leaveAnimation ? animations.leavePage2 : ""
-                  }`}
-                  onClick={() => {
-                    setTimeout(() => {
-                      setShowMenu(false);
-                    }, 500);
-                  }}
-                >
-                  <p className="text-secondary dark:text-black pb-3  hover:text-accent dark:hover:text-accent">
-                    {" "}
-                    Projects
-                  </p>
-                </div>
-              </Link>
-            ) : (
-              <Link href="/proyectos">
-                <div
-                  className={`heading1Menu ${
-                    lightMode === "light"
-                      ? "linksUnderlinesMenuWhite"
-                      : "linksUnderlinesMenuBlack"
-                  } relative ${animations.goDown3} cursor-pointer ${
-                    leaveAnimation ? animations.leavePage2 : ""
-                  }`}
-                  onClick={() => {
-                    setTimeout(() => {
-                      setShowMenu(false);
-                    }, 500);
-                  }}
-                >
-                  <p className="text-secondary dark:text-black pb-3  hover:text-accent dark:hover:text-accent">
-                    {" "}
-                    Proyectos
-                  </p>
-                </div>
-              </Link>
-            )}
+                      ? "/arrow-right-white.svg"
+                      : "/arrow-right-black.svg"
+                  }
+                  alt="arrow"
+                  className="2xs:opacity-0 h-[28px] "
+                />
+              </div>
+            </Link>
 
             {/*ABOUT LINK*/}
 
-            {language === "english" ? (
-              <Link href="/about">
-                <div
-                  className={`heading1Menu ${
+            <Link href="/about">
+              <div
+                className={`heading1Menu ${
+                  lightMode === "light"
+                    ? "linksUnderlinesMenuWhite"
+                    : "linksUnderlinesMenuBlack"
+                } relative ${animations.goDown2} cursor-pointer ${
+                  leaveAnimation ? animations.leavePage3 : ""
+                } flex items-end`}
+                onClick={() => {
+                  setTimeout(() => {
+                    setShowMenu(false);
+                  }, 1000);
+                }}
+              >
+                <p className="text-secondary dark:text-black 2xs:pb-3 pb-[2px]  hover:text-accent dark:hover:text-accent">
+                  {language === "english" ? "About" : "Sobre mí"}
+                </p>
+                <img
+                  src={
                     lightMode === "light"
-                      ? "linksUnderlinesMenuWhite"
-                      : "linksUnderlinesMenuBlack"
-                  } relative ${animations.goDown2} cursor-pointer ${
-                    leaveAnimation ? animations.leavePage3 : ""
-                  }`}
-                  onClick={() => {
-                    setTimeout(() => {
-                      setShowMenu(false);
-                    }, 1000);
-                  }}
-                >
-                  <p className="text-secondary dark:text-black pb-3  hover:text-accent dark:hover:text-accent">
-                    About
-                  </p>
-                </div>
-              </Link>
-            ) : (
-              <Link href="/sobre-mi">
-                <div
-                  className={`heading1Menu ${
-                    lightMode === "light"
-                      ? "linksUnderlinesMenuWhite"
-                      : "linksUnderlinesMenuBlack"
-                  } relative ${animations.goDown2} cursor-pointer ${
-                    leaveAnimation ? animations.leavePage3 : ""
-                  }`}
-                  onClick={() => {
-                    setTimeout(() => {
-                      setShowMenu(false);
-                    }, 1000);
-                  }}
-                >
-                  <p className="text-secondary dark:text-black pb-3  hover:text-accent dark:hover:text-accent">
-                    Sobre mí
-                  </p>
-                </div>
-              </Link>
-            )}
+                      ? "/arrow-right-white.svg"
+                      : "/arrow-right-black.svg"
+                  }
+                  alt="arrow"
+                  className="2xs:opacity-0 h-[28px] "
+                />
+              </div>
+            </Link>
 
             {/*CONTACT LINK*/}
 
-            {language === "english" ? (
-              <Link href="/contact">
-                <div
-                  className={`heading1Menu ${
+            <Link href="/contact">
+              <div
+                className={`heading1Menu ${
+                  lightMode === "light"
+                    ? "linksUnderlinesMenuWhite"
+                    : "linksUnderlinesMenuBlack"
+                } relative ${animations.goDown1} cursor-pointer ${
+                  leaveAnimation ? animations.leavePage4 : ""
+                }  flex items-end`}
+                onClick={() => {
+                  setTimeout(() => {
+                    setShowMenu(false);
+                  }, 1000);
+                }}
+              >
+                <p className="text-secondary dark:text-black 2xs:pb-3 pb-[2px]  hover:text-accent dark:hover:text-accent">
+                  {language === "english" ? "Contact" : "Contacto"}
+                </p>
+                <img
+                  src={
                     lightMode === "light"
-                      ? "linksUnderlinesMenuWhite"
-                      : "linksUnderlinesMenuBlack"
-                  } relative ${animations.goDown1} cursor-pointer ${
-                    leaveAnimation ? animations.leavePage4 : ""
-                  }`}
-                  onClick={() => {
-                    setTimeout(() => {
-                      setShowMenu(false);
-                    }, 1000);
-                  }}
-                >
-                  <p className="text-secondary dark:text-black pb-3  hover:text-accent dark:hover:text-accent">
-                    Contact
-                  </p>
-                </div>
-              </Link>
-            ) : (
-              <Link href="/contacto">
-                <div
-                  className={`heading1Menu ${
-                    lightMode === "light"
-                      ? "linksUnderlinesMenuWhite"
-                      : "linksUnderlinesMenuBlack"
-                  } relative ${animations.goDown1} cursor-pointer ${
-                    leaveAnimation ? animations.leavePage4 : ""
-                  }`}
-                  onClick={() => {
-                    setTimeout(() => {
-                      setShowMenu(false);
-                    }, 1000);
-                  }}
-                >
-                  <p className="text-secondary dark:text-black pb-3  hover:text-accent dark:hover:text-accent">
-                    Contacto
-                  </p>
-                </div>
-              </Link>
-            )}
+                      ? "/arrow-right-white.svg"
+                      : "/arrow-right-black.svg"
+                  }
+                  alt="arrow"
+                  className="2xs:opacity-0 h-[28px] "
+                />
+              </div>
+            </Link>
 
             {/*BLOG LINK*/}
 
-            {language === "english" ? (
-              <Link href="/blog">
-                <div
-                  className={`heading1Menu ${
+            <Link href={language === "english" ? "/blog" : "/blog-es"}>
+              <div
+                className={`heading1Menu ${
+                  lightMode === "light"
+                    ? "linksUnderlinesMenuWhite"
+                    : "linksUnderlinesMenuBlack"
+                } relative ${animations.goDown1} cursor-pointer ${
+                  leaveAnimation ? animations.leavePage4 : ""
+                } flex items-end`}
+                onClick={() => {
+                  setTimeout(() => {
+                    setShowMenu(false);
+                  }, 1000);
+                }}
+              >
+                <p className="text-secondary dark:text-black 2xs:pb-3 pb-[2px]  hover:text-accent dark:hover:text-accent">
+                  Blog
+                </p>
+                <img
+                  src={
                     lightMode === "light"
-                      ? "linksUnderlinesMenuWhite"
-                      : "linksUnderlinesMenuBlack"
-                  } relative ${animations.goDown1} cursor-pointer ${
-                    leaveAnimation ? animations.leavePage4 : ""
-                  }`}
-                  onClick={() => {
-                    setTimeout(() => {
-                      setShowMenu(false);
-                    }, 1000);
-                  }}
-                >
-                  <p className="text-secondary dark:text-black pb-3  hover:text-accent dark:hover:text-accent">
-                    Blog
-                  </p>
-                </div>
-              </Link>
-            ) : (
-              <Link href="/blog-es">
-                <div
-                  className={`heading1Menu ${
-                    lightMode === "light"
-                      ? "linksUnderlinesMenuWhite"
-                      : "linksUnderlinesMenuBlack"
-                  } relative ${animations.goDown1} cursor-pointer ${
-                    leaveAnimation ? animations.leavePage4 : ""
-                  }`}
-                  onClick={() => {
-                    setTimeout(() => {
-                      setShowMenu(false);
-                    }, 1000);
-                  }}
-                >
-                  <p className="text-secondary dark:text-black pb-3  hover:text-accent dark:hover:text-accent">
-                    Blog
-                  </p>
-                </div>
-              </Link>
-            )}
+                      ? "/arrow-right-white.svg"
+                      : "/arrow-right-black.svg"
+                  }
+                  alt="arrow"
+                  className="2xs:opacity-0 h-[28px] "
+                />
+              </div>
+            </Link>
 
-            <div className="mt-3 flex items-center heading2Menu gap-5 ">
+            <div className="mt-[50px] flex items-center heading2Menu gap-[30px] ">
+              {/*LANGUAGE BUTTON*/}
               <div className={`${animations.goUp1}`}>
                 {" "}
                 <p
@@ -282,6 +212,8 @@ export default function MenuElements() {
                   {language === "english" ? "SP" : "EN"}
                 </p>
               </div>
+
+              {/*LIGHTMODE BUTTON*/}
 
               <LightMode />
             </div>

@@ -120,7 +120,7 @@ export const proyectos = [
   {
     url: "seconds-counter-es",
     title:
-      "Seconds Counter",
+      "Contador de Segundos",
     desc: "Ejercicio 4Geeks",
     img: "/projects/cover-counter.jpg",
     video: "/projects/video-counter.gif",

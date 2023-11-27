@@ -81,7 +81,7 @@ export default function ProjectInfoES({ proyecto }) {
                     alt="code icon"
                     className={`h-[31px] 1xs:h-[36px] md:h-[41px] xl:h-[46px] ${animations.rotateWhenHovered}`}
                   />
-                  <p className="text-secondary dark:text-primary projectsIcons mt-[-0.8px]">
+                  <p className="text-secondary dark:text-primary projectsIcons mt-[-0.8px] tracking-tighter">
                     Código
                   </p>
                 </div>
@@ -213,7 +213,7 @@ export default function ProjectInfoES({ proyecto }) {
 
             {/*BACK*/}
             <div
-              className={`flex items-center mb-[40px] md:mb-[50px] xl:mb-[80px] cursor-pointer ${
+              className={`flex items-center mb-[40px] md:mb-[50px] xl:mb-[80px] cursor-pointer mt-5 ${
                 animations.goUp4
               } ${leaveAnimation ? animations.leavePageDown1 : ""}`}
               onClick={() => history.back()}
@@ -225,10 +225,13 @@ export default function ProjectInfoES({ proyecto }) {
                     : "/arrow-left-black.svg"
                 }
                 alt="arrow to go to projects"
-                className={`h-[16px] w-[18px] md:h-[23px] md:w-[25px] md:me-2 me-1`}
+                className="h-[14px] w-[16px] 
+                md:h-[17px] md:w-[19px] 
+                xl:h-[19px] xl:w-[21px]
+                md:me-2 me-1"
               />
 
-              <p className="text-secondary dark:text-primary font-source font-bold md:text-[20px] text-[14px] hover:text-[18px] hover:md:text-[24px] transition-all">
+              <p className="text-secondary dark:text-primary font-source font-semibold md:text-[16px] xl:text-[20px] text-[14px] hover:text-[16px] hover:md:text-[18px] hover:xl:text-[22px]  transition-all hover:mb-[1px]">
                 {" "}
                 Volver a los proyectos
               </p>

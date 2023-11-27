@@ -90,12 +90,16 @@ body {
   @apply font-source xl:text-[55px] md:text-[45px] xs:text-[28px] text-[26px]  xl:leading-[55px] md:leading-[48px] leading-[30px] font-bold;
 }
 
+.heading1Sections {
+  @apply font-source xl:text-[55px] md:text-[45px] sm:text-[38px] 1xs:text-[31px] xs:text-[29px] text-[26px]  xl:leading-[55px] md:leading-[48px] leading-[30px] font-bold;
+}
+
 .heading1Menu {
   @apply font-source xl:text-[55px] md:text-[45px] xs:text-[38px] xxxs:text-[31px] xxxxs:text-[28px] text-[26px]  xl:leading-[50px] md:leading-[40px] leading-[30px] font-semibold;
 }
 
 .heading2 {
-  @apply font-source xl:text-[30px] sm:text-[19px] text-[15px] text-center xl:leading-[35px] sm:leading-[25px] leading-[20px] font-normal;
+  @apply font-source xl:text-[30px] sm:text-[19px] text-[16px] text-center xl:leading-[35px] sm:leading-[25px] leading-[20px] font-normal;
 }
 
 .heading2Menu {
@@ -111,11 +115,11 @@ body {
 }
 
 .links {
-  @apply font-source text-secondary dark:text-primary xl:text-[40px] md:text-[30px] sm:text-[20px] text-[15px] text-center font-bold;
+  @apply font-source text-secondary dark:text-primary xl:text-[40px] md:text-[30px] sm:text-[20px] text-[16px] text-center font-bold;
 }
 
 .projectsIcons {
-  @apply font-source xl:text-[18px] sm:text-[15px] text-[15px] text-center  font-normal;
+  @apply font-source xl:text-[18px] sm:text-[15px] 2xs:text-[13px] text-[12px] text-center  font-normal;
 }
 /*NAVBAR */
 
@@ -178,7 +182,7 @@ body {
   right: 0;
   bottom: -1.5px;
   width: 100%;
-  height: 3px;
+  height: 0;
   transition: opacity 0.3s ease-in-out;
 }
 
@@ -189,11 +193,11 @@ body {
   right: 0;
   bottom: -1.5px;
   width: 100%;
-  height: 3px;
+  height: 0;
   transition: opacity 0.3s ease-in-out;
 }
 
-@media (min-width: 425px) {
+@media (min-width: 550px) {
   .linksUnderlinesHomeBlack::after,
   .linksUnderlinesHomeWhite::after {
     height: 3px;
@@ -232,7 +236,7 @@ body {
   left: 0;
   bottom: -1px;
   width: 100%;
-  height: 3px;
+  height: 0;
   background-color: rgb(186 182 228);
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
@@ -244,7 +248,7 @@ body {
   left: 0;
   bottom: -1px;
   width: 100%;
-  height: 3px;
+  height: 0;
   background-color: #11101d;
   opacity: 1;
   transition: opacity 0.3s ease-in-out;

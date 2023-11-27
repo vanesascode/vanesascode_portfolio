@@ -154,11 +154,14 @@ export default function BlogPillES({ pill }) {
                     ? "/arrow-left-white.svg"
                     : "/arrow-left-black.svg"
                 }
-                alt="arrow to go to projects"
-                className={`h-[16px] w-[18px] md:h-[23px] md:w-[25px] md:me-2 me-1`}
+                alt="arrow to go to pills"
+                className="h-[14px] w-[16px] 
+                md:h-[17px] md:w-[19px] 
+                xl:h-[19px] xl:w-[21px]
+                md:me-2 me-1"
               />
 
-              <p className="text-secondary dark:text-primary font-source font-bold md:text-[20px] text-[14px] hover:text-[18px] hover:md:text-[24px] transition-all">
+              <p className="text-secondary dark:text-primary font-source font-semibold md:text-[16px] xl:text-[20px] text-[14px] hover:text-[16px] hover:md:text-[18px] hover:xl:text-[22px]  transition-all hover:mb-[1px]">
                 {" "}
                 Volver a las píldoras
               </p>

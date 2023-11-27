@@ -83,13 +83,13 @@ export default function HomeElements() {
 
             <div className="flexCenter">
               <div
-                className={`  md:pt-[60px] pt-[60px] ${
-                  animations.goUpHome
-                } paddingXBody ${
+                className={` pt-[80px] ${animations.goUpHome} paddingXBody ${
                   leaveAnimation ? animations.leavePageDown1 : ""
                 }`}
               >
-                <Link href="/projects">
+                <Link
+                  href={language === "english" ? "/projects" : "/proyectos"}
+                >
                   <div className="flexCenter">
                     <div
                       className={` relative ${
@@ -98,7 +98,7 @@ export default function HomeElements() {
                           : "linksUnderlinesHomeBlack"
                       }  `}
                     >
-                      <p className="links text-secondary dark:text-primary hover:text-accent dark:hover:text-accent mb-1">
+                      <p className="links text-secondary dark:text-primary hover:text-accent dark:hover:text-accent mb-1 tracking-tighter">
                         {language === "english"
                           ? "See my projects"
                           : "Visita mis proyectos"}
@@ -122,7 +122,7 @@ export default function HomeElements() {
 
             <div className="flexCenter">
               <div
-                className={`pt-2  ${animations.goUpHome}  ${
+                className={`pt-4  ${animations.goUpHome}  ${
                   leaveAnimation ? animations.leavePageDown1 : ""
                 }`}
               >
@@ -135,7 +135,7 @@ export default function HomeElements() {
                           : "linksUnderlinesHomeBlack"
                       } `}
                     >
-                      <p className="links text-secondary dark:text-primary hover:text-accent dark:hover:text-accent mb-1">
+                      <p className="links text-secondary dark:text-primary hover:text-accent dark:hover:text-accent mb-1 tracking-tighter">
                         {language === "english"
                           ? "More about me"
                           : "Más sobre mí"}

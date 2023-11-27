@@ -211,7 +211,7 @@ export default function ProjectInfo({ project }) {
 
             {/*BACK*/}
             <div
-              className={`flex items-center mb-[40px] md:mb-[50px] xl:mb-[80px] cursor-pointer ${
+              className={`flex items-center mb-[40px] md:mb-[50px] xl:mb-[80px] cursor-pointer   ${
                 animations.goUp4
               } ${leaveAnimation ? animations.leavePageDown1 : ""}`}
               onClick={() => history.back()}
@@ -223,10 +223,14 @@ export default function ProjectInfo({ project }) {
                     : "/arrow-left-black.svg"
                 }
                 alt="arrow to go to projects"
-                className={`h-[16px] w-[18px] md:h-[23px] md:w-[25px] md:me-2 me-1`}
+                className="
+                h-[14px] w-[16px] 
+                md:h-[17px] md:w-[19px] 
+                xl:h-[19px] xl:w-[21px]
+                md:me-2 me-1"
               />
 
-              <p className="text-secondary dark:text-primary font-source font-bold md:text-[20px] text-[14px] hover:text-[18px] hover:md:text-[24px] transition-all">
+              <p className="text-secondary dark:text-primary font-source font-semibold md:text-[16px] xl:text-[20px] text-[14px] hover:text-[16px] hover:md:text-[18px] hover:xl:text-[22px]  transition-all hover:mb-[1px]">
                 {" "}
                 Back to projects
               </p>
@@ -237,3 +241,5 @@ export default function ProjectInfo({ project }) {
     </>
   );
 }
+
+//xl:mb-[1px] md:mb-[0.6px] mb-[0.05px]
