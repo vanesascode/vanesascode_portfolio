@@ -87,7 +87,7 @@ body {
 }
 
 .heading1 {
-  @apply font-source xl:text-[55px] md:text-[45px] xs:text-[28px] text-[26px]  xl:leading-[50px] md:leading-[40px] leading-[30px] font-bold;
+  @apply font-source xl:text-[55px] md:text-[45px] xs:text-[28px] text-[26px]  xl:leading-[55px] md:leading-[48px] leading-[30px] font-bold;
 }
 
 .heading1Menu {

@@ -160,7 +160,7 @@ export default function BlogPillES({ pill }) {
 
               <p className="text-secondary dark:text-primary font-source font-bold md:text-[20px] text-[14px] hover:text-[18px] hover:md:text-[24px] transition-all">
                 {" "}
-                Back to pills
+                Volver a las píldoras
               </p>
             </div>
           </div>

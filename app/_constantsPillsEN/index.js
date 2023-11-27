@@ -1,13 +1,24 @@
 export const blogPillsEN = [
   {
+    url: "compiler-options-typescript",
+    date: "Nov 23, 2023",
+    title: "Compiler options in Typescript",
+    subtitle: "How to improve code quality and catch potential errors in Typescript using compiler options",
+    paragraph1: "When you are working with Typescript it may be very annoying to encounter errors due to having some 'any' or 'null' values in your code. The good news is that you can use compiler options to throw errors to alert you of the potential problems in your code. ",
+    paragraph2: "This compiler options can be set in a 'tsconfig.json' file. You can create one with the command 'tsc --init'. It contains all the configuration options uncommented for the TypeScript compiler, and then you can choose which ones to uncomment to make them apply.",
+    gistIdIn2: "0458d69d53fdd24b10ebd13d6121cb4c",
+    paragraph3: "For example, you can uncomment the 'noImplicitAny' compiler option to make it throw errors when you have 'any' values in your code. Or you can uncomment the 'strictNullChecks' compiler option to make it throw errors when you have 'null' values in your code. This will help you to catch potential errors in your code before you go any further with it.",
+    paragraph4: "Take into account, though, that, by default, the 'strict' compiler option is set to 'true'. That way, you have all strict type-checking options enabled. However, it is useful to know the different options you have in the tsconfig.json file in order to have more control over your code.",
+    linkName: "tsconfig.json docs",
+    linkUrl: "https://www.typescriptlang.org/docs/handbook/tsconfig-json.html",
+  },
+  {
     url: "how-to-write-commits",
     date: "Nov 23, 2023",
     title: "How to write good commits in GitHub",
     subtitle: "Tips to write good commits in GitHub so they follow best practices to ensure clear, concise, and meaningful commit messages.",
     paragraph1: "Well-written commit messages not only help you and your team understand the changes made, but also make it easier for others to contribute and maintain the codebase. In the command line, instead of typing 'git commit -m 'message', you can simply type 'git commit' and press Enter. This way, GitHub will prompt you to write a commit longer message in a new window inside VSCode. You then close and save, and you can continue with the next steps in the command line. Here you have some tips that can help you write good commit messages:",
-
     gistIdIn: "e983a2406fde27214d779809fa662b11",
-
     paragraph2: "Start with a concise subject line (up to 50 characters) that summarizes the purpose of the commit. Separate the subject from the body with a blank line. Then, in the commit body, provide more details about the changes made, explaining why they were necessary. Include any relevant context, such as issue numbers or references to related commits.",
     paragraph3: "Write commit messages in the present tense to describe what the commit does, rather than what it did. For example, use 'Add feature' instead of 'Added feature'. In fact, starting the subject line with an imperative verb, such as 'Add', 'Fix', 'Update', or 'Remove', helps to convey the intention of the commit.",
     paragraph4: "Each commit should have a clear and specific purpose. Avoid making unrelated changes in a single commit. If you have multiple changes, consider splitting them into separate commits. And finally,  think of following a consistent style and format for commit messages within your project. This makes it easier for others to understand and review your commits."

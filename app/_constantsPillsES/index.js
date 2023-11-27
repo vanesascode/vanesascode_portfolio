@@ -1,5 +1,18 @@
 export const blogPillsES = [
   {
+    url: "compiler-options-typescript-es",
+    date: "Nov 27, 2023",
+    title: "La compilación en TypeScript",
+    subtitle: "Cómo mejorar la calidad del código y detectar posibles errores en TypeScript utilizando las opciones de compilación",
+    paragraph1: "Cuando estás trabajando con TypeScript, puede ser muy molesto encontrarte con errores debido a tener algunos valores 'any' o 'null' en tu código. La buena noticia es que puedes utilizar las opciones del fichero compilador para lanzar errores y alertarte sobre los posibles problemas en tu código.",
+    paragraph2: "Estas opciones del compilador se pueden configurar en un archivo 'tsconfig.json'. Puedes crear uno con el comando 'tsc --init'. Contiene todas las opciones de configuración de compilación TypeScript, y luego puedes elegir cuáles descomentar para que se apliquen.",
+    gistIdIn2: "0458d69d53fdd24b10ebd13d6121cb4c",
+    paragraph3: "Por ejemplo, puedes descomentar la opción del compilador 'noImplicitAny' para que lance errores cuando tengas valores 'any' en tu código. O puedes descomentar la opción del compilador 'strictNullChecks' para que lance errores cuando tengas valores 'null' en tu código. Esto te ayudará a detectar posibles errores en tu código antes de avanzar más con él.",
+    paragraph4: "Ten en cuenta que, de forma predeterminada, la opción del compilador 'strict' está configurada como 'true'. De esta manera, tienes habilitadas todas las opciones de verificación de tipos estrictas. Sin embargo, es útil conocer las diferentes opciones que tienes en el archivo 'tsconfig.json' para tener un mayor control sobre tu código.",
+    linkName: "tsconfig.json docs",
+    linkUrl: "https://www.typescriptlang.org/docs/handbook/tsconfig-json.html",
+  },
+  {
     url: "how-to-write-commits-es",
     date: "Nov 23, 2023",
     title: "Como escribir buenos commits en GitHub",

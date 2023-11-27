@@ -16,6 +16,8 @@ And also, in the end, I used `Javascript`. This is because I really wanted to us
 
 As for `other tools`, the idea of using them came when encountering the challenge of something I had imagined I wanted to implement but didn't really know how when making the draft. So, in the moment I would search for a solution and find the proper code lines or maybe the library that would make it possible.
 
+---
+
 ### Design decisions
 
 The dynamic particles background was one of my first decisions and the one that gave place to others after. The fact that the particles are `always different` when you start the site and that they `keep changing` in a way you cannot expect, describe, I think, `the job of the developer` that has to start from a different point everytime and doesn't know what challenges and obstacles he/she will encounter in every project.
@@ -29,6 +31,8 @@ However, I was for sure that rounded forms wasn't going to define me. I am quite
 I was very careful with `consistency`, something that characterizes me in fact, so it ended up being a 'a piece' of work/art, and not a bag of chunks of different cool ideas, but ideas that not match...
 
 Perfectionism is another characteristic that defines me, so I spent hours defining sizes, paddings, widths, etc for all the screen breakpoints, so the design of the website was as `responsive` with all kinds of devices as possible.
+
+---
 
 ### Starting the project
 
@@ -50,6 +54,14 @@ The particles background added difficulty to what I just explained above, also, 
 
 Having to `rethink the process to achieve the many challenges from the draft`, is something that happened a lot during building the project. I think that in future projects, this may happen less due to more experience with the behaviour of the tools I am using.
 
+---
+
+### Index.js file for organization of components
+
+I have a lot of components of all kinds in the `_components` folder. However, instead of trying to organize them into different subfolders, which would of been a bit confusing too, I prefered to add an file in which I imported and exported them, and in which with only one glimpse you can see all of them, and `organized by sections` of the website. Also, makes `code cleaner` in the components in which they are imported.
+
+---
+
 ### BUG
 
 From the beginning of the process I realized there was some intrusive text in the project. There was a `;`symbol at the top of the layout and I was unable to find it, neither using the google tools, or just searching for it in the project in all the files.
@@ -59,9 +71,19 @@ I started by setting the root `color to transparent`, not to see it. That affect
 
 Also, when I created the menu and had to create a page from scratch in there, of course, `I had to add the annoying ";"symbol` at the top so I didn't have to repeat lots of general css settings I had for the navbar and rest.
 
-### INDEX.JS file for the components
+---
 
-I have a lot of components of all kinds in the `_components` folder. However, instead of trying to organize them into different subfolders, which would of been a bit confusing too, I prefered to add an file in which I imported and exported them, and in which with only one glimpse you can see all of them, and `organized by sections` of the website. Also, makes `code cleaner` in the components in which they are imported.
+### Working on the Spanish translation - NextJS Error: Hydration failed
+
+When I started working on the Spanish translation of the site, I focused it in the same way that I worked on the dark mode: Having two variables in the Context Api and implementing a text in one language or another depending on the state (which was also saved in local storage). I thought this would also help me reuse most of the components I had already built for the English original site. And that I would only need to create different constants files for each topic/language.
+
+However, when I started with the projects and blog sections, I started encountaring the typical Next Hydration error, which tells you that `Text content does not match server-rendered HTML`. I couldn't understand where it came from, since the English original components worked perfectly, so it couldn't be that I had some html in the server that wouldn't match the html in the client's side.
+
+I searched for it anyway, but couldn't find it. I watched some tutorials and read the docs, but the only the thing that helped, only with some text lines (ones that didn't come from the \_constants folders) was trying to supress the error by adding the attribute `suppressHydrationWarning`, which I found in the Next official Docs. However, it didn't work for all, and still, this solution wouldn't let me deploy the website.
+
+So, the only solution that worked for me was to duplicate all the pages and components for the projects and blog sections, and strictly separate both flows, both for the English and the Spanish ones. `It is a pity, because I had to duplicate a lot of code in my project`, but at least for now, I don't think I have an alternative.
+
+---
 
 ## 🔧🔨 Tools I used:
 

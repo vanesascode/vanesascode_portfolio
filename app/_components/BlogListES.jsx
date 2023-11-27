@@ -34,7 +34,7 @@ const BlogListES = ({ blogPills }) => {
               onMouseLeave={handleMouseLeave}
             >
               <div className="p-5 glassmorphism">
-                <p className="text-secondary dark:text-primary font-bold md:text-[25px] text-[18px] text-center p-2 font-source 1xl:line-clamp-1 2xl:line-clamp-none">
+                <p className="text-secondary dark:text-primary font-bold md:text-[25px] text-[18px] text-center p-2 font-source 1xl:line-clamp-1 xl:line-clamp-2 2xl:line-clamp-2">
                   {bp.title}
                 </p>
 
