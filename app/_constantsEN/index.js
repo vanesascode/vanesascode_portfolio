@@ -53,9 +53,9 @@ export const projects = [
 
     paragraph2: " Tailwind CSS has become my preferred CSS framework now due to its rapid development capabilities, comprehensive utility classes and flexible configuration options. It enables me to quickly style elements and build totally responsive user interfaces without the need for writing custom CSS.",
 
-    paragraph3: "I incorporated the React Slick library to create a carousel component. The offer section features a collage of elements with a static background, and I used relative-absolute positions and percentages for flexible and responsive design. I also designed and implemented the modals, which only appear once and can be reset by clearing the local storage.",
+    paragraph3: "I incorporated the React Slick library to create a carousel component. The offer section features was created with a collage of elements on a static background, and I used relative-absolute positions and percentages for flexible and responsive design. I also designed and implemented the modals, which only appear once and can be reset by clearing the local storage.",
 
-    paragraph4: "Vite streamlined the development process, optimized production builds, and enhanced the performance of Lizz Boots. However, Vite does not handle server-side rendering (SSR) or provide server-side functionality, so this project is purely frontend work, and I used Next.js for the following projects using React.",
+    paragraph4: "Vite streamlined the development process, optimized production builds, and enhanced the performance of Lizz Boots. However, Vite does not handle server-side rendering (SSR) or provide server-side functionality, so this project is purely frontend work, and I used Next.js for the following projects I was using React.",
   },
   {
     url: "zen-todo-list",
@@ -88,13 +88,13 @@ export const projects = [
     code: "https://github.com/vanesascode/contact-list-react-router-context-api-tsx-tailwind-vite",
     iconsLight: "/projects/icons-contactlist-light.png",
     iconsDark: "/projects/icons-contactlist-dark.png",
-    paragraph1: "This is one of the many projects made during the 4GeeksAcademy Bootcamp I took. We normally use a school template, but in this one I had the chance to configure it myself, so I could use Typescript, Vite and Tailwind.",
+    paragraph1: "This is one of the many projects made during the 4GeeksAcademy Bootcamp. We normally used a school template, but in this one I had the chance to configure it myself, so I could use Typescript, Vite and Tailwind.",
 
     paragraph2: "The application uses React Router for navigation and routing between different pages. The Context API is used for state management, allowing components to share and access data. Vite is used as the build tool for fast development and hot module replacement.",
 
-    paragraph3: "As part of the assignment, we had to connect the application to a school Restful Api and display the data. And so, the app can create, edit and remove different agendas and different contacts inside each agenda.",
+    paragraph3: "As part of the assignment, we had to connect the application to a school Restful Api and obtain the data from there. This way, the app can create, edit and remove different agendas and different contacts inside each agenda.",
 
-    paragraph4: "Please note that, this Api is owned by 4GeeksAcademy and its purporse is for learning, so the data displayed is automatically erased after some hours.",
+    paragraph4: "Please note that, this Api is owned by 4GeeksAcademy and its purporse is educational, so the data displayed is automatically erased after some hours.",
 
   },
   {
@@ -108,9 +108,9 @@ export const projects = [
     code: "https://github.com/vanesascode/web-selling-book-with-bootstrap-sass",
     iconsLight: "/projects/icons-everydayzen.png",
     iconsDark: "/projects/icons-everydayzen.png",
-    paragraph1: "I designed and built a landing page for the books of my favourite zen author, using Vanilla Javascript, Bootstrap, and Sass. In fact, in this project I deepened my knowledge of Bootstrap and used most of its components.",
+    paragraph1: "I designed and built a landing page for the books of my favourite zen author, using Vanilla Javascript, Bootstrap, and Sass. In fact, in this project I deepened my knowledge of Bootstrap and used many of its components.",
 
-    paragraph2: "Since Bootstrap colors are not customizable, I used Sass to change some of the class Bootstrap colors and add a unique look to the website.",
+    paragraph2: "Since Bootstrap's main colors are not customizable, I used Sass to change some of the class Bootstrap colors and add a unique look to the website.",
 
     paragraph3: "I created a file called 'styles.scss' in the 'static' folder of my project. In this file, I imported Bootstrap styles using @import '../node_modules/bootstrap/scss/bootstrap.scss'. To compile the SASS code into CSS, I installed the 'Live Sass Compiler' extension by Ritwick Dey in Visual Studio Code. I clicked on the 'Watch Sass' button and made the necessary changes in the 'scss' file. This triggered the compilation process and generated the 'styles.css' file.",
 
@@ -130,7 +130,7 @@ export const projects = [
     iconsDark: "/projects/icons-secondscounter-dark.png",
     paragraph1: "This is one of the many projects made during the 4GeeksAcademy Bootcamp I took. We normally use a school template, but in this one I had the chance to configure it myself, so I could try using Typescript, Vite and Tailwind (which are not taught during the Bootcamp)",
 
-    paragraph2: "It has a dark mode, but since the style of the site is very basic, I just decided to apply css classes to apply it, instead of the Tailwind own dark mode feature (which in fact, I didn't use it until I created this portfolio).",
+    paragraph2: "It has a dark mode, but since the style of the site is very basic, I just decided to apply css classes to apply it, instead of the Tailwind own dark mode feature (which in fact, I haven't used until I created this personal portfolio).",
 
     paragraph3: "The challenge of the project was to create a simple counter that starts counting the seconds once the browser is loaded. There are many ways of doing so, but I chose to use the useState and useEffect hooks, and the setInterval function. The reasons were the simplicity the useSates give you, the efficiecy of the useEffect hook and the real-time updates that the setInterval function offers. They three offer flexibility so you can easily modify the functionality of the counter by adding additional logic or modifying the interval duration without making significant changes to the code.",
 

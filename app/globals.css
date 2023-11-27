@@ -114,6 +114,9 @@ body {
   @apply font-source text-secondary dark:text-primary xl:text-[40px] md:text-[30px] sm:text-[20px] text-[15px] text-center font-bold;
 }
 
+.projectsIcons {
+  @apply font-source xl:text-[18px] sm:text-[15px] text-[15px] text-center  font-normal;
+}
 /*NAVBAR */
 
 .size-brackets-logo {

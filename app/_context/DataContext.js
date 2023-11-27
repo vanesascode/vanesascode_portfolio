@@ -11,7 +11,7 @@ export const DataProvider = ({ children }) => {
   const [language, setLanguage] = useState(() => {
     let initialLanguageMode = "english";
     if (typeof localStorage !== "undefined") { // because some environments other than the browser, such as React Native, don't have local storage
-      initialLanguageMode = localStorage.getItem("languageMode") || "language";
+      initialLanguageMode = localStorage.getItem("languageMode") || "english";
     }
     return initialLanguageMode;
   });

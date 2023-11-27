@@ -54,7 +54,7 @@ export default function ProjectInfoES({ proyecto }) {
               } ${leaveAnimation ? animations.leavePage3 : ""}`}
             >
               <a href={proyecto.link} target="_blank" rel="noreferrer">
-                <div className="flex gap-2 items-center flex-col">
+                <div className="flex gap-1 md:gap-2 items-center flex-col">
                   <img
                     src={
                       lightMode === "light"
@@ -62,14 +62,16 @@ export default function ProjectInfoES({ proyecto }) {
                         : "/projects/internet-black.svg"
                     }
                     alt="web icon"
-                    className={`h-[35px] md:h-[45px] ${animations.rotateWhenHovered}`}
+                    className={`h-[30px] 1xs:h-[35px] md:h-[40px] xl:h-[45px] ${animations.rotateWhenHovered}`}
                   />
-                  <p className="text-secondary dark:text-primary">Web</p>
+                  <p className="text-secondary dark:text-primary projectsIcons">
+                    Web
+                  </p>
                 </div>
               </a>
 
               <a href={proyecto.code} target="_blank" rel="noreferrer">
-                <div className="flex gap-2 items-center flex-col">
+                <div className="flex gap-1 md:gap-2  items-center flex-col">
                   <img
                     src={
                       lightMode === "light"
@@ -77,9 +79,11 @@ export default function ProjectInfoES({ proyecto }) {
                         : "/projects/github-black.svg"
                     }
                     alt="code icon"
-                    className={`h-[35px] md:h-[45px] ${animations.rotateWhenHovered}`}
+                    className={`h-[31px] 1xs:h-[36px] md:h-[41px] xl:h-[46px] ${animations.rotateWhenHovered}`}
                   />
-                  <p className="text-secondary dark:text-primary">Código</p>
+                  <p className="text-secondary dark:text-primary projectsIcons mt-[-0.8px]">
+                    Código
+                  </p>
                 </div>
               </a>
             </div>
@@ -132,8 +136,8 @@ export default function ProjectInfoES({ proyecto }) {
                     leaveAnimation ? animations.leavePageDown4 : ""
                   }`}
                 >
-                  <p className="text-secondary dark:text-primary tracking-[-1px] sm:tracking-normal pb-3">
-                    Technología utilizada:
+                  <p className="text-secondary dark:text-primary tracking-[-1px] sm:tracking-normal pb-3 leading-5">
+                    Tecnología utilizada:
                   </p>
                 </div>
               </div>

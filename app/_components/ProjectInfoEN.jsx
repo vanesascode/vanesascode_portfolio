@@ -52,7 +52,7 @@ export default function ProjectInfo({ project }) {
               } ${leaveAnimation ? animations.leavePage3 : ""}`}
             >
               <a href={project.link} target="_blank" rel="noreferrer">
-                <div className="flex gap-2 items-center flex-col">
+                <div className="flex gap-1 md:gap-2  items-center flex-col">
                   <img
                     src={
                       lightMode === "light"
@@ -60,14 +60,16 @@ export default function ProjectInfo({ project }) {
                         : "/projects/internet-black.svg"
                     }
                     alt="web icon"
-                    className={`h-[35px] md:h-[45px] ${animations.rotateWhenHovered}`}
+                    className={`h-[30px] 1xs:h-[35px] md:h-[40px] xl:h-[45px] ${animations.rotateWhenHovered}`}
                   />
-                  <p className="text-secondary dark:text-primary">Web</p>
+                  <p className="text-secondary dark:text-primary projectsIcons">
+                    Web
+                  </p>
                 </div>
               </a>
 
               <a href={project.code} target="_blank" rel="noreferrer">
-                <div className="flex gap-2 items-center flex-col">
+                <div className="flex gap-1 md:gap-2  items-center flex-col">
                   <img
                     src={
                       lightMode === "light"
@@ -75,9 +77,11 @@ export default function ProjectInfo({ project }) {
                         : "/projects/github-black.svg"
                     }
                     alt="code icon"
-                    className={`h-[35px] md:h-[45px] ${animations.rotateWhenHovered}`}
+                    className={`h-[31px] 1xs:h-[36px] md:h-[41px] xl:h-[46px]  ${animations.rotateWhenHovered}`}
                   />
-                  <p className="text-secondary dark:text-primary">Code</p>
+                  <p className="text-secondary dark:text-primary projectsIcons mt-[-0.8px]">
+                    Code
+                  </p>
                 </div>
               </a>
             </div>

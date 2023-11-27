@@ -49,13 +49,13 @@ export const proyectos = [
     iconsLight: "/projects/icons-lizzboots-light.png",
     iconsDark: "/projects/icons-lizzboots-dark.png",
 
-    paragraph1: "I designed and built a landing page for a fictional boots brand using React, TypeScript, Tailwind, and Vite. In fact, this project was the opportunity to learn Tailwind in more depth.",
+    paragraph1: "Diseñé y construí una landing page para una marca ficticia de botas utilizando React, TypeScript, Tailwind y Vite. De hecho, este proyecto fue una oportunidad para aprender Tailwind en mayor profundidad.",
 
-    paragraph2: " Tailwind CSS has become my preferred CSS framework now due to its rapid development capabilities, comprehensive utility classes and flexible configuration options. It enables me to quickly style elements and build totally responsive user interfaces without the need for writing custom CSS.",
+    paragraph2: "Tailwind CSS se ha convertido en mi framework CSS preferido debido a sus capacidades de desarrollo rápido, sus prácticas 'utility classes' y opciones de configuración flexibles. Me permite estilizar rápidamente elementos y construir interfaces de usuario totalmente responsivas sin necesidad de escribir CSS personalizado.",
 
-    paragraph3: "I incorporated the React Slick library to create a carousel component. The offer section features a collage of elements with a static background, and I used relative-absolute positions and percentages for flexible and responsive design. I also designed and implemented the modals, which only appear once and can be reset by clearing the local storage.",
+    paragraph3: "Incorporé la librería 'React Slick' para crear un componente carrusel. La sección de ofertas la creé con un collage de elementos encima de un fondo estático, y utilicé posiciones relativas-absolutas y porcentajes para un diseño flexible y responsivo. También diseñé e implementé los 'modals', que solo aparecen una vez y se pueden restablecer borrando el 'local storage'.",
 
-    paragraph4: "Vite streamlined the development process, optimized production builds, and enhanced the performance of Lizz Boots. However, Vite does not handle server-side rendering (SSR) or provide server-side functionality, so this project is purely frontend work, and I used Next.js for the following projects using React.",
+    paragraph4: "Vite optimizó el proceso de desarrollo, mejoró la construcción de producción y aumentó el rendimiento de Lizz Boots. Sin embargo, Vite no maneja el renderizado del lado del servidor (SSR) ni proporciona funcionalidad de servidor, por lo que este proyecto es puramente trabajo de frontend, y utilicé Next.js para los siguientes proyectos en los que utilizo React.",
   },
   {
     url: "zen-todo-list-es",
@@ -69,13 +69,13 @@ export const proyectos = [
     iconsLight: "/projects/icons-zentodolist.png",
     iconsDark: "/projects/icons-zentodolist.png",
 
-    paragraph1: "This is basically a zen themed todo-list to practice Typescript. It is esentially using classes, so it was also a good revision of object-oriented programming (OOP). The code follows the principles of encapsulation, singleton pattern, and separation of concerns between different components (Each class is responsible for one specific task, and it does not depend on the other classes. This makes the code more modular and easier to maintain).",
+    paragraph1: "Básicamente, se trata de una lista de tareas con temática zen para practicar TypeScript. Principalmente utiliza clases, por lo que también es una buena revisión de la programación orientada a objetos (OOP). El código sigue los principios de encapsulamiento, el patrón singleton y la separación de responsabilidades entre diferentes componentes (Cada clase es responsable de una tarea específica y no depende de las otras clases. Esto hace que el código sea más modular y fácil de mantener).",
 
-    paragraph2: "The Todo List is created using three classes: ListItem, FullList, ListTemplate. The ListItem class has three properties: id, item, and checked. The id property is a unique identifier for the item, the item property is the text of the item, and the checked property indicates whether the item is checked or not. ",
+    paragraph2: "La lista de tareas se crea utilizando tres clases: ListItem, FullList y ListTemplate. La clase ListItem tiene tres propiedades: id, item y checked. La propiedad id es un identificador único para el elemento, la propiedad item es el texto del elemento y la propiedad checked indica si el elemento está marcado o no.",
 
-    paragraph3: "The FullList class is a singleton class, which means that only one instance of it can be created. The FullList class has methods for loading, saving, clearing, adding, and removing items from the list. The ListTemplate class is responsible for rendering the list items on the DOM and handling user interactions. The ListTemplate class has a render method that takes a FullList instance as a parameter and renders the list items based on it. ",
+    paragraph3: "La clase FullList es una clase singleton, lo que significa que solo se puede crear una instancia de ella. La clase FullList tiene métodos para cargar, guardar, borrar, agregar y eliminar elementos de la lista. La clase ListTemplate es responsable de renderizar los elementos de la lista en el DOM y manejar las interacciones del usuario. La clase ListTemplate tiene un método render que recibe una instancia de FullList como parámetro y renderiza los elementos de la lista en base a ella.",
 
-    paragraph4: "The Todo List is initialized in the main.ts file. In the main.ts file, an instance of FullList is created and an instance of ListTemplate is created. Event listeners are added to handle form submissions and button clicks, and the initial data is loaded and rendered.",
+    paragraph4: "La lista de tareas se inicializa en el archivo main.ts. En el archivo main.ts se crea una instancia de FullList y una instancia de ListTemplate. Se añaden listeners de eventos para manejar el envío del formulario y los clics en los botones, y se carga y renderiza los datos iniciales.",
   },
   {
     url: "contact-list-es",
@@ -88,13 +88,13 @@ export const proyectos = [
     code: "https://github.com/vanesascode/contact-list-react-router-context-api-tsx-tailwind-vite",
     iconsLight: "/projects/icons-contactlist-light.png",
     iconsDark: "/projects/icons-contactlist-dark.png",
-    paragraph1: "This is one of the many projects made during the 4GeeksAcademy Bootcamp I took. We normally use a school template, but in this one I had the chance to configure it myself, so I could use Typescript, Vite and Tailwind.",
+    paragraph1: "Este es uno de los muchos proyectos realizados durante el Bootcamp de 4GeeksAcademy. Normalmente utilizábamos una plantilla escolar, pero en esta ocasión tuve la oportunidad de hacer la configuración yo, por lo que pude usar Typescript, Vite y Tailwind  (los cuales no se enseñan durante el Bootcamp).",
 
-    paragraph2: "The application uses React Router for navigation and routing between different pages. The Context API is used for state management, allowing components to share and access data. Vite is used as the build tool for fast development and hot module replacement.",
+    paragraph2: "La aplicación utiliza React Router para la navegación y el enrutamiento entre diferentes páginas. Se utiliza el Context API para la gestión de los estados, permitiendo que los componentes compartan y accedan a los datos. Vite se utiliza como la herramienta de construcción para un desarrollo rápido y 'hot module replacement'.",
 
-    paragraph3: "As part of the assignment, we had to connect the application to a school Restful Api and display the data. And so, the app can create, edit and remove different agendas and different contacts inside each agenda.",
+    paragraph3: "Como parte de la tarea, tuvimos que conectar la aplicación a una API Restful de la escuela y recoger los datos de ahí. De esta forma, la aplicación puede crear, editar y eliminar diferentes agendas y diferentes contactos dentro de cada agenda.",
 
-    paragraph4: "Please note that, this Api is owned by 4GeeksAcademy and its purporse is for learning, so the data displayed is automatically erased after some hours.",
+    paragraph4: "Por favor, tengan en cuenta que esta API es propiedad de 4GeeksAcademy y su propósito es educativo, por lo que los datos mostrados se borran automáticamente después de algunas horas.",
 
   },
   {
@@ -108,13 +108,13 @@ export const proyectos = [
     code: "https://github.com/vanesascode/web-selling-book-with-bootstrap-sass",
     iconsLight: "/projects/icons-everydayzen.png",
     iconsDark: "/projects/icons-everydayzen.png",
-    paragraph1: "I designed and built a landing page for the books of my favourite zen author, using Vanilla Javascript, Bootstrap, and Sass. In fact, in this project I deepened my knowledge of Bootstrap and used most of its components.",
+    paragraph1: "Diseñé y construí una landing page para los libros de mi autora zen favorita, utilizando Vanilla Javascript , Bootstrap y Sass. De hecho, en este proyecto profundicé en mi conocimiento de Bootstrap y utilicé muchos de sus componentes.",
 
-    paragraph2: "Since Bootstrap colors are not customizable, I used Sass to change some of the class Bootstrap colors and add a unique look to the website.",
+    paragraph2: "Dado que los colores principales de Bootstrap no son personalizables, utilicé Sass para cambiar algunos de los colores de clase de Bootstrap y agregar un aspecto único al sitio web.",
 
-    paragraph3: "I created a file called 'styles.scss' in the 'static' folder of my project. In this file, I imported Bootstrap styles using @import '../node_modules/bootstrap/scss/bootstrap.scss'. To compile the SASS code into CSS, I installed the 'Live Sass Compiler' extension by Ritwick Dey in Visual Studio Code. I clicked on the 'Watch Sass' button and made the necessary changes in the 'scss' file. This triggered the compilation process and generated the 'styles.css' file.",
+    paragraph3: "Creé un archivo llamado 'styles.scss' en la carpeta 'static' de mi proyecto. En este archivo, importé los estilos de Bootstrap usando @import '../node_modules/bootstrap/scss/bootstrap.scss'. Para compilar el código SASS a CSS, instalé la extensión 'Live Sass Compiler' de Ritwick Dey en Visual Studio Code. Hacía clic en el botón 'Watch Sass' y realizaba los cambios necesarios en el archivo 'scss'. Esto activaba el proceso de compilación y generaba el archivo 'styles.css'.",
 
-    paragraph4: "As for the Bootstrap components, they provide a consistent and responsive design across different devices and screen sizes, saving time and effort in development. However, they are not very much customizable and I think that they can be difficult to be modified in the future.",
+    paragraph4: "En cuanto a los componentes de Bootstrap, proporcionan un diseño consistente y adaptable en diferentes dispositivos y tamaños de pantalla, lo que ahorra tiempo y esfuerzo en el desarrollo. Sin embargo, no son muy personalizables y creo que pueden resultar difíciles de modificar en el futuro.",
   },
 
   {
@@ -128,13 +128,13 @@ export const proyectos = [
     code: "https://github.com/vanesascode/life-is-just-seconds-tailwind-react-tsx-vite",
     iconsLight: "/projects/icons-secondscounter-light.png",
     iconsDark: "/projects/icons-secondscounter-dark.png",
-    paragraph1: "This is one of the many projects made during the 4GeeksAcademy Bootcamp I took. We normally use a school template, but in this one I had the chance to configure it myself, so I could try using Typescript, Vite and Tailwind (which are not taught during the Bootcamp)",
+    paragraph1: "Este es uno de los muchos proyectos realizados durante el Bootcamp de 4GeeksAcademy. Normalmente utilizabamos una plantilla de la escuela, pero en esta ocasión tuve la oportunidad de configurarlo yo misma, por lo que pude probar a utilizar Typescript, Vite y Tailwind (los cuales no se enseñan durante el Bootcamp).",
 
-    paragraph2: "It has a dark mode, but since the style of the site is very basic, I just decided to apply css classes to apply it, instead of the Tailwind own dark mode feature (which in fact, I didn't use it until I created this portfolio).",
+    paragraph2: "Tiene un modo oscuro, pero como el estilo del sitio es muy básico, decidí simplemente aplicar clases CSS para implementarlo, en lugar de utilizar la función de modo oscuro propia de Tailwind (que de hecho, no he utilizado hasta la creación de este portafolio personal).",
 
-    paragraph3: "The challenge of the project was to create a simple counter that starts counting the seconds once the browser is loaded. There are many ways of doing so, but I chose to use the useState and useEffect hooks, and the setInterval function. The reasons were the simplicity the useSates give you, the efficiecy of the useEffect hook and the real-time updates that the setInterval function offers. They three offer flexibility so you can easily modify the functionality of the counter by adding additional logic or modifying the interval duration without making significant changes to the code.",
+    paragraph3: "El desafío del proyecto fue crear un contador simple que comienza a contar los segundos una vez que se carga el navegador. Hay muchas formas de hacerlo, pero elegí usar los hooks useState y useEffect, y la función setInterval. Las razones fueron la simplicidad que proporciona useState, la eficiencia del hook useEffect y las actualizaciones en tiempo real que ofrece la función setInterval. Los tres ofrecen flexibilidad para que puedas modificar fácilmente la funcionalidad del contador agregando lógica adicional o modificando la duración del intervalo sin realizar cambios significativos en el código.",
 
-    paragraph4: "It also has a button to toggle between fullscreen and normal screen, that works thanks to the fullscreen Api provided by the browser.",
+    paragraph4: "También tiene un botón para alternar entre pantalla completa y pantalla normal, que funciona gracias a la API de pantalla completa proporcionada por el navegador.",
   },
 
 ];
