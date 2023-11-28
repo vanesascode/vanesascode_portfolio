@@ -126,7 +126,7 @@ export default function HomeElements() {
                   leaveAnimation ? animations.leavePageDown1 : ""
                 }`}
               >
-                <Link href="/">
+                <Link href="/about">
                   <div className="flexCenter ">
                     <div
                       className={` relative ${

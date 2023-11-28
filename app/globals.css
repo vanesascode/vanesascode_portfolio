@@ -143,10 +143,6 @@ body {
   @apply px-[35px] lg:px-[90px];
 }
 
-.paddingYNavbar {
-  @apply py-[0px] lg:pt-[40px];
-}
-
 /*BLOG */
 
 .glassmorphism {

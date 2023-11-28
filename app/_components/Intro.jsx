@@ -16,13 +16,11 @@ const Intro = () => {
     return () => clearTimeout(timeout);
   }, []);
 
-  //container
-
   return (
     <>
       {intro && (
         <div
-          className={`flexCenter  h-screen ${animations.fadeOut} bg-primary `}
+          className={`flexCenter h-screen ${animations.fadeOut} bg-primary `}
         >
           <div>
             {/*TOP LINE*/}

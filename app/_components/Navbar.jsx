@@ -34,9 +34,9 @@ export default function Navbar() {
   };
 
   return (
-    <div className="fixed md:top-0 top-5 lg:left-20 lg:right-20 1xs:left-8 1xs:right-8 z-50 left-4 right-4">
+    <div className="fixed md:top-0 top-5 lg:left-10 lg:right-10 2xl:left-20 2xl:right-20 1xs:left-8 1xs:right-8 z-50 left-4 right-4">
       <div
-        className={`flex justify-between items-center paddingYNavbar navbar-index ${
+        className={`flex justify-between items-center 2xl:pt-[40px] navbar-index ${
           animations.goDown1
         } ${leaveAnimation ? animations.leavePage4 : ""}`}
       >
