@@ -105,7 +105,7 @@ export default function MenuElements() {
 
             {/*ABOUT LINK*/}
 
-            <Link href="/about">
+            <Link href={language === "english" ? "/about" : "/about-es"}>
               <div
                 className={`heading1Menu ${
                   lightMode === "light"

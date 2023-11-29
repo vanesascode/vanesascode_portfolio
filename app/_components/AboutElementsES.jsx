@@ -3,8 +3,8 @@ import { useContext } from "react";
 import animations from "../animations.module.css";
 import { useMediaQuery } from "react-responsive";
 import DataContext from "../_context/DataContext";
-import { technologiesPicsEN } from "../_constantsAboutEN";
-import { skillsEN } from "../_constantsAboutEN";
+import { technologiesPicsES } from "../_constantsAboutES";
+import { skillsES } from "../_constantsAboutES";
 import Link from "next/link";
 
 // IF YOU REFRESH THIS COMPONENT, THE ERROR : Hydration failed because the initial UI does not match what was rendered on the server. APPEARS BECAUSE OF THE useMediaQueries. YOU CAN IGNORE THE ERROR.
@@ -34,7 +34,7 @@ const AboutElementsEN = () => {
                 animations.goDown4
               } ${leaveAnimation ? animations.leavePage1 : ""}`}
             >
-              About me
+              Sobre mí
             </div>
             {/*DESCRIPTION*/}
             <div
@@ -42,17 +42,19 @@ const AboutElementsEN = () => {
                 animations.goDown3
               } ${leaveAnimation ? animations.leavePage2 : ""}`}
             >
-              I am a full stack developer based in the Spanish Pyrenees. When
-              I'm not coding or exploring new technologies, you can often find
-              me taking a walk in the mountains with my dog Walter.
+              Soy una desarrolladora full stack afincada en el Pirineo español.
+              Cuando no estoy escribiendo código ni explorando nuevas
+              tecnologías, a menudo puedes encontrarme dando un paseo por la
+              montaña con mi perro Walter.
               <br />
               <br />
-              In addition to my programming skills, I have a background in
-              teaching, music technology, and customer service. I bring a unique
-              blend of technology and creativity to the projects I build. I am
-              self-taught and independent, but I also excel at communication and
-              collaboration within productive teams. I have experience applying
-              agile methodologies and working remotely.
+              Además de mis habilidades de programación, tengo experiencia en
+              enseñanza, tecnología musical y atención al usuario. Aporto una
+              combinación única de tecnología y creatividad a los proyectos que
+              construyo. Soy autodidacta e independiente, pero también destaco
+              en la comunicación y colaboración dentro de equipos productivos.
+              Tengo experiencia aplicando metodologías ágiles y trabajando de
+              forma remota.
             </div>
             {/*CV PDF*/}
 
@@ -70,7 +72,7 @@ const AboutElementsEN = () => {
                 
                 transition-all xl:hover:mb-[2px]  cursor-pointer"
                 >
-                  My CV
+                  Mi CV
                 </div>
                 <img
                   src={
@@ -98,7 +100,7 @@ const AboutElementsEN = () => {
                 hover:scale-105
                 transition-all xl:hover:mb-[6px] max-xl:hover:mb-[1px] cursor-pointer"
                 >
-                  My Projects
+                  Mis Proyectos
                 </div>
                 <img
                   src={
@@ -126,7 +128,7 @@ const AboutElementsEN = () => {
                 hover:scale-105
                 transition-all xl:hover:mb-[8px] md:hover:mb-[1px] hover:mb-[1.5px]  cursor-pointer"
                 >
-                  My Blog
+                  Mi Blog
                 </div>
                 <img
                   src={
@@ -187,7 +189,7 @@ const AboutElementsEN = () => {
                   !isMin1280 && leaveAnimation ? animations.leavePage4 : ""
                 }`}
               >
-                Technologies
+                Tecnologías
               </div>
 
               <div
@@ -201,7 +203,7 @@ const AboutElementsEN = () => {
                 }`}
               >
                 {isMax374 || isMin980
-                  ? technologiesPicsEN.map((pic) => (
+                  ? technologiesPicsES.map((pic) => (
                       <div key={pic.lightPic} className="flexCenter">
                         <img
                           src={
@@ -215,7 +217,7 @@ const AboutElementsEN = () => {
                         />
                       </div>
                     ))
-                  : technologiesPicsEN.slice(0, -1).map((pic) => (
+                  : technologiesPicsES.slice(0, -1).map((pic) => (
                       <div key={pic.lightPic} className="flexCenter">
                         <img
                           src={
@@ -253,7 +255,7 @@ const AboutElementsEN = () => {
                 }`}
               >
                 {isMax767 || isMin1025
-                  ? skillsEN.map((skill) => (
+                  ? skillsES.map((skill) => (
                       <div
                         key={skill.skill}
                         className="bg-secondary dark:bg-primary  text-primary dark:text-secondary font-semibold text-[14px] md:text-[16px]  1xl:text-[18px]  md:p-2 p-1 rounded flexCenter"
@@ -261,7 +263,7 @@ const AboutElementsEN = () => {
                         {skill.skill}
                       </div>
                     ))
-                  : skillsEN.slice(0, -1).map((skill) => (
+                  : skillsES.slice(0, -1).map((skill) => (
                       <div
                         key={skill.skill}
                         className="bg-secondary dark:bg-primary  text-primary dark:text-secondary font-semibold text-[14px] md:text-[16px]  1xl:text-[18px]  md:p-2 p-1 rounded flexCenter"

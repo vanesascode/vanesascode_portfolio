@@ -1,4 +1,4 @@
-export const technologiesPics = [
+export const technologiesPicsEN = [
   {
     lightPic: "next-dark.png",
     darkPic: "next-light.png",
@@ -108,7 +108,7 @@ export const technologiesPics = [
   },
 ]
 
-export const skills = [
+export const skillsEN = [
   {
     skill: "Communication",
   },

@@ -126,7 +126,7 @@ export default function HomeElements() {
                   leaveAnimation ? animations.leavePageDown1 : ""
                 }`}
               >
-                <Link href="/about">
+                <Link href={language === "english" ? "/about" : "/about-es"}>
                   <div className="flexCenter ">
                     <div
                       className={` relative ${
