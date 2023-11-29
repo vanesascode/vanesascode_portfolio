@@ -17,6 +17,7 @@ import HomeElements from "./HomeElements";
 import MenuElements from "./MenuElements";
 // inner components:
 import LightMode from "./LightMode";
+import LanguageMode from "./LanguageMode";
 
 // PARTICLES:
 import ParticlesWhite from "./ParticlesWhite";
@@ -75,4 +76,5 @@ export {
   ContactElements,
   AboutElementsEN,
   AboutElementsES,
+  LanguageMode,
 };

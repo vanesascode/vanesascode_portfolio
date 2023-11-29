@@ -63,12 +63,13 @@ const AboutElementsEN = () => {
                 }`}
               >
                 <div
-                  className="text-secondary dark:text-primary  hover:text-accent dark:hover:text-accent font-source font-semibold 
-                xl:text-[29px] md:text-[22px]  text-[16px] mb-[1px]
-                 
-                hover:scale-105
-                
-                transition-all xl:hover:mb-[2px]  cursor-pointer"
+                  className="text-secondary dark:text-primary  hover:text-accent dark:hover:text-accent font-source  
+                  xl:text-[29px] 
+                  md:text-[22px]  
+                  text-[18px] 
+                  mb-[2px]
+                  hover:scale-105
+                  transition-all xl:hover:mb-[2px]  cursor-pointer tracking-tighter  font-bold"
                 >
                   My CV
                 </div>
@@ -93,8 +94,8 @@ const AboutElementsEN = () => {
                 }`}
               >
                 <div
-                  className="text-secondary dark:text-primary  hover:text-accent dark:hover:text-accent font-source font-semibold 
-                xl:text-[29px] md:text-[22px]  text-[16px] mb-[1px]
+                  className="text-secondary dark:text-primary  hover:text-accent dark:hover:text-accent font-source tracking-tighter  font-bold
+                xl:text-[29px] md:text-[22px]  text-[18px] mb-[2px]
                 hover:scale-105
                 transition-all xl:hover:mb-[6px] max-xl:hover:mb-[1px] cursor-pointer"
                 >
@@ -121,8 +122,8 @@ const AboutElementsEN = () => {
                 } ${leaveAnimation ? animations.leavePage3 : ""}`}
               >
                 <div
-                  className="text-secondary dark:text-primary  hover:text-accent dark:hover:text-accent font-source font-semibold 
-                xl:text-[29px] md:text-[22px]  text-[16px] mb-[1px]
+                  className="text-secondary dark:text-primary  hover:text-accent dark:hover:text-accent font-source tracking-tighter  font-bold
+                xl:text-[29px] md:text-[22px]  text-[18px] mb-[2px]
                 hover:scale-105
                 transition-all xl:hover:mb-[8px] md:hover:mb-[1px] hover:mb-[1.5px]  cursor-pointer"
                 >

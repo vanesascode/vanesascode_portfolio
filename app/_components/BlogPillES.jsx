@@ -74,7 +74,7 @@ export default function BlogPillES({ pill }) {
             <div
               className={` paragraph ${animations.goUp4} ${
                 leaveAnimation ? animations.leavePageDown1 : ""
-              }  mt-[10px] md:mt-[12px] xl:mt-[22px] px-[5px]`}
+              }  mt-[10px] md:mt-[12px] xl:mt-[22px] px-0`}
             >
               <p className="text-secondary dark:text-primary">
                 {pill.paragraph1}

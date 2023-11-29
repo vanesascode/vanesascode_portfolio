@@ -18,16 +18,21 @@ export default function HomeElements() {
           <div>
             <div className="flexCenter flex-col ">
               {/*TITLE*/}
-              <div className="max-w-5xl text-center heading1 ">
+              <div className="max-w-5xl text-center heading1Big">
                 <div>
                   <div
                     className={`${animations.goDownHome4} ${
                       leaveAnimation ? animations.leavePage1 : ""
                     }`}
                   >
-                    <p className="text-secondary dark:text-primary tracking-[-1px] sm:tracking-normal">
-                      {language === "english" ? "Hi, I'm" : "Hola, soy"}{" "}
-                      <br className="block sm:hidden " /> Vanesa Juarez,
+                    <p className="text-secondary dark:text-primary tracking-[-1px] sm:tracking-tight">
+                      {language === "english" ? "Hi, I'm" : "Hola, soy"}
+                      <br className="block sm:hidden " /> Vanesa Juarez
+                      <span className="lg:hidden">,</span>
+                      <span className="max-lg:hidden text-secondary dark:text-primary">
+                        {" "}
+                        Paris,
+                      </span>
                     </p>
                   </div>
                   <div
@@ -98,7 +103,12 @@ export default function HomeElements() {
                           : "linksUnderlinesHomeBlack"
                       }  `}
                     >
-                      <p className="links text-secondary dark:text-primary hover:text-accent dark:hover:text-accent mb-1 tracking-tighter">
+                      <p
+                        className="links
+                      mb-[5px]
+
+                      text-secondary dark:text-primary hover:text-accent dark:hover:text-accent  tracking-tighter"
+                      >
                         {language === "english"
                           ? "See my projects"
                           : "Visita mis proyectos"}
