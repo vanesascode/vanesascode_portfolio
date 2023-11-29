@@ -1,25 +1,25 @@
 import React from "react";
 import { useContext } from "react";
-
+import animations from "../animations.module.css";
 import { useMediaQuery } from "react-responsive";
-
 import DataContext from "../_context/DataContext";
-
 import { technologiesPics } from "../_constantsAbout";
 import { skills } from "../_constantsAbout";
 import Link from "next/link";
 
-const AboutElements = () => {
+// IF YOU REFRESH THIS COMPONENT, THE ERROR : Hydration failed because the initial UI does not match what was rendered on the server. APPEARS BECAUSE OF THE useMediaQueries. YOU CAN IGNORE THE ERROR.
+
+const AboutElementsEN = () => {
   const { lightMode, showMenu, leaveAnimation, language } =
     useContext(DataContext);
-
-  //Technologies pics:
 
   const isMin980 = useMediaQuery({ query: "(min-width: 980px)" });
   const isMax374 = useMediaQuery({ query: "(max-width: 374px)" });
 
   const isMax767 = useMediaQuery({ query: "(max-width: 767px)" });
   const isMin1025 = useMediaQuery({ query: "(min-width: 1025px)" });
+
+  const isMin1280 = useMediaQuery({ query: "(min-width: 1280px)" });
 
   return (
     <>
@@ -29,11 +29,19 @@ const AboutElements = () => {
 
           <div className="xl:w-2/5 xl:pe-10">
             {/*TITLE*/}
-            <div className="text-secondary dark:text-primary heading1 text-center">
+            <div
+              className={`text-secondary dark:text-primary heading1 text-center ${
+                animations.goDown4
+              } ${leaveAnimation ? animations.leavePage1 : ""}`}
+            >
               About me
             </div>
             {/*DESCRIPTION*/}
-            <div className=" mt-5 text-secondary dark:text-primary font-semibold md:text-[16px] lg:text-[18px] 1xl:text-[20px] text-[14px]">
+            <div
+              className={`mt-5 text-secondary dark:text-primary font-semibold md:text-[16px] lg:text-[18px] 1xl:text-[20px] text-[14px] ${
+                animations.goDown3
+              } ${leaveAnimation ? animations.leavePage2 : ""}`}
+            >
               I am a full stack developer based in the Spanish Pyrenees. When
               I'm not coding or exploring new technologies, you can often find
               me taking a walk in the mountains with my dog.
@@ -43,13 +51,17 @@ const AboutElements = () => {
               teaching, music technology, and communication. I bring a unique
               blend of technology and creativity to my coding projects. I am
               self-taught and independent, but I also excel at communication and
-              collaboration within productive teams. I have valuable experience
-              working remotely.
+              collaboration within productive teams. I have experience applying
+              agile methodologies and working remotely.
             </div>
             {/*CV PDF*/}
 
             <a href="/about/vanesa-juarez-cv-nov-2023.pdf" download>
-              <div className="flexCenter pt-10">
+              <div
+                className={`${animations.goDown2} flexCenter pt-10 ${
+                  leaveAnimation ? animations.leavePage3 : ""
+                }`}
+              >
                 <div
                   className="text-secondary dark:text-primary  hover:text-accent dark:hover:text-accent font-source font-semibold 
                 xl:text-[29px] md:text-[22px]  text-[16px] mb-[1px]
@@ -75,7 +87,11 @@ const AboutElements = () => {
             {/*PROJECTS*/}
 
             <Link href={language === "english" ? "/projects" : "/proyectos"}>
-              <div className="flexCenter mt-4">
+              <div
+                className={`flexCenter mt-4 ${animations.goDown2} ${
+                  leaveAnimation ? animations.leavePage3 : ""
+                }`}
+              >
                 <div
                   className="text-secondary dark:text-primary  hover:text-accent dark:hover:text-accent font-source font-semibold 
                 xl:text-[29px] md:text-[22px]  text-[16px] mb-[1px]
@@ -99,7 +115,11 @@ const AboutElements = () => {
             {/*BLOG*/}
 
             <Link href={language === "english" ? "/blog" : "/blog-es"}>
-              <div className="flexCenter mt-4 xl:mb-[40px]">
+              <div
+                className={`flexCenter mt-4 xl:mb-[40px]  ${
+                  animations.goDown2
+                } ${leaveAnimation ? animations.leavePage3 : ""}`}
+              >
                 <div
                   className="text-secondary dark:text-primary  hover:text-accent dark:hover:text-accent font-source font-semibold 
                 xl:text-[29px] md:text-[22px]  text-[16px] mb-[1px]
@@ -124,8 +144,12 @@ const AboutElements = () => {
           {/*CENTER************************************************************************/}
 
           <div className="xl:w-1/5 flexCenter">
-            <div className="xl:hidden">
-              {/*MY PICTURE*/}
+            <div
+              className={`xl:hidden ${animations.goDown1} ${
+                leaveAnimation ? animations.leavePage4 : ""
+              }`}
+            >
+              {/*MY PICTURE - HORIZONTAL*/}
 
               <img
                 src="/about/vanesa-walter-horizontal.jpg"
@@ -133,13 +157,17 @@ const AboutElements = () => {
                 className=" my-[40px] object-contain"
               />
             </div>
-            <div className="max-xl:hidden">
-              {/*MY PICTURE*/}
+            <div
+              className={`max-xl:hidden ${animations.goDown3} ${
+                leaveAnimation ? animations.leavePage2 : ""
+              }`}
+            >
+              {/*MY PICTURE - VERTICAL*/}
 
               <img
                 src="/about/vanesa-walter-vertical.jpg"
                 alt="bracket"
-                className="py-[40px] object-contain h-screen"
+                className="py-[40px] object-contain h-screen "
               />
             </div>
           </div>
@@ -150,15 +178,27 @@ const AboutElements = () => {
             <div className="flex flex-col w-full">
               {/*Technologies*/}
 
-              <div className="text-secondary dark:text-primary heading1 text-center xl:ps-10 tracking-tight">
+              <div
+                className={`text-secondary dark:text-primary heading1 text-center xl:ps-10 tracking-tight ${
+                  isMin1280 ? animations.goDown4 : animations.goDown1
+                } ${
+                  isMin1280 && leaveAnimation ? animations.leavePage1 : ""
+                }  ${
+                  !isMin1280 && leaveAnimation ? animations.leavePage4 : ""
+                }`}
+              >
                 Technologies
               </div>
 
               <div
-                className="xl:ps-10 text-center
+                className={`xl:ps-10 text-center
               grid xxxxs:grid-cols-3  xs:grid-cols-4 1md:grid-cols-4 2md:grid-cols-5 3md:grid-cols-6 lg:grid-cols-7 mt-6
               
-               xxxxs:gap-3  lg:gap-4 "
+               xxxxs:gap-3  lg:gap-4 ${
+                 isMin1280 ? animations.goDown3 : animations.goDown1
+               } ${isMin1280 && leaveAnimation ? animations.leavePage2 : ""}  ${
+                  !isMin1280 && leaveAnimation ? animations.leavePage4 : ""
+                }`}
               >
                 {isMax374 || isMin980
                   ? technologiesPics.map((pic) => (
@@ -192,10 +232,26 @@ const AboutElements = () => {
 
               {/*skills*/}
 
-              <div className="text-secondary dark:text-primary heading1 text-center mt-10 1xl:mt-[100px] 2xl:mt-[150px] ">
+              <div
+                className={`text-secondary dark:text-primary heading1 text-center mt-10 1xl:mt-[100px] 2xl:mt-[150px]  ${
+                  isMin1280 ? animations.goDown2 : animations.goDown1
+                } ${
+                  isMin1280 && leaveAnimation ? animations.leavePage3 : ""
+                }  ${
+                  !isMin1280 && leaveAnimation ? animations.leavePage4 : ""
+                }`}
+              >
                 Skills
               </div>
-              <div className="xl:ps-10 grid md:grid-cols-2 lg:grid-cols-3 text-center gap-2 md:gap-3 lg:gap-4 mt-6 mb-[40px]">
+              <div
+                className={`xl:ps-10 grid md:grid-cols-2 lg:grid-cols-3 text-center gap-2 md:gap-3 lg:gap-4 mt-6 mb-[40px] ${
+                  animations.goDown1
+                } ${
+                  isMin1280 && leaveAnimation ? animations.leavePage3 : ""
+                }  ${
+                  !isMin1280 && leaveAnimation ? animations.leavePage4 : ""
+                }`}
+              >
                 {isMax767 || isMin1025
                   ? skills.map((skill) => (
                       <div
@@ -222,4 +278,4 @@ const AboutElements = () => {
   );
 };
 
-export default AboutElements;
+export default AboutElementsEN;

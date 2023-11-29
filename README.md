@@ -134,7 +134,9 @@ Find info [HERE](https://github.com/tsparticles)
 - npm i tsparticles-slim
 - npm i tsparticles-engine
 
-### 🔹 Embedding Gist snippets in the blog
+### 🔹 GIST-REACT
+
+Embedding Gist snippets in the blog:
 
 I tried many different libraries, but the only that really worked for me was [THIS ONE](https://www.npmjs.com/package/gist-react)
 
@@ -148,5 +150,22 @@ const gistId = 'abcdefg';
 const App = () => {
   return <Gist gistId={gistId} />;
 };
+
+```
+
+### 🔹 REACT-RESPONSIVE
+
+This [library](https://www.npmjs.com/package/react-responsive) provides a set of React components for building responsive UIs based on the viewport size. It simplifies working with media queries in React applications. Especifically, it has a custom hook that works just like the 'window.innerWidth', the 'useMediaQuery' hook.
+
+- npm i react-responsive
+
+```
+import { useMediaQuery } from "react-responsive";
+
+const isMin1280 = useMediaQuery({ query: "(min-width: 1280px)" });
+
+<div className={`text-secondary dark:text-primary heading1 text-center xl:ps-10 tracking-tight ${isMin1280 ? animations.goDown4 : animations.goDown1}`}>
+    Technologies
+</div>
 
 ```

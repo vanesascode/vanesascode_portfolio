@@ -45,7 +45,8 @@ import SocialmediaShareIcons from "./SocialmediaShareIcons";
 import ContactElements from "./ContactElements";
 
 // ABOUT:
-import AboutElements from "./AboutElements";
+import AboutElementsEN from "./AboutElementsEN";
+// import AboutElementsES from "./AboutElementsES";
 
 export {
   Intro,
@@ -72,5 +73,6 @@ export {
   BlogListES,
   SocialmediaShareIcons,
   ContactElements,
-  AboutElements,
+  AboutElementsEN,
+  // AboutElementsES,
 };

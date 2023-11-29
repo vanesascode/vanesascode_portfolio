@@ -1,5 +1,18 @@
 export const blogPillsES = [
   {
+    url: "viewport-conditionals-react",
+    date: "Nov 29, 2023",
+    title: "Viewport conditionals in React",
+    subtitle: "How to perform JavaScript logic based on the viewport width in React",
+    paragraph1: "Have you ever needed to apply different styles to your website based on the viewport width? If so, you may have tried to use the 'window.innerWidth' property. However, this property will give you an error in the console if you are working with React. It will tell you that 'window' is not defined.",
+    paragraph2: "There's a library for that, and that is 'react-responsive'. This library provides a set of React components for building responsive UIs based on the viewport size. It simplifies working with media queries in React applications. Especifically, it has a custom hook that works just like the 'window.innerWidth', the 'useMediaQuery' hook. The following is a real example I used in this portfolio: ",
+    gistIdIn2: "615984aa4ec10c85ff0a9e3693a25de3",
+    paragraph3: "The useMediaQuery hook accepts an options object where you can define the media query conditions. The options object can have properties such as minWidth, maxWidth, minHeight, maxHeight, and more. These properties allow you to specify the minimum and maximum values for the viewport width and height.",
+    paragraph4: "When you use the useMediaQuery hook with the specified options, it returns a boolean value that indicates whether the media query condition is true or false based on the current viewport size. If the media query condition is met, the returned boolean value will be true, otherwise it will be false.",
+    linkName: "react-responsive docs",
+    linkUrl: "https://www.npmjs.com/package/react-responsive",
+  },
+  {
     url: "compiler-options-typescript-es",
     date: "Nov 27, 2023",
     title: "La compilación en TypeScript",
