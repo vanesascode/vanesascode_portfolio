@@ -59,7 +59,12 @@ export default function BlogPillES({ pill }) {
 
               {/*DATE*/}
 
-              <p className="text-secondary dark:text-primary paragraph px-[5px] max-xs:ml-[30px]">
+              <p
+                className="text-secondary dark:text-primary date_text 
+              px-[5px] 
+              max-xs:ml-[30px] 
+              xl:tracking-wider"
+              >
                 {pill.date}
               </p>
             </div>

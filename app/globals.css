@@ -145,6 +145,11 @@ body {
 
 /*BLOG */
 
+.date_text {
+  @apply xl:text-[23px] md:text-[18px] xxs:text-[16px] text-[14px] text-end
+  font-normal;
+}
+
 .glassmorphism {
   @apply rounded border-none  bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-4;
 }

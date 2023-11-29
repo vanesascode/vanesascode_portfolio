@@ -9,7 +9,7 @@ import Link from "next/link";
 
 // IF YOU REFRESH THIS COMPONENT, THE ERROR : Hydration failed because the initial UI does not match what was rendered on the server. APPEARS BECAUSE OF THE useMediaQueries. YOU CAN IGNORE THE ERROR.
 
-const AboutElementsEN = () => {
+const AboutElementsES = () => {
   const { lightMode, showMenu, leaveAnimation, language } =
     useContext(DataContext);
 
@@ -280,4 +280,4 @@ const AboutElementsEN = () => {
   );
 };
 
-export default AboutElementsEN;
+export default AboutElementsES;

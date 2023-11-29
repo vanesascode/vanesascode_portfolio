@@ -43,8 +43,13 @@ export default function SocialmediaShareIcons({ pill }) {
   };
 
   return (
-    <div className="px-[5px] flex items-center gap-[12px] xl:gap-[18px]  xs:flex-row max-xs:grid grid-cols-3 max-xs:mb-1">
+    <div
+      className="px-[5px] flex items-center  xs:flex-row max-xs:grid grid-cols-2 max-xs:mb-1
+    
+     xl:gap-[25px] md:gap-[20px] xs:gap-[18px] gap-[15px] "
+    >
       <button onClick={handleTwitterShare}>
+        {/*TWITTER */}
         <img
           src={
             lightMode === "light"
@@ -52,10 +57,11 @@ export default function SocialmediaShareIcons({ pill }) {
               : "/blog/twitterx-black.svg"
           }
           alt="Twitter share icon"
-          className="h-[10px] md:h-[15px]  xl:h-[20px]  "
+          className="h-[12px] md:h-[15.5px]  xl:h-[20px]  "
         />
       </button>
       <button onClick={handleWhatsAppShare}>
+        {/*WHASAPP */}
         <img
           src={
             lightMode === "light"
@@ -63,11 +69,12 @@ export default function SocialmediaShareIcons({ pill }) {
               : "/blog/whatsapp-black.svg"
           }
           alt=" share icon"
-          className="h-[10px] md:h-[15px]  xl:h-[20px]  "
+          className="h-[12px] md:h-[15px]  xl:h-[20px]  "
         />
       </button>
 
       <button onClick={handleLinkedInShare}>
+        {/*LINKEDIN */}
         <img
           src={
             lightMode === "light"
@@ -75,11 +82,11 @@ export default function SocialmediaShareIcons({ pill }) {
               : "/blog/linkedin-black.svg"
           }
           alt="linkedin share icon"
-          className="h-[14px]    mb-[0px] 
+          className="h-[14px]  max-xs:ms-[-1px] 
 
-          xs:mb-[0.5px] xs:h-[14px]
+          xs:mb-[0.5px] xs:h-[16px]
 
-          sm:mb-0 sm:h-[14px]
+          sm:mb-0 
           
           md:mb-[-0.4px]  md:h-[19.5px]
 
@@ -87,6 +94,7 @@ export default function SocialmediaShareIcons({ pill }) {
         />
       </button>
       <button onClick={handleEmailShare}>
+        {/*EMAIL */}
         <img
           src={
             lightMode === "light"
@@ -94,11 +102,11 @@ export default function SocialmediaShareIcons({ pill }) {
               : "/blog/email-black.svg"
           }
           alt="email share icon"
-          className="h-[10px]   mb-[-0.7px]
+          className="h-[12px]   mb-[-0.7px]
 
-          xs:mb-[0px] xs:h-[13px]
+          xs:mb-[0px] xs:h-[14px]
 
-          sm:mb-0 sm:h-[14px]
+          sm:mb-0 
 
           md:mb-[-1px] md:h-[18.5px] 
 

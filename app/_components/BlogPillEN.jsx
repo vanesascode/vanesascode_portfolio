@@ -53,13 +53,18 @@ export default function BlogPillEN({ pill }) {
             <div
               className={` ${animations.goDown2} ${
                 leaveAnimation ? animations.leavePage3 : ""
-              } border-b-2 border-secondary dark:border-primary w-full flex justify-between items-center mt-[50px] xl:mt-[70px] `}
+              } border-b-2 border-secondary dark:border-primary w-full flex justify-between items-center max-xs:items-end mt-[50px] xl:mt-[70px] `}
             >
               <SocialmediaShareIcons pill={pill} />
 
               {/*DATE*/}
 
-              <p className="text-secondary dark:text-primary paragraph px-[5px] max-xs:ml-[30px]">
+              <p
+                className="text-secondary dark:text-primary date_text 
+              px-[5px] 
+              max-xs:ml-[30px] 
+              xl:tracking-wider"
+              >
                 {pill.date}
               </p>
             </div>
@@ -69,12 +74,14 @@ export default function BlogPillEN({ pill }) {
             <div
               className={` paragraph ${animations.goUp4} ${
                 leaveAnimation ? animations.leavePageDown1 : ""
-              }  mt-[10px] md:mt-[12px] xl:mt-[22px] px-[5px]`}
+              }  mt-[10px] md:mt-[12px] xl:mt-[22px] px-0`}
             >
               <p className="text-secondary dark:text-primary">
                 {pill.paragraph1}
               </p>
+
               {/*IMAGE 1*/}
+
               <div
                 className={`
               mt-[10px] md:mt-[12px] xl:mt-[22px] 2xl:w-[900px] 1xl:w-[800px] xl:w-[650px] 1md:w-[550px] md:w-[500px] w-full mx-auto ${
@@ -83,7 +90,9 @@ export default function BlogPillEN({ pill }) {
               >
                 <Gist gistId={pill.gistIdIn} />;
               </div>
+
               {/*PARAGRAPH 2*/}
+
               <p className="text-secondary dark:text-primary">
                 {pill.paragraph2}
               </p>
