@@ -1,19 +1,19 @@
 export const blogPillsES = [
   {
-    url: "viewport-conditionals-react",
+    url: "viewport-conditionales-react-es",
     date: "Nov 29, 2023",
-    title: "Viewport conditionals in React",
-    subtitle: "How to perform JavaScript logic based on the viewport width in React",
-    paragraph1: "Have you ever needed to apply different styles to your website based on the viewport width? If so, you may have tried to use the 'window.innerWidth' property. However, this property will give you an error in the console if you are working with React. It will tell you that 'window' is not defined.",
-    paragraph2: "There's a library for that, and that is 'react-responsive'. This library provides a set of React components for building responsive UIs based on the viewport size. It simplifies working with media queries in React applications. Especifically, it has a custom hook that works just like the 'window.innerWidth', the 'useMediaQuery' hook. The following is a real example I used in this portfolio: ",
+    title: "Conditionales de Viewport en React",
+    subtitle: "Cómo implementar lógica JavaScript en función del ancho del viewport en React",
+    paragraph1: "¿Alguna vez has necesitado aplicar diferentes estilos a tu sitio web en función del ancho del viewport? Si es así, es posible que haya intentado utilizar la propiedad 'window.innerWidth'. Sin embargo, esta propiedad te dará un error en la consola si está trabajando con React. Te dirá que 'window' no está definido.",
+    paragraph2: "Existe una biblioteca específica para este propósito, llamada 'react-responsive'. Esta biblioteca proporciona un conjunto de componentes React para crear interfaces de usuario responsivas en función del tamaño del viewport. Simplifica el trabajo con los 'media queries' en aplicaciones React. Específicamente, tiene un hook personalizado que funciona de manera similar a 'window.innerWidth', llamado 'useMediaQuery'. El siguiente es un ejemplo real que utilicé en este portafolio:",
     gistIdIn2: "615984aa4ec10c85ff0a9e3693a25de3",
-    paragraph3: "The useMediaQuery hook accepts an options object where you can define the media query conditions. The options object can have properties such as minWidth, maxWidth, minHeight, maxHeight, and more. These properties allow you to specify the minimum and maximum values for the viewport width and height.",
-    paragraph4: "When you use the useMediaQuery hook with the specified options, it returns a boolean value that indicates whether the media query condition is true or false based on the current viewport size. If the media query condition is met, the returned boolean value will be true, otherwise it will be false.",
+    paragraph3: "El hook useMediaQuery acepta un objeto de opciones donde puedes definir las condiciones de los 'media query'. El objeto de opciones puede tener propiedades como minWidth, maxWidth, minHeight, maxHeight y más. Estas propiedades te permiten especificar los valores mínimo y máximo para el ancho y alto del viewport.",
+    paragraph4: "Cuando utilizas el hook 'useMediaQuery' con las opciones especificadas, devuelve un valor booleano que indica si la condición del media query es verdadera o falsa en función del tamaño actual del viewport. Si se cumple la condición del query media, el valor booleano devuelto será verdadero; de lo contrario, será falso.",
     linkName: "react-responsive docs",
     linkUrl: "https://www.npmjs.com/package/react-responsive",
   },
   {
-    url: "compiler-options-typescript-es",
+    url: "opciones-compilacion-typescript-es",
     date: "Nov 27, 2023",
     title: "La compilación en TypeScript",
     subtitle: "Cómo mejorar la calidad del código y detectar posibles errores en TypeScript utilizando las opciones de compilación",
@@ -26,81 +26,75 @@ export const blogPillsES = [
     linkUrl: "https://www.typescriptlang.org/docs/handbook/tsconfig-json.html",
   },
   {
-    url: "how-to-write-commits-es",
+    url: "como-escribir-commits-es",
     date: "Nov 23, 2023",
-    title: "Como escribir buenos commits en GitHub",
-    subtitle: "Tips to write good commits in GitHub so they follow best practices to ensure clear, concise, and meaningful commit messages.",
-    paragraph1: "Well-written commit messages not only help you and your team understand the changes made, but also make it easier for others to contribute and maintain the codebase. In the command line, instead of typing 'git commit -m 'message', you can simply type 'git commit' and press Enter. This way, GitHub will prompt you to write a commit longer message in a new window inside VSCode. You then close and save, and you can continue with the next steps in the command line. Here you have some tips that can help you write good commit messages:",
+    title: "Cómo escribir buenos commits en GitHub",
+    subtitle: "Consejos para escribir buenos commits en GitHub, seguir las mejores prácticas y garantizar mensajes claros, concisos y significativos.",
+    paragraph1: "Los mensajes de commit bien escritos no solo te ayudan a ti y a tu equipo a comprender los cambios realizados, sino que también facilitan que otros contribuyan y mantengan el código base. En la línea de comandos, en lugar de escribir 'git commit -m 'message', simplemente puedes escribir 'git commit' y presionar Enter. De esta manera, GitHub te pedirá que escribas un mensaje de commit más largo en una nueva ventana dentro de VSCode. Luego, cierra y guarda, y puedes continuar con los siguientes pasos en la línea de comandos. Aquí tienes algunos consejos que pueden ayudarte a escribir buenos mensajes de commit:",
 
     gistIdIn: "e983a2406fde27214d779809fa662b11",
 
-    paragraph2: "Start with a concise subject line (up to 50 characters) that summarizes the purpose of the commit. Separate the subject from the body with a blank line. Then, in the commit body, provide more details about the changes made, explaining why they were necessary. Include any relevant context, such as issue numbers or references to related commits.",
-    paragraph3: "Write commit messages in the present tense to describe what the commit does, rather than what it did. For example, use 'Add feature' instead of 'Added feature'. In fact, starting the subject line with an imperative verb, such as 'Add', 'Fix', 'Update', or 'Remove', helps to convey the intention of the commit.",
-    paragraph4: "Each commit should have a clear and specific purpose. Avoid making unrelated changes in a single commit. If you have multiple changes, consider splitting them into separate commits. And finally,  think of following a consistent style and format for commit messages within your project. This makes it easier for others to understand and review your commits."
+    paragraph2: "Comienza con una línea de asunto concisa (hasta 50 caracteres) que resuma el propósito del commit. Separa el asunto del cuerpo con una línea en blanco. Luego, en el cuerpo del commit, proporciona más detalles sobre los cambios realizados, explicando por qué fueron necesarios. Incluye cualquier contexto relevante, como números de issue o referencias a commits relacionados.",
+    paragraph3: "Escribe en tiempo presente para describir lo que hace el commit, en lugar de lo que hizo. Por ejemplo, usa 'Agregar característica' en lugar de 'Se agregó característica'. De hecho, comenzar la línea de asunto con un verbo imperativo, como 'Agregar', 'Corregir', 'Actualizar' o 'Eliminar', ayuda a transmitir la intención del commit.",
+    paragraph4: "Cada commit debe tener un propósito claro y específico. Evita realizar cambios no relacionados en un solo commit. Si tienes varios cambios, considera dividirlos en commits separados. Y finalmente, piensa en seguir un estilo y formato coherentes para los mensajes de commit dentro de tu proyecto. Esto facilita que otros comprendan y revisen tus commits."
   },
   {
-    url: "how-to-use-JSDoc-comments-es",
+    url: "como-usar-JSDoc-comentarios-es",
     date: "Nov 19, 2023",
-    title: "How to use JSDoc comments with VS Code",
-    subtitle: "Leverage the benefits of static type checking provided by TypeScript while still enjoying the flexibility and expressiveness of JavaScript.",
-    paragraph1: "JSDoc is a markup language used to annotate JavaScript code with documentation comments. It allows you to describe the purpose, parameters, return values, and other details of your functions, classes, and variables.",
-
+    title: "Cómo utilizar comentarios JSDoc con VS Code",
+    subtitle: "Aprovecha los beneficios de la verificación de tipos estáticos proporcionada por TypeScript mientras disfrutas de la flexibilidad y expresividad de JavaScript.",
+    paragraph1: "JSDoc es un lenguaje de marcado utilizado para anotar código JavaScript con comentarios de documentación. Te permite describir el propósito, los parámetros, los valores de retorno y otros detalles de tus funciones, clases y variables.",
     gistIdIn: "983c4e20eecddeab80dfe401c37402c9",
+    paragraph2: "JSDoc es genial porque te permite aprovechar los beneficios de la verificación de tipos estáticos que proporciona TypeScript sin dejar de disfrutar de la flexibilidad y expresividad de JavaScript. Y las notas te permiten recordar de qué se trataba tu código cuando lo olvidas por completo.",
+    paragraph3: "Los comentarios JSDoc comienzan con /** y terminan con */, y pueden contener etiquetas como @param, @returns, @typedef y más. Los comentarios JSDoc se pueden utilizar para generar documentación API mediante herramientas como JSDoc o typedoc. Luego, puedes agregar la línea //@ts-check al principio del archivo que desees (o tener una configuración en tu archivo jsconfig.json para que se aplique a todo el proyecto), que hace que el código se queje cuando una regla que establezcas no se cumpla, tal como sucedería con TypeScript.",
 
-    paragraph2: "JSDoc is cool because it allows you to leverage the benefits of static type checking provided by TypeScript while still enjoying the flexibility and expressiveness of JavaScript. And the notes let you remember what your code was about when you completely forget.",
-
-
-  },
-  {
-    url: "reusable-components-trick-React-es",
-    date: "Nov 10, 2023",
-    title: "Truco components reusables en React",
-    subtitle: "How do add especial features to a reusable component to be seen only when you want",
-    paragraph1: "In the same app, you may want to reuse a component many times. However, there are times that you may want to add a change to that component, only on certain occasions. In the example below, I am using the <ThreadCard/> component two times. However, the second time I want to add extra bottom margin in one of the classes lines. How to do that?",
-
-    gistIdIn: "7e1fdd41009cc069911893d663ee0ffb",
-
-    paragraph2: "Well, one way is to add a prop to the component (only when you want the modification) that you can add to its code as a condition. If the prop is true, then the changes apply. That simple. In the example, it is the prop ‘isComment’. So you just have to add a condition such as '${isComment && “mb-10}' (see below).",
-
-    gistIdIn2: "1a082cba4ef72ab738f2ae2e89d763cf",
-    paragraph3: "JSDoc comments start with /** and end with */, and they can contain tags like @param, @returns, @typedef, and more. JSDoc comments can be used to generate API documentation using tools like JSDoc or typedoc. Then, you can add the line //@ts-check in the file you want (or have a configuration in your `jsconfig.json`file for the whole project), that makes the code complain when a rule you set, just as it would happen with Typescript.",
-
-    paragraph4: "To get automatic templates in VsCode, you just have to type /** before your code and click on the intelliSense suggestion.",
+    paragraph4: "Para obtener plantillas automáticas en VS Code, solo tienes que escribir /** antes de tu código y hacer clic en la sugerencia de IntelliSense que te aparece.",
     linkName: "JSDoc docs",
     linkUrl: "https://jsdoc.app/",
   },
   {
-    url: "understanding-nextjs-searchParams-es",
+    url: "truco-componentes-reutilizables-es",
+    date: "Nov 10, 2023",
+    title: "Truco componentes reutilizables en React",
+    subtitle: "Cómo agregar características especiales a un componente reutilizable para que se vean solo cuando lo deseas.",
+    paragraph1: "En la misma aplicación, es posible que quieras reutilizar un componente muchas veces. Sin embargo, hay ocasiones en las que puede que quieras añadir un cambio a ese componente, solo en determinadas ocasiones. En el siguiente ejemplo, estoy usando el componente <ThreadCard/> dos veces. Sin embargo, la segunda vez quiero añadir un margen inferior adicional en una de las líneas de clases. ¿Cómo puedo hacerlo?",
+
+    gistIdIn: "7e1fdd41009cc069911893d663ee0ffb",
+
+    paragraph2: "Bueno, una forma es agregar un prop al componente (solo cuando deseas la modificación) que puedes agregar a tu código como condición. Si el prop es verdadero, entonces se aplican los cambios. Así de simple. En el ejemplo, es el prop 'isComment'. Entonces, solo tienes que agregar una condición como '${isComment && 'mb-10'}'(ver abajo).",
+
+    gistIdIn2: "1a082cba4ef72ab738f2ae2e89d763cf",
+
+  },
+  {
+    url: "paginacion-nextjs-searchParams-es",
     date: "Nov 7, 2023",
-    title: "Next.js searchParams and Pagination",
-    subtitle: "How do searchParms work in Next.js and how to apply them to set a Pagination system",
-    paragraph1: "Have you ever seen that the main page (Home page) has 'searchParams' as props and you don't know where this prop comes from? That's happened to me so I'll give it try to explain it as better as I can.",
+    title: "Next.js searchParams y Paginación",
+    subtitle: "Cómo funcionan los searchParams en Next.js y cómo aplicarlos en un sistema de paginación",
+    paragraph1: "¿Alguna vez has visto que la página principal tiene 'searchParams' como props y no sabes de dónde vienen? A mí me ha pasado, así que intentaré explicarlos lo mejor que pueda.",
 
     gistIdIn: "81690a7c0a01786747b2ec00001e618a",
 
-    paragraph2: "The 'searchParams' property is derived from the query parameters in the URL of the browser. So, in the case of the Home component mentioned before, the Next.js router automatically extracts the query parameters from the URL and provides them as an object called searchParams to the page component. And why do we need it? Because we want to pass it to the 'fetchPosts function' in order to get our posts with pagination (see function in the gist below). We are passing the page we are in as a prop, and then the action (the 'fetchPosts' function) can calculate how many posts it has to skip. And also, based on the amount skipped and the total posts and so, can calculate if the variable 'isNext' is true (that there are more posts to show in a next page).",
+    paragraph2: "La propiedad 'searchParams' se deriva de los parámetros de consulta en la URL del navegador. Entonces, en el caso de la página principal mencionada anteriormente, el enrutador Next.js extrae automáticamente los parámetros de consulta de la URL y los proporciona como un objeto llamado searchParams a la página. ¿Y por qué lo necesitamos? Porque queremos pasarlo a la función 'fetchPosts' para obtener nuestros posts con paginación, por ejemplo (mira la función en el gist a continuación). Estamos pasando la página en la que estamos como prop, y luego la acción (la función 'fetchPosts') puede calcular cuántas publicaciones tiene que omitir. Y también, en función de la cantidad omitida y el total de publicaciones y demás, puede calcular si la variable 'isNext' es verdadera (es decir, que sí que hay más publicaciones para mostrar en una página siguiente)..",
 
     gistIdIn2: "f853ed7cd8569cd3c4ca3b6a4b9c3098",
-    paragraph3: "Since we are returning, not only the posts, but the 'isNext' variable as well, we can use this variable in the 'Pagination' component to enable or disable the buttons that the client will have to be able to change of page, and the the 'handleNavigation' function, which is responsible for handling the navigation logic based on the button clicked ('Prev' or 'Next') and updating the URL accordingly. ",
+    paragraph3: "Dado que estamos devolviendo, no solo las publicaciones, sino también la variable 'isNext', podemos usar esta variable en el componente 'Pagination' para habilitar o deshabilitar los botones que el cliente tendrá para poder cambiar de página. Y luego la función 'handleNavigation' dentro del componente 'Navigation', que se encarga de manejar la lógica de navegación en función del botón pulsado ('Prev' o 'Next') y actualizar la URL en consecuencia. ",
     gistIdIn3: "bd7eb728fd0cfeab3f6e04446a2fefe2",
 
-    paragraph4: " The first time, when the app first loads, the number of the pagination is obviously '1', since the searchParams are not receiving any '?page=' value from the URL yet (see: 'searchParams.page ? +searchParams.page : 1'). But when we press the 'Next' button inside the 'Pagination' component, we get the next page thanks to the 'handleNavigation' function doing its logic. However, as mentioned before, we also have to check if the 'isNext' variable is true or false. If it is true, we'll go to a next page. If it is false, there is no next page to go to. From then on, we are working with the '?page=' value in the props thanks to the searchParams. ",
-
-
-
+    paragraph4: "Cuando la aplicación se carga por primera vez, el número de paginación es obviamente '1', ya que los searchParams aún no reciben ningún valor '?page=' de la URL (ver: 'searchParams.page ? +searchParams.page : 1'). Pero cuando presionamos el botón 'Next' dentro del componente 'Paginación', obtenemos la siguiente página gracias a la función 'handleNavigation' haciendo su lógica. Sin embargo, como se mencionó anteriormente, también tenemos que verificar si la variable 'isNext' es verdadera o falsa. Si es true, iremos a la siguiente página. Si es false, no hay una siguiente página a la que ir. A partir de entonces, estamos trabajando con el valor '?page=' en los props gracias a los searchParams.",
   },
 
   {
-    url: "optional-chaining-operator-es",
+    url: "chaining-operator-opcional-es",
     date: "Nov 5, 2023",
-    title: "The optional chaining operator",
-    subtitle: "What is and how to use the optional chaining operator in JavaScript",
-    paragraph1: "The '?' after 'userInfo' (see example below) is called the 'optional chaining operator' in JavaScript. It is used to safely access nested properties or methods of an object without causing an error if any of the properties or methods are undefined or null. ",
+    title: "El 'chaining operator' opcional",
+    subtitle: "Qué es y cómo usar el chaining operator opcional en JavaScript",
+    paragraph1: "El signo de interrogación '?' después de 'userInfo' (ver ejemplo más abajo) se llama 'optional chaining operator' o 'operador de encadenamiento opcional' en JavaScript. Se utiliza para acceder de forma segura a propiedades o métodos anidados de un objeto sin provocar un error si alguna de las propiedades o métodos es indefinida o nula.",
 
-    paragraph2: " In the example below, the code checks if the userInfo object exists and if the onboarded property is truthy. The thing is that when the user is created in the database, it then gets a boolean state of true in the onboarded property. ",
+    paragraph2: "En el ejemplo a continuación, el código verifica si el objeto 'userInfo' existe y si la propiedad 'onboarded' es verdadera. La cuestión es que cuando se crea el usuario en la base de datos, obtiene un estado booleano de verdadero en la propiedad onboarded.",
     gistIdIn2: "6440171227c44672b9985d20f39ba8db",
-    paragraph3: "So, if userInfo is not onboarded, it means that userInfo itself is either undefined or null. In other words, it means that the userInfo object does not exist. Therefore, the condition if (!userInfo?.onboarded) is checking if the userInfo object does not exist or if the onboarded property of userInfo is falsy. If either of these conditions is true, it means that the user is not onboarded and the code will redirect the user to the '/onboarding' page. ",
-    paragraph4: "If the '?' chaining operator wasn't there in the example above, it would throw an error if the userInfo object was null or undefined, and the app could unfortunately crash.",
+    paragraph3: "Entonces, si 'userInfo' no está 'onboarded', significa que 'userInfo' en sí tiene un valor indefinido o nulo. En otras palabras, significa que el objeto 'userInfo' no existe. Por lo tanto, la condición if (!userInfo?.onboarded) está comprobando si el objeto 'userInfo' no existe o si la propiedad 'onboarded' de 'userInfo' es falsa. Si alguna de estas condiciones es verdadera, significa que el usuario no está incorporado y el código redirigirá al usuario a la página '/onboarding'.",
+    paragraph4: "Si el operador de encadenamiento '?' no estuviera presente en el ejemplo anterior, se produciría un error si el objeto 'userInfo' fuera nulo o indefinido, y la aplicación podría romperse desafortunadamente.",
   },
   {
     url: "authentication-clerk-nextjs-es",

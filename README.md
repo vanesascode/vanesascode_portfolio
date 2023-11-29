@@ -62,7 +62,9 @@ I have a lot of components of all kinds in the `_components` folder. However, in
 
 ---
 
-### BUG
+### BUGS
+
+#### - Intrusive `;`
 
 From the beginning of the process I realized there was some intrusive text in the project. There was a `;`symbol at the top of the layout and I was unable to find it, neither using the google tools, or just searching for it in the project in all the files.
 
@@ -70,6 +72,46 @@ Therefore, I had to adjust my work to it...
 I started by setting the root `color to transparent`, not to see it. That affected to my code because sometimes it seems I am using too much or even `repeting color css values` (for example: 'text-secondary').
 
 Also, when I created the menu and had to create a page from scratch in there, of course, `I had to add the annoying ";"symbol` at the top so I didn't have to repeat lots of general css settings I had for the navbar and rest.
+
+#### - LightMode not respected by svg files the second time components are loaded:
+
+If you refresh any other page but the home page, and you are in light more (clear background, although in the Local Storage it says "dark"), the svg files that were black, will turn white for no reason. So the first time the components load, everything allright, but the second, by a misterious reason I haven't been able to solve yet, not right. The code I use is simple:
+
+```
+<img
+   src={
+     lightMode === "light"
+     ? "/bracket-right-white.svg"
+     : "/bracket-right-black.svg"
+     }
+    alt="logo"
+    className="size-brackets-logo"
+/>
+```
+
+I even tried this:
+
+```
+{lightMode === "light" && (
+  <img
+     src="/bracket-left-white.svg"
+     alt="logo"
+     className="size-brackets-logo"
+   />
+)}
+
+{lightMode === "dark" && (
+  <img
+     src="/bracket-left-black.svg"
+     alt="logo"
+     className="size-brackets-logo"
+   />
+)}
+```
+
+But, the second time the page/component is loaded, the white bracket, or any other svg, will turn black. I decided to leave the light mode anyway, in spite of this, because it is the second time it is loaded, something it is not as usual to do for a user, unless they are sharing the link. However, by default, the first time a user opens the link, the mode is dark (and the bug doesn't happen with the dark svgs).
+
+If you are reading this and know how to solve these bugs. Please, don't hesitate to contact me. Thank you.
 
 ---
 

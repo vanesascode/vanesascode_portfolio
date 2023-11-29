@@ -151,7 +151,7 @@ export default function BlogPillEN({ pill }) {
             </div>
 
             {/*BACK*/}
-            <div
+            <button
               className={`flex items-center mb-[40px] md:mb-[50px] xl:mb-[80px] cursor-pointer ${
                 animations.goUp4
               } ${leaveAnimation ? animations.leavePageDown1 : ""}`}
@@ -174,7 +174,7 @@ export default function BlogPillEN({ pill }) {
                 {" "}
                 Back to pills
               </p>
-            </div>
+            </button>
           </div>
         </div>
       )}

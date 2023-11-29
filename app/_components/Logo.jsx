@@ -21,15 +21,23 @@ export default function Logo() {
         >
           {/* LEFT BRACKET */}
 
-          <img
-            src={
-              lightMode === "light"
-                ? "/bracket-left-white.svg"
-                : "/bracket-left-black.svg"
-            }
-            alt="logo"
-            className="size-brackets-logo"
-          />
+          {/*Trying to solve the problem that if you refresh the page, the color of the brackets become white even though you are in "dark" mode*/}
+
+          {lightMode === "light" && (
+            <img
+              src="/bracket-left-white.svg"
+              alt="logo"
+              className="size-brackets-logo"
+            />
+          )}
+
+          {lightMode === "dark" && (
+            <img
+              src="/bracket-left-black.svg"
+              alt="logo"
+              className="size-brackets-logo"
+            />
+          )}
 
           {/* V */}
 

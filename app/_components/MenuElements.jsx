@@ -35,7 +35,7 @@ export default function MenuElements() {
                   }, 1000);
                 }}
               >
-                <p className="text-secondary dark:text-black   hover:text-accent dark:hover:text-accent">
+                <p className="text-secondary dark:text-black 2xs:mb-2 xl:mb-3   hover:text-accent dark:hover:text-accent">
                   {language === "english" ? "Home" : "Inicio"}
                 </p>
                 <img
@@ -68,7 +68,7 @@ export default function MenuElements() {
                   }, 500);
                 }}
               >
-                <p className="text-secondary dark:text-black   hover:text-accent dark:hover:text-accent">
+                <p className="text-secondary dark:text-black 2xs:mb-2 xl:mb-3  hover:text-accent dark:hover:text-accent">
                   {" "}
                   {language === "english" ? "Projects" : "Proyectos"}
                 </p>
@@ -102,7 +102,7 @@ export default function MenuElements() {
                   }, 1000);
                 }}
               >
-                <p className="text-secondary dark:text-black   hover:text-accent dark:hover:text-accent">
+                <p className="text-secondary dark:text-black 2xs:mb-2 xl:mb-3   hover:text-accent dark:hover:text-accent">
                   {language === "english" ? "About" : "Sobre mí"}
                 </p>
                 <img
@@ -135,7 +135,7 @@ export default function MenuElements() {
                   }, 1000);
                 }}
               >
-                <p className="text-secondary dark:text-black    hover:text-accent dark:hover:text-accent">
+                <p className="text-secondary dark:text-black 2xs:mb-2 xl:mb-3   hover:text-accent dark:hover:text-accent">
                   {language === "english" ? "Contact" : "Contacto"}
                 </p>
                 <img
@@ -168,7 +168,7 @@ export default function MenuElements() {
                   }, 1000);
                 }}
               >
-                <p className="text-secondary dark:text-black  hover:text-accent dark:hover:text-accent">
+                <p className="text-secondary dark:text-black 2xs:mb-2 xl:mb-3  hover:text-accent dark:hover:text-accent">
                   Blog
                 </p>
                 <img

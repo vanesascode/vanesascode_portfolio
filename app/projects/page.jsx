@@ -8,7 +8,7 @@ import {
   ProjectsElementsEN,
 } from "../_components";
 
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 
 import DataContext from "../_context/DataContext";
 

@@ -212,7 +212,7 @@ export default function ProjectInfoES({ proyecto }) {
             </div>
 
             {/*BACK*/}
-            <div
+            <button
               className={`flex items-center mb-[40px] md:mb-[50px] xl:mb-[80px] cursor-pointer mt-5 ${
                 animations.goUp4
               } ${leaveAnimation ? animations.leavePageDown1 : ""}`}
@@ -235,7 +235,7 @@ export default function ProjectInfoES({ proyecto }) {
                 {" "}
                 Volver a los proyectos
               </p>
-            </div>
+            </button>
           </div>
         </div>
       )}

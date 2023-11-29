@@ -46,43 +46,43 @@ export const blogPillsEN = [
     gistIdIn: "983c4e20eecddeab80dfe401c37402c9",
 
     paragraph2: "JSDoc is cool because it allows you to leverage the benefits of static type checking provided by TypeScript while still enjoying the flexibility and expressiveness of JavaScript. And the notes let you remember what your code was about when you completely forget.",
+    paragraph3: "JSDoc comments start with /** and end with */, and they can contain tags like @param, @returns, @typedef, and more. JSDoc comments can be used to generate API documentation using tools like JSDoc or typedoc. Then, you can add the line //@ts-check at the beginning of the file you want (or have a configuration in your `jsconfig.json`file so it is applied to the whole project), that makes the code complain when a rule you set is broken, just as it would happen with Typescript.",
 
+    paragraph4: "To get automatic templates in VsCode, you just have to type /** before your code and click on the intelliSense suggestion that appears.",
+    linkName: "JSDoc docs",
+    linkUrl: "https://jsdoc.app/",
 
   },
   {
     url: "reusable-components-trick-React",
     date: "Nov 10, 2023",
     title: "Reusable components trick in React",
-    subtitle: "How do add especial features to a reusable component to be seen only when you want",
-    paragraph1: "In the same app, you may want to reuse a component many times. However, there are times that you may want to add a change to that component, only on certain occasions. In the example below, I am using the <ThreadCard/> component two times. However, the second time I want to add extra bottom margin in one of the classes lines. How to do that?",
+    subtitle: "How to add especial features to a reusable component to be seen only when you want",
+    paragraph1: "In the same app, you may want to reuse a component many times. However, there are times that you may want to add a change to that component, only on certain occasions. In the example below, I am using the <ThreadCard/> component two times. However, the second time I want to add extra bottom margin in one of the classes lines. How can I do that?",
 
     gistIdIn: "7e1fdd41009cc069911893d663ee0ffb",
 
-    paragraph2: "Well, one way is to add a prop to the component (only when you want the modification) that you can add to its code as a condition. If the prop is true, then the changes apply. That simple. In the example, it is the prop ‘isComment’. So you just have to add a condition such as '${isComment && “mb-10}' (see below).",
+    paragraph2: "Well, one way is to add a prop to the component (only when you want the modification) that you can add to its code as a condition. If the prop is true, then the changes apply. That simple. In the example, it is the prop 'isComment'. So you just have to add a condition such as '${isComment && “mb-10}' (see below).",
 
     gistIdIn2: "1a082cba4ef72ab738f2ae2e89d763cf",
-    paragraph3: "JSDoc comments start with /** and end with */, and they can contain tags like @param, @returns, @typedef, and more. JSDoc comments can be used to generate API documentation using tools like JSDoc or typedoc. Then, you can add the line //@ts-check in the file you want (or have a configuration in your `jsconfig.json`file for the whole project), that makes the code complain when a rule you set, just as it would happen with Typescript.",
 
-    paragraph4: "To get automatic templates in VsCode, you just have to type /** before your code and click on the intelliSense suggestion.",
-    linkName: "JSDoc docs",
-    linkUrl: "https://jsdoc.app/",
   },
   {
     url: "understanding-nextjs-searchParams",
     date: "Nov 7, 2023",
     title: "Next.js searchParams and Pagination",
     subtitle: "How do searchParms work in Next.js and how to apply them to set a Pagination system",
-    paragraph1: "Have you ever seen that the main page (Home page) has 'searchParams' as props and you don't know where this prop comes from? That's happened to me so I'll give it try to explain it as better as I can.",
+    paragraph1: "Have you ever seen that the main page has 'searchParams' as props and you don't know where they come from? That's happened to me so I'll give it a try to explain it as better as I can.",
 
     gistIdIn: "81690a7c0a01786747b2ec00001e618a",
 
-    paragraph2: "The 'searchParams' property is derived from the query parameters in the URL of the browser. So, in the case of the Home component mentioned before, the Next.js router automatically extracts the query parameters from the URL and provides them as an object called searchParams to the page component. And why do we need it? Because we want to pass it to the 'fetchPosts function' in order to get our posts with pagination (see function in the gist below). We are passing the page we are in as a prop, and then the action (the 'fetchPosts' function) can calculate how many posts it has to skip. And also, based on the amount skipped and the total posts and so, can calculate if the variable 'isNext' is true (that there are more posts to show in a next page).",
+    paragraph2: "The 'searchParams' property is derived from the query parameters in the URL of the browser. So, in the case of the main page mentioned before, the Next.js router automatically extracts the query parameters from the URL and provides them as an object called searchParams to the page. And why do we need it? Because we want to pass it to the 'fetchPosts function' in order to get our posts with pagination, for example (see function in the gist below). We are passing the page we are in as a prop, and then the action (the 'fetchPosts' function) can calculate how many posts it has to skip. And also, based on the amount skipped and the total posts and so, can calculate if the variable 'isNext' is true (which means, that indeed there are more posts to show in a next page).",
 
     gistIdIn2: "f853ed7cd8569cd3c4ca3b6a4b9c3098",
-    paragraph3: "Since we are returning, not only the posts, but the 'isNext' variable as well, we can use this variable in the 'Pagination' component to enable or disable the buttons that the client will have to be able to change of page, and the the 'handleNavigation' function, which is responsible for handling the navigation logic based on the button clicked ('Prev' or 'Next') and updating the URL accordingly. ",
+    paragraph3: "Since we are returning, not only the posts, but the 'isNext' variable as well, we can use this variable in the 'Pagination' component to enable or disable the buttons that the client will have to be able to change of page. And then the 'handleNavigation' function (inside the 'Pagination' component), is responsible for handling the navigation logic based on the button clicked ('Prev' or 'Next') and updating the URL accordingly. ",
     gistIdIn3: "bd7eb728fd0cfeab3f6e04446a2fefe2",
 
-    paragraph4: " The first time, when the app first loads, the number of the pagination is obviously '1', since the searchParams are not receiving any '?page=' value from the URL yet (see: 'searchParams.page ? +searchParams.page : 1'). But when we press the 'Next' button inside the 'Pagination' component, we get the next page thanks to the 'handleNavigation' function doing its logic. However, as mentioned before, we also have to check if the 'isNext' variable is true or false. If it is true, we'll go to a next page. If it is false, there is no next page to go to. From then on, we are working with the '?page=' value in the props thanks to the searchParams. ",
+    paragraph4: "When the app first loads, the number of the pagination is obviously '1', since the searchParams are not receiving any '?page=' value from the URL yet (see: 'searchParams.page ? +searchParams.page : 1'). But when we press the 'Next' button inside the 'Pagination' component, we get the next page thanks to the 'handleNavigation' function doing its logic. However, as mentioned before, we also have to check if the 'isNext' variable is true or false. If it is true, we'll go to a next page. If it is false, there is no next page to go to. From then on, we are working with the '?page=' value in the props thanks to the searchParams. ",
 
 
 

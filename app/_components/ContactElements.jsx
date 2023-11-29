@@ -33,7 +33,7 @@ export default function ContactElements() {
 
             {/*SUBTITLE*/}
 
-            <div className="heading2 ">
+            <div className=" xl:text-[30px] sm:text-[19px] text-[16px] text-center xl:leading-[35px] sm:leading-[25px] leading-[20px] font-normal">
               <div
                 className={`${animations.goDown3} ${
                   leaveAnimation ? animations.leavePage2 : ""
