@@ -95,9 +95,9 @@ export const blogPillsEN = [
     subtitle: "What is and how to use the optional chaining operator in JavaScript",
     paragraph1: "The '?' after 'userInfo' (see example below) is called the 'optional chaining operator' in JavaScript. It is used to safely access nested properties or methods of an object without causing an error if any of the properties or methods are undefined or null. ",
 
-    paragraph2: " In the example below, the code checks if the userInfo object exists and if the onboarded property is truthy. The thing is that when the user is created in the database, it then gets a boolean state of true in the onboarded property. ",
+    paragraph2: " In the following example, the code checks if the 'userInfo' object exists and if the 'onboarded' property is truthy. The thing is that when the user is created in the database, it then gets a boolean state of true in the onboarded property. ",
     gistIdIn2: "6440171227c44672b9985d20f39ba8db",
-    paragraph3: "So, if userInfo is not onboarded, it means that userInfo itself is either undefined or null. In other words, it means that the userInfo object does not exist. Therefore, the condition if (!userInfo?.onboarded) is checking if the userInfo object does not exist or if the onboarded property of userInfo is falsy. If either of these conditions is true, it means that the user is not onboarded and the code will redirect the user to the '/onboarding' page. ",
+    paragraph3: "So, if 'userInfo' is not 'onboarded', it means that 'userInfo' itself is either undefined or null. In other words, it means that the 'userInfo' object does not exist. Therefore, the condition if (!userInfo?.onboarded) is checking if the 'userInfo' object does not exist or if the 'onboarded' property of 'userInfo' is falsy. If either of these conditions is true, it means that the user is not onboarded and the code will redirect the user to the '/onboarding' page. ",
     paragraph4: "If the '?' chaining operator wasn't there in the example above, it would throw an error if the userInfo object was null or undefined, and the app could unfortunately crash.",
   },
   {

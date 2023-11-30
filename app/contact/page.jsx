@@ -14,7 +14,7 @@ import DataContext from "../_context/DataContext";
 
 import "../globals.css";
 
-export default function Proyectos() {
+export default function Contact() {
   // CONTEXT:
 
   const { lightMode } = useContext(DataContext);

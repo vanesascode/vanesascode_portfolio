@@ -127,6 +127,58 @@ So, the only solution that worked for me was to duplicate all the pages and comp
 
 ---
 
+### WEB PERFORMANCE
+
+#### Google Lighthouse ( in the Chrome Dev Tools)
+
+The score on desktop was really good. On mobile, the performance went a bit low, and recommended to `reduce unused Javascript`. It may have to do with the extra code I had to add due to the Hydration weird error I explained in the previous section.
+
+#### Google Seach Console
+
+#### Favicon Ico
+
+I created a `favicon.ico` that is png and a `icon.svg` that is svg (both the same size, 48x48px), and put them as recommended in the root of the app folder.
+
+#### Metadata:
+
+In main 'layout':
+
+```
+export const metadata = {
+  title: {
+    template: '%s | vanesascode',
+    default: "vanesascode portfolio & blog",
+  },
+  description: "Hello, I'm Dave. 👋 This is my portfolio as a Full Stack Developer.",
+  applicationName: "vanesascode portfolio & blog",
+  authors: [{ name: "vanesascode" }],
+  generator: 'Next.js',
+  keywords: ['vnesascode', 'code', 'web development', 'javascript', 'react', 'node.js', 'next.js', 'web dev', 'html', 'css', 'python', 'typescript', 'portfolio', 'blog', 'vanesa juarez paris', 'vanesa juarez'],
+  referrer: 'origin-when-cross-origin',
+  creator: 'Vanesa Juarez Paris',
+  publisher: 'Vanesa Juarez Paris',
+}
+```
+
+In other 'layouts', example:
+
+```
+//metadata
+
+export const metadata = {
+  title: "Blog",
+};
+
+export default function CreatePromptLayout({ children }) {
+  return <section>{children}</section>;
+}
+
+```
+
+For the `opengraph image` I created an image and named it `opengraph-image.png` (and its alt.text file) and put them in the root of the app file.
+
+---
+
 ## 🔧🔨 Tools I used:
 
 ### 🔹NEXT.JS

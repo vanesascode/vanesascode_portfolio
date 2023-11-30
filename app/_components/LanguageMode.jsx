@@ -31,7 +31,7 @@ const LanguageMode = () => {
         } ${leaveAnimation ? animations.leavePageDown1 : ""}`}
         onClick={HandleChangeLanguage}
       >
-        {language === "english" ? "SP" : "EN"}
+        {language === "english" ? "ES" : "EN"}
       </p>
     </div>
   );
