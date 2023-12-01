@@ -71,7 +71,30 @@ From the beginning of the process I realized there was some intrusive text in th
 Therefore, I had to adjust my work to it...
 I started by setting the root `color to transparent`, not to see it. That affected to my code because sometimes it seems I am using too much or even `repeting color css values` (for example: 'text-secondary').
 
-Also, when I created the menu and had to create a page from scratch in there, of course, `I had to add the annoying ";"symbol` at the top so I didn't have to repeat lots of general css settings I had for the navbar and rest.
+When the website was in production,on people's mobiles with the 'google's translator' extension would make all the text of the complete website disappear. The cause was having put the color to transparent in the globals.css like this:
+
+```
+* {
+  color: transparent;
+}
+```
+
+So a tried to put it just above the tree (I could see where thanks to the chrome's dev tools), and then yes, it worked: The `;` bug disappeared and the google's translator extension text created when translated would appear...
+
+```
+export default function Home() {
+  return (
+    <div className="relative text-transparent">
+etc
+```
+
+```
+export default function HomeES() {
+
+  return (
+    <div className="relative h-screen text-transparent">
+etc
+```
 
 #### - LightMode not respected by svg files the second time components are loaded:
 

@@ -104,10 +104,10 @@ export const blogPillsEN = [
     url: "authentication-clerk-nextjs",
     date: "Nov 3, 2023",
     title: "Authentication with Clerk",
-    subtitle: "How to easily add authentication to your Next.js application without the need to build and manage your own authentication system",
+    subtitle: "How to Add Third-Party Authentication: The Easy Way to Add Authentication to Your Next.js App",
     paragraph1: "Clerk provides a user-friendly interface for user registration, login, and password reset, and also for these user to create communities. It handles user sessions and provides secure authentication tokens for authenticated users. And the developer, as an administrator, has access to your users' data in a very easy and intuitive way. Once you create your account in their website, they give you some secret keys you add to your Next.js' .env.local file. Then you install the library in your project (npm install @clerk/nextjs). You then import it and wrap your app in the <ClerkProvider> component.",
     gistIdIn: "c0e13bb4b9fe281c6ee32dca744e30bb",
-    paragraph2: "So you can decide what pages are private and which are public, you create a file in the root of your project called 'middleware', in which you can add the public paths",
+    paragraph2: "So you can decide what pages are private and which are public, you create a file in the root of your project called 'middleware', in which you can add the public paths.",
     gistIdIn2: "5789915f7fbd734579c514d1be0039cf",
     paragraph3: "You have many other components you can use, such as the 'SignUp' or the 'SignIn' ones, to create your own sign in an sign up pages. Or the 'OrganizationSwitcher' to create a new organization. Find more info in the Docs.",
     linkName: "Clerk.com",
@@ -118,11 +118,11 @@ export const blogPillsEN = [
     date: "Nov 2, 2023",
     title: "Placeholders while content is loading",
     subtitle: "How to add a nice and dynamic placeholder with Shadcn/iu while the content is loading in Next.js",
-    paragraph1: "The Shadcn/ui component you need for this is the 'Skeleton' one, and is very easy to use. After installing Shadcn/ui (npx shadcn-ui@latest init), and then the skeleton component (npx shadcn-ui@latest add skeleton), you create a Next.js 'loading' file. This file renders while the content is loading. And in there you just import the component 'skeleton' that was created while installing Shadcn/ui. Imagine you have 9 cards that must load. Then, in your loading page you render 9 cards too, that are going to fit the future content:",
+    paragraph1: "The Shadcn/ui component you need for this is the 'Skeleton' one, and is very easy to use. After installing Shadcn/ui (npx shadcn-ui@latest init), and then the skeleton component (npx shadcn-ui@latest add skeleton), you create a Next.js 'loading' file. This file renders while the content is loading. And in there you just import the component 'skeleton' that was created while installing Shadcn/ui. Imagine you have 9 cards that must load. Then, in your loading page you render 9 cards too, that are going to fit the future that is going to load later:",
     gistIdIn: "c82888092a23cbb0941ca1d6c6f7236f",
     paragraph2: "The idea is that you can use this component 'skeleton' as many times as you like, and give them the size and shape you want, in order to imitate the content shape that you are going show when loaded. You can do that in a different component, as a fake card:",
     gistIdIn2: "7a1444e760c943ece89e6b1194594a48",
-    paragraph3: "This gives a very professional and natural feeling that the content is being baked before appearing",
+    paragraph3: "This gives a very professional and natural feeling that the content is being baked before appearing.",
     linkName: "Shadcn/ui Skeleton",
     linkUrl: "https://ui.shadcn.com/docs/components/skeleton"
   },
@@ -145,7 +145,7 @@ export const blogPillsEN = [
     paragraph1: "It was easier than I thought, just using the css property 'line-clamp', which specifies the maximum number of lines to display. Place the class in the same <p> tag.",
     gistIdIn: "55ce52eddbaceb1208c72886650783eb",
     paragraph2: "However, you also need to use 'display: -webkit-box' so the '-webkit-line-clamp' property is enabled. The '-webkit-box-orient' property is set to vertical to arrange the lines vertically, and the 'overflow: hidden' property hides any overflowing text.",
-    paragraph3: "Just so you know, the -webkit-line-clamp property is a special property that's not officially recognized by all browsers. It's mainly used in webkit-based browsers like Chrome and Safari. If you want to ensure better browser support, you might need to use JavaScript or other techniques to dynamically truncate the text based on the number of lines you want to display.",
+    paragraph3: "The -webkit-line-clamp property is a special property that's not officially recognized by all browsers. It's mainly used in webkit-based browsers like Chrome and Safari. If you want to ensure better browser support, you might need to use JavaScript or other techniques to dynamically truncate the text based on the number of lines you want to display.",
     paragraph4: "If you are using TailwindCSS, the tag is 'line-clamp-1' (from 1 to 6) or 'line-clamp-none'. ",
     linkName: "Can I use -webkit-line-clamp?",
     linkUrl: "https://caniuse.com/?search=%20-webkit-line-clamp"
@@ -171,7 +171,7 @@ export const blogPillsEN = [
     paragraph1: "Today I was trying to embed a Gist in my blog. I had done it in the past but in Vanilla Javascript. You just copy the script Github gives you and paste it in the page.",
     gistIdIn: "824d362c029b1f96604616a00682a402",
     paragraph2: "However, in React it wasn't so easy, so I searched for a library that helped me. To my frustration, I tried several that were recommened in forums, such as 'react-gist' or 'react-gist-embed'. The second one finally made the Gist appear, but with lack of elements in it.",
-    paragraph3: "I then made a search of less known libraries for this, and guess what, by changing the order of the words to 'gist-react' you can find one that works! You just have to follow the easy instructions to get it up and running. (See them above)",
+    paragraph3: "I then made a search of less known libraries, and guess what: by changing the order of the words to 'gist-react' you can find one that works! You just have to follow the easy instructions to get it up and running. (See them above)",
     linkName: "gist-react",
     linkUrl: "https://www.npmjs.com/package/gist-react"
 
@@ -182,10 +182,10 @@ export const blogPillsEN = [
     date: "Oct 28, 2023",
     title: "Individual states for mapped elements",
     subtitle: "How to add individual states inside a map function with using the index.",
-    paragraph1: "I was working on my portfolio projects' preview page, and really wanted to add an arrow next to the title of each project when it was hovered.",
+    paragraph1: "I was working on my portfolio projects' preview page, and wanted to add an arrow next to the title of each project when it was hovered.",
     gistIdIn: "2d0a67975a788070901e2e29fa08c3cc",
-    paragraph2: "I used a useState to set it, but I encountered the problem that when hovering one project, all projects made their arrow appear, since I am rendering the projects from a constants js file with a map function.",
-    paragraph3: "So I solved it by adding a new state variable (in the example, called 'hoveredIndex') which keeps track of the index of the pill that is being hovered on. The handleMouseEnter and handleMouseLeave functions update such state accordingly.",
+    paragraph2: "I tried a useState to set it, but I encountered the problem that when hovering one project, all the other projects made their arrow appear too, since I am rendering the projects from a constants Javascript file with a map function.",
+    paragraph3: "So I solved it by adding a new state variable (in the example, called 'hoveredIndex') which keeps track of the index of the project that is being hovered on. The handleMouseEnter and handleMouseLeave functions update such state accordingly.",
     paragraph4: "Inside the map function, I added a new variable (called 'isHovered') which checks if the current index matches the 'hoveredIndex'. Based on this condition, the opacity of the arrow image is set to either 1 (visible) or 0 (hidden)."
   },
 ]

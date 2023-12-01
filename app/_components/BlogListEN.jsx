@@ -9,6 +9,8 @@ import { Gist } from "gist-react";
 
 import animations from "../animations.module.css";
 
+import { useMediaQuery } from "react-responsive";
+
 const BlogList = ({ blogPills }) => {
   const { lightMode } = useContext(DataContext);
 
@@ -21,6 +23,8 @@ const BlogList = ({ blogPills }) => {
   const handleMouseLeave = () => {
     setHoveredIndex(null);
   };
+
+  const isMin550 = useMediaQuery({ query: "(min-width: 550px)" });
 
   return (
     <div className="2xl:grid-cols-3 xl:grid-cols-2 grid-cols-1 grid gap-10">
@@ -63,8 +67,10 @@ const BlogList = ({ blogPills }) => {
                     }
                     alt="arrow to go to website"
                     className={`h-[20px] w-[20px] md:h-[30px] md:w-[30px] mb-[-2px] ${
-                      isHovered ? "opacity-100" : "opacity-0 "
-                    } ${isHovered ? animations.arrowGoUp : ""} `}
+                      isHovered && isMin550 ? "opacity-100" : "opacity-0 "
+                    } ${!isMin550 && "opacity-100"} ${
+                      isHovered ? animations.arrowGoUp : ""
+                    } `}
                   />
 
                   {/*DATE*/}

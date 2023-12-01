@@ -3,7 +3,6 @@ import { useContext, useState } from "react";
 import { proyectos } from "../_constantsProjectsES";
 import DataContext from "../_context/DataContext";
 import Link from "next/link";
-
 import animations from "../animations.module.css";
 
 const ProjectsListES = () => {
@@ -82,7 +81,7 @@ const ProjectsListES = () => {
                       alt="arrow to go to website"
                       className={`h-[20px] w-[20px] md:h-[30px] md:w-[30px] max-2xs:hidden mb-[-2px] ${
                         isHovered ? "opacity-100" : "opacity-0"
-                      } ${isHovered ? animations.arrowGoUp : ""}`}
+                      } ${isHovered ? animations.arrowGoUp : ""} `}
                     />
                   </div>
                 </div>

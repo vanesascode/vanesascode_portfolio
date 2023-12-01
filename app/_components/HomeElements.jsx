@@ -74,8 +74,8 @@ export default function HomeElements() {
                   >
                     <p className="text-secondary dark:text-primary md:tracking-[0.8px] tracking-[0.2px] xl:tracking-[1px]">
                       {language === "english"
-                        ? "& an addict to learning"
-                        : "& una adicta al aprendizaje"}
+                        ? "& a passionate learner"
+                        : "& una apasionada del aprendizaje"}
                     </p>
                   </div>
                 </div>

@@ -1,5 +1,3 @@
-
-
 import './globals.css'
 import { DataProvider } from './_context/DataContext'
 
@@ -16,16 +14,15 @@ export const metadata = {
   referrer: 'origin-when-cross-origin',
   creator: 'Vanesa Juarez Paris',
   publisher: 'Vanesa Juarez Paris',
+  google: 'notranslate',
 }
 
 export default function RootLayout({ children }) {
 
-  // const { lightMode } = useContext(DataContext);
-
   return (
     <DataProvider>
-      <html lang="en" className='overflow-hidden'>
-        <body>
+      <html className='overflow-hidden'>
+        <body lang='en'>
           <main>{children}</main>
         </body>
       </html>

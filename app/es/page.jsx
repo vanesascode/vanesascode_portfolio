@@ -13,7 +13,7 @@ import { useEffect, useState, useContext } from "react";
 
 import DataContext from "../_context/DataContext";
 
-export default function Home() {
+export default function HomeES() {
   // CONTEXT:
 
   const { lightMode } = useContext(DataContext);
@@ -52,7 +52,7 @@ export default function Home() {
   }, 700);
 
   return (
-    <div className="relative h-screen">
+    <div className="relative h-screen text-transparent">
       <Intro />
       <div className="container paddingX">
         <div className="z-40">

@@ -1,15 +1,19 @@
-"use client"
+"use client";
 
-import { ParticlesBlack, ParticlesWhite, Intro, Navbar, HomeElements, MenuElements } from "./_components";
+import {
+  ParticlesBlack,
+  ParticlesWhite,
+  Intro,
+  Navbar,
+  HomeElements,
+  MenuElements,
+} from "./_components";
 
 import { useEffect, useState, useContext } from "react";
 
 import DataContext from "./_context/DataContext";
 
 export default function Home() {
-
-
-
   // CONTEXT:
 
   const { lightMode } = useContext(DataContext);
@@ -19,7 +23,6 @@ export default function Home() {
   const [showParticles, setShowParticles] = useState(false);
 
   const [showHome, setShowHome] = useState(false);
-
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -42,17 +45,14 @@ export default function Home() {
     return () => clearTimeout(timer);
   }, []);
 
-
-  // Delay to load Home after the Intro: 
+  // Delay to load Home after the Intro:
 
   const timeoutId = setTimeout(() => {
-
     setShowHome(true);
   }, 700);
 
   return (
-    <div className="relative">
-
+    <div className="relative text-transparent">
       <Intro />
       <div className="container paddingX">
         <div className="z-40">
@@ -61,14 +61,20 @@ export default function Home() {
           <MenuElements />
         </div>
 
-        <div className={`opacity-0 transition-opacity duration-[0.7s] ${isVisible ? 'opacity-100' : ''}`}>
+        <div
+          className={`opacity-0 transition-opacity duration-[0.7s] ${
+            isVisible ? "opacity-100" : ""
+          }`}
+        >
           {/*Particles Background*/}
-          {showParticles && lightMode === 'dark' && <ParticlesWhite id="tsparticles" />}
+          {showParticles && lightMode === "dark" && (
+            <ParticlesWhite id="tsparticles" />
+          )}
         </div>
-        {showParticles && lightMode === 'light' && <ParticlesBlack id="tsparticles" />}
-
-
-      </div >
-    </div>)
+        {showParticles && lightMode === "light" && (
+          <ParticlesBlack id="tsparticles" />
+        )}
+      </div>
+    </div>
+  );
 }
-

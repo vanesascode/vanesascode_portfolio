@@ -13,10 +13,6 @@ body {
   cursor: crosshair;
 }
 
-* {
-  color: transparent;
-}
-
 .container {
   @apply max-w-[1740px] h-screen mx-auto;
 }

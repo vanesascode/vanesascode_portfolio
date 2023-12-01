@@ -39,9 +39,11 @@ export default function ContactElements() {
                   leaveAnimation ? animations.leavePage2 : ""
                 }`}
               >
-                <p className="text-secondary dark:text-primary md:tracking-[-0.5px] tracking-tighter xl:tracking-[-0.95px]">
-                  vanesa.juarez.paris@gmail.com
-                </p>
+                <a href="mailto:vanesascode@gmail.com?subject=&body=">
+                  <p className="text-secondary dark:text-primary md:tracking-[-0.5px] tracking-tighter xl:tracking-[-0.95px]">
+                    vanesascode@gmail.com
+                  </p>
+                </a>
               </div>
             </div>
 

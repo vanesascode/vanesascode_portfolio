@@ -1,10 +1,17 @@
 import React from "react";
+
 import { useContext } from "react";
+
 import animations from "../animations.module.css";
+
 import { useMediaQuery } from "react-responsive";
+
 import DataContext from "../_context/DataContext";
+
 import { technologiesPicsEN } from "../_constantsAboutEN";
+
 import { skillsEN } from "../_constantsAboutEN";
+
 import Link from "next/link";
 
 // IF YOU REFRESH THIS COMPONENT, THE ERROR : Hydration failed because the initial UI does not match what was rendered on the server. APPEARS BECAUSE OF THE useMediaQueries. YOU CAN IGNORE THE ERROR.
