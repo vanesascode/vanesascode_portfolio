@@ -79,15 +79,18 @@ export default function BlogPillES({ pill }) {
               <p className="text-secondary dark:text-primary">
                 {pill.paragraph1}
               </p>
+
               {/*IMAGE 1*/}
+
               <div
                 className={`
-              mt-[10px] md:mt-[12px] xl:mt-[22px] 2xl:w-[900px] 1xl:w-[800px] xl:w-[650px] 1md:w-[550px] md:w-[500px] w-full mx-auto ${
-                animations.goUp4
-              } ${leaveAnimation ? animations.leavePageDown1 : ""}`}
+             mt-[10px] md:mt-[12px] xl:mt-[22px] 2xl:w-[900px] 1xl:w-[800px] xl:w-[650px] 1md:w-[550px] md:w-[500px] w-full mx-auto ${
+               animations.goUp4
+             } ${leaveAnimation ? animations.leavePageDown1 : ""}`}
               >
-                <Gist gistId={pill.gistIdIn} />;
+                <Gist gistId={pill.gistIdIn} />
               </div>
+
               {/*PARAGRAPH 2*/}
               <p className="text-secondary dark:text-primary">
                 {pill.paragraph2}
@@ -101,7 +104,7 @@ export default function BlogPillES({ pill }) {
                 animations.goDown1
               } ${leaveAnimation ? animations.leavePage4 : ""}`}
                 >
-                  <Gist gistId={pill.gistIdIn2} />;
+                  <Gist gistId={pill.gistIdIn2} />
                 </div>
               ) : (
                 ""
@@ -118,7 +121,7 @@ export default function BlogPillES({ pill }) {
                 animations.goDown1
               } ${leaveAnimation ? animations.leavePage4 : ""}`}
                 >
-                  <Gist gistId={pill.gistIdIn3} />;
+                  <Gist gistId={pill.gistIdIn3} />
                 </div>
               )}
               {!pill.gistIdIn3 && pill.paragraph4 && <br />}

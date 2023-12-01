@@ -1,8 +1,6 @@
 # Welcome to my portfolio! 👨‍💻
 
-Portfolio in progress...
-
-Here you will find the tools and info about the process I followed in order to build this website.
+Here you will find the tools and info about the process I followed in order to build portfolio and blog.
 
 ## 📋 Process:
 
@@ -42,6 +40,8 @@ I was aware that, as the project went further, I would have to spend time cleani
 
 As for the `CSS files`, I added all the animations that were not hovered at any time, which were quite a few, in the `animations.module.css` file. Otherwise, the globals.css file would be too long and confusing. Still, I am adding some of the animations I need in the globals.css file because I found working with the hover pseudo-class easier from there.
 
+---
+
 ### Intro section
 
 In the draft I had imagined lots of `animations` for my website, so I started with that.
@@ -62,9 +62,9 @@ I have a lot of components of all kinds in the `_components` folder. However, in
 
 ---
 
-### BUGS
+## 🐞 Bugs:
 
-#### - Intrusive `;`
+#### 🔹 Intrusive `;`
 
 From the beginning of the process I realized there was some intrusive text in the project. There was a `;`symbol at the top of the layout and I was unable to find it, neither using the google tools, or just searching for it in the project in all the files.
 
@@ -96,7 +96,9 @@ export default function HomeES() {
 etc
 ```
 
-#### - LightMode not respected by svg files the second time components are loaded:
+---
+
+#### 🔹 LightMode not respected by svg files the second time components are loaded:
 
 If you refresh any other page but the home page, and you are in light more (clear background, although in the Local Storage it says "dark"), the svg files that were black, will turn white for no reason. So the first time the components load, everything allright, but the second, by a misterious reason I haven't been able to solve yet, not right. The code I use is simple:
 
@@ -138,7 +140,7 @@ If you are reading this and know how to solve these bugs. Please, don't hesitate
 
 ---
 
-### Working on the Spanish translation - NextJS Error: Hydration failed
+#### 🔹 Working on the Spanish translation - NextJS Error: Hydration failed
 
 When I started working on the Spanish translation of the site, I focused it in the same way that I worked on the dark mode: Having two variables in the Context Api and implementing a text in one language or another depending on the state (which was also saved in local storage). I thought this would also help me reuse most of the components I had already built for the English original site. And that I would only need to create different constants files for each topic/language.
 
@@ -150,19 +152,21 @@ So, the only solution that worked for me was to duplicate all the pages and comp
 
 ---
 
-### WEB PERFORMANCE
+### 🎆 WEB PERFORMANCE
 
 #### Google Lighthouse ( in the Chrome Dev Tools)
 
 The score on desktop was really good. On mobile, the performance went a bit low, and recommended to `reduce unused Javascript`. It may have to do with the extra code I had to add due to the Hydration weird error I explained in the previous section.
 
-#### Google Seach Console
+#### 🔹 Google Seach Console
 
-#### Favicon Ico
+(waiting for some results)
+
+#### 🔹 Favicon Ico
 
 I created a `favicon.ico` that is png and a `icon.svg` that is svg (both the same size, 48x48px), and put them as recommended in the root of the app folder.
 
-#### Metadata:
+#### 🔹 Metadata:
 
 In main 'layout':
 
@@ -198,7 +202,7 @@ export default function CreatePromptLayout({ children }) {
 
 ```
 
-For the `opengraph image` I created an image and named it `opengraph-image.png` (and its alt.text file) and put them in the root of the app file.
+👉 For the `opengraph image` I created an image and named it `opengraph-image.png` (and its alt.text file) and put them in the root of the app file.
 
 ---
 
@@ -257,6 +261,8 @@ Embedding Gist snippets in the blog:
 
 I tried many different libraries, but the only that really worked for me was [THIS ONE](https://www.npmjs.com/package/gist-react)
 
+Installation steps (29-10-2023):
+
 - npm i gist-react
 
 ```
@@ -273,6 +279,8 @@ const App = () => {
 ### 🔹 REACT-RESPONSIVE
 
 This [library](https://www.npmjs.com/package/react-responsive) provides a set of React components for building responsive UIs based on the viewport size. It simplifies working with media queries in React applications. Especifically, it has a custom hook that works just like the 'window.innerWidth', the 'useMediaQuery' hook.
+
+Installation steps (1-12-2023):
 
 - npm i react-responsive
 

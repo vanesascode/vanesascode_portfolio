@@ -3,7 +3,7 @@ import { useContext } from "react";
 import DataContext from "../_context/DataContext";
 
 export default function SocialmediaShareIcons({ pill }) {
-  const { language } = useContext(DataContext);
+  const { language, lightMode } = useContext(DataContext);
 
   // share in social media:
 
@@ -13,12 +13,12 @@ export default function SocialmediaShareIcons({ pill }) {
         ? `https://twitter.com/intent/tweet?url=${encodeURIComponent(
             window.location.href //returns the full URL of the current page
           )}&text=${encodeURIComponent(
-            `"${pill.subtitle} (mini article written by vanesascode)`
+            `"${pill.subtitle}"\n\nArticle written by vanesascode)`
           )}`
         : `https://twitter.com/intent/tweet?url=${encodeURIComponent(
             window.location.href //returns the full URL of the current page
           )}&text=${encodeURIComponent(
-            `"${pill.subtitle} (mini artículo escrito por vanesascode)`
+            `"${pill.subtitle}"\n\nArtículo escrito por vanesascode)`
           )}`;
     window.open(url, "_blank");
   };
@@ -30,8 +30,8 @@ export default function SocialmediaShareIcons({ pill }) {
         : "Echa un vistazo a este mini artículo de desarrollo escrito por vanesascode";
     const body =
       language === "english"
-        ? `I wanted to share with you this interesting mini article about web development written by vanesascode:\n\n${pill.subtitle}\n\nCheck it out at: ${window.location.href}`
-        : `Quería compartir contigo este interesante mini artículo sobre desarrollo web escrito por vanesascode :\n\n${pill.subtitle}\n\nÁbrelo aquí: ${window.location.href}`;
+        ? `I wanted to share with you this interesting mini article about web development written by vanesascode:\n\n"${pill.subtitle}"\n\nCheck it out at: ${window.location.href}`
+        : `Quería compartir contigo este interesante mini artículo sobre desarrollo web escrito por vanesascode :\n\n"${pill.subtitle}"\n\nÁbrelo aquí: ${window.location.href}`;
 
     const mailtoLink = `mailto:?subject=${encodeURIComponent(
       subject
@@ -43,7 +43,7 @@ export default function SocialmediaShareIcons({ pill }) {
     const message =
       language === "english"
         ? `Check out this interesting mini article about development written by vanesascode: ${pill.subtitle}\n\n${window.location.href}`
-        : `Echa un vistazo a este interesante mini artículo sobre desarrollo web escrito por vanesascode: ${pill.subtitle}\n\n${window.location.href}`;
+        : `Echa un vistazo a este interesante mini artículo sobre desarrollo web escrito por vanesascode:\n\n"${pill.subtitle}"\n\n${window.location.href}`;
 
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://wa.me/?text=${encodedMessage}`;

@@ -5,6 +5,7 @@ export const blogPillsES = [
     title: "Condicionales de Viewport en React",
     subtitle: "Cómo implementar lógica JavaScript en función del ancho del viewport en React",
     paragraph1: "¿Alguna vez has necesitado aplicar diferentes estilos a tu sitio web en función del ancho del viewport? Si es así, es posible que haya intentado utilizar la propiedad 'window.innerWidth'. Sin embargo, esta propiedad te dará un error en la consola si está trabajando con React. Te dirá que 'window' no está definido.",
+
     paragraph2: "Existe una biblioteca específica para este propósito, llamada 'react-responsive'. Esta biblioteca proporciona un conjunto de componentes React para crear interfaces de usuario responsivas en función del tamaño del viewport. Simplifica el trabajo con los 'media queries' en aplicaciones React. Específicamente, tiene un hook personalizado que funciona de manera similar a 'window.innerWidth', llamado 'useMediaQuery'. El siguiente es un ejemplo real que utilicé en este portafolio:",
     gistIdIn2: "615984aa4ec10c85ff0a9e3693a25de3",
     paragraph3: "El hook useMediaQuery acepta un objeto de opciones donde puedes definir las condiciones de los 'media query'. El objeto de opciones puede tener propiedades como minWidth, maxWidth, minHeight, maxHeight y más. Estas propiedades te permiten especificar los valores mínimo y máximo para el ancho y alto del viewport.",

@@ -88,7 +88,7 @@ export default function BlogPillEN({ pill }) {
                 animations.goUp4
               } ${leaveAnimation ? animations.leavePageDown1 : ""}`}
               >
-                <Gist gistId={pill.gistIdIn} />;
+                <Gist gistId={pill.gistIdIn} />
               </div>
 
               {/*PARAGRAPH 2*/}
@@ -105,7 +105,7 @@ export default function BlogPillEN({ pill }) {
                 animations.goDown1
               } ${leaveAnimation ? animations.leavePage4 : ""}`}
                 >
-                  <Gist gistId={pill.gistIdIn2} />;
+                  <Gist gistId={pill.gistIdIn2} />
                 </div>
               ) : (
                 ""
@@ -122,7 +122,7 @@ export default function BlogPillEN({ pill }) {
                 animations.goDown1
               } ${leaveAnimation ? animations.leavePage4 : ""}`}
                 >
-                  <Gist gistId={pill.gistIdIn3} />;
+                  <Gist gistId={pill.gistIdIn3} />
                 </div>
               )}
               {!pill.gistIdIn3 && pill.paragraph4 && <br />}

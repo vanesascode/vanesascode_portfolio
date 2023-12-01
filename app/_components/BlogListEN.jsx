@@ -45,7 +45,7 @@ const BlogList = ({ blogPills }) => {
                 {/*IMAGE*/}
 
                 <div className="h-[150px] overflow-hidden  object-none flex justify-center items-center mt-[10px] ">
-                  <Gist gistId={bp.gistIdIn || bp.gistIdIn2} />;
+                  <Gist gistId={bp.gistIdIn || bp.gistIdIn2} />
                 </div>
 
                 {/*SUBTITLE*/}
