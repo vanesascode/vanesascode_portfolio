@@ -6,6 +6,8 @@ import { useContext } from "react";
 
 import DataContext from "../_context/DataContext";
 
+import Link from "next/link";
+
 export default function ProjectInfoES({ proyecto }) {
   const { lightMode, showMenu, leaveAnimation } = useContext(DataContext);
 
@@ -212,7 +214,8 @@ export default function ProjectInfoES({ proyecto }) {
             </div>
 
             {/*BACK*/}
-            <button
+            <Link
+              href="/proyectos"
               className={`flex items-center mb-[40px] md:mb-[50px] xl:mb-[80px] cursor-pointer mt-5 ${
                 animations.goUp4
               } ${leaveAnimation ? animations.leavePageDown1 : ""}`}
@@ -235,7 +238,7 @@ export default function ProjectInfoES({ proyecto }) {
                 {" "}
                 Volver a los proyectos
               </p>
-            </button>
+            </Link>
           </div>
         </div>
       )}

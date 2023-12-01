@@ -8,7 +8,9 @@ import DataContext from "../_context/DataContext";
 
 import { Gist } from "gist-react";
 
-import { SocialmediaShareIcons } from ".";
+import { SocialmediaShareIcons } from "../_components";
+
+import Link from "next/link";
 
 export default function BlogPillES({ pill }) {
   const { lightMode, showMenu, leaveAnimation } = useContext(DataContext);
@@ -150,11 +152,11 @@ export default function BlogPillES({ pill }) {
             </div>
 
             {/*BACK*/}
-            <button
+            <Link
+              href="/blog-es"
               className={`flex items-center mb-[40px] md:mb-[50px] xl:mb-[80px] cursor-pointer ${
                 animations.goUp4
               } ${leaveAnimation ? animations.leavePageDown1 : ""}`}
-              onClick={() => history.back()}
             >
               <img
                 src={
@@ -173,7 +175,7 @@ export default function BlogPillES({ pill }) {
                 {" "}
                 Volver a las píldoras
               </p>
-            </button>
+            </Link>
           </div>
         </div>
       )}

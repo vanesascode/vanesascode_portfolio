@@ -4,7 +4,7 @@ Here you will find the tools and info about the process I followed in order to b
 
 ## 📋 Process:
 
-### Choosing the tools
+### 🔹 Choosing the tools
 
 I started a [draft](https://www.figma.com/file/r7XnJWCM3NpFsQg2ummezz/Portfolio-vanesascode?type=design&node-id=0-1&mode=design&t=vmmyR1jeUsWMg7Bm-0) with `FIGMA`, in order to put on 'paper' the ideas I had been collecting over the previous days, and to start trying some visual structure. Also helped for the structured of pages the website was going to have. It was a basic draft though, since I am not a professional designer.
 
@@ -16,13 +16,13 @@ As for `other tools`, the idea of using them came when encountering the challeng
 
 ---
 
-### Design decisions
+### 🔹 Design decisions
 
 The dynamic particles background was one of my first decisions and the one that gave place to others after. The fact that the particles are `always different` when you start the site and that they `keep changing` in a way you cannot expect, describe, I think, `the job of the developer` that has to start from a different point everytime and doesn't know what challenges and obstacles he/she will encounter in every project.
 
 I sacrificed performance of the site, though, because the library that builds the particles is quite heavy, but couldn't find any other similar that worked well and was lighter. However, I did in this project because I know, it being a personal portfolio, won't need to be faster that it is now. It would be cool, though, if in the future I had more knowledge and experience in order to build my own library for building artistic tools like this that were more efficient.
 
-I chose the `blue color` becuase of its relation with 'serious' topics, and academic/work topics are. However, I didn't want it to be extremely serious, so I was quite flexible with the language I was using in the texts and the tone of colors choice, that would make it more creative.
+I chose the `blue color` because of its relation with 'serious' topics, and academic/work topics are. However, I didn't want it to be extremely serious, so I was quite flexible with the language I was using in the texts and the tone of colors choice, that would make it more creative.
 
 However, I was for sure that rounded forms wasn't going to define me. I am quite assertive, especially at work and making things happen, so I used `straight lines` in general, even for the SVG icons I was using across the project.
 
@@ -32,7 +32,7 @@ Perfectionism is another characteristic that defines me, so I spent hours defini
 
 ---
 
-### Starting the project
+### 🔹 Starting the project
 
 So when I had all my `configuration ready` and really started coding, I started by following the Figma strategy, making everything work little by little.
 
@@ -42,7 +42,7 @@ As for the `CSS files`, I added all the animations that were not hovered at any 
 
 ---
 
-### Intro section
+### 🔹 Intro section
 
 In the draft I had imagined lots of `animations` for my website, so I started with that.
 
@@ -56,7 +56,7 @@ Having to `rethink the process to achieve the many challenges from the draft`, i
 
 ---
 
-### Index.js file for organization of components
+### 🔹 Index.js file for organization of components
 
 I have a lot of components of all kinds in the `_components` folder. However, instead of trying to organize them into different subfolders, which would of been a bit confusing too, I prefered to add an file in which I imported and exported them, and in which with only one glimpse you can see all of them, and `organized by sections` of the website. Also, makes `code cleaner` in the components in which they are imported.
 
@@ -154,7 +154,7 @@ So, the only solution that worked for me was to duplicate all the pages and comp
 
 ### 🎆 WEB PERFORMANCE
 
-#### Google Lighthouse ( in the Chrome Dev Tools)
+#### 🔹 Google Lighthouse ( in the Chrome Dev Tools)
 
 The score on desktop was really good. On mobile, the performance went a bit low, and recommended to `reduce unused Javascript`. It may have to do with the extra code I had to add due to the Hydration weird error I explained in the previous section.
 
