@@ -63,7 +63,7 @@ const AboutElementsEN = () => {
             </div>
             {/*CV PDF*/}
 
-            <a href="/about/vanesa-juarez-cv-nov-2023.pdf" download>
+            <a href="/about/vanesa-juarez-cv-dec-2023.pdf" download>
               <div
                 className={`${animations.goDown2} flexCenter pt-10 ${
                   leaveAnimation ? animations.leavePage3 : ""

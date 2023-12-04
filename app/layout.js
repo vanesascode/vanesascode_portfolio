@@ -10,7 +10,7 @@ export const metadata = {
   applicationName: "vanesascode portfolio & blog",
   authors: [{ name: "vanesascode" }],
   generator: 'Next.js',
-  keywords: ['vnesascode', 'code', 'web development', 'javascript', 'react', 'node.js', 'next.js', 'web dev', 'html', 'css', 'python', 'typescript', 'portfolio', 'blog', 'vanesa juarez paris', 'vanesa juarez'],
+  keywords: ['vanesascode', 'code', 'web development', 'javascript', 'react', 'node.js', 'next.js', 'web dev', 'html', 'css', 'python', 'typescript', 'portfolio', 'blog', 'vanesa juarez paris', 'vanesa juarez'],
   referrer: 'origin-when-cross-origin',
   creator: 'Vanesa Juarez Paris',
   publisher: 'Vanesa Juarez Paris',
