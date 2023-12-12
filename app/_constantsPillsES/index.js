@@ -1,5 +1,19 @@
 export const blogPillsES = [
   {
+    url: "revalidate-path-next",
+    date: "Dec 12, 2023",
+    title: "Revalidar una ruta de URL en Next.js",
+    subtitle: "Cómo obtener datos actualizados bajo demanda para una ruta específica en Next.js",
+    paragraph1: "La función 'revalidatePath' en Next.js te permite purgar datos en caché bajo demanda para una ruta específica. La purga de datos en caché para una ruta específica generalmente implica eliminar los datos en caché del almacenamiento de caché o marcarlos como inválidos. Esto obliga a la aplicación a obtener datos actualizados para esa ruta la próxima vez que se acceda a ella. En lugar de depender únicamente de los procesos automáticos de revalidación en segundo plano, tienes el control para iniciar explícitamente y de inmediato el proceso de revalidación.",
+
+    paragraph2: "A continuación puedes ver el siguiente código, el cual forma parte de mi aplicación 'Fils' (una plataforma de microblogging y redes sociales). Se trata de una 'server action' que crea un nuevo documento de 'thread' o post, actualiza el modelo de User con el ID del thread creado y luego llama a la función revalidatePath() con la ruta URL de la página donde se crea el nuevo thread/post (accedido como parámetro).",
+    gistIdIn2: "fefdad24aebbadbb56ad9bea51fcdee2",
+    paragraph3: "Cuando se crea el post, la página te redirige a la página de inicio, donde se encuentran todos los posts creados hasta entonces. Si la función de revalidación no se llamara, no verías el nuevo hilo. Pero al llamarla, los cambios en la base de datos se ven automáticamente en el lado del cliente sin tener que actualizar la página.",
+    paragraph4: "Puedes obtener fácilmente la ruta importando 'usePathname' de 'next/navigation' en el componente donde se llama a la acción del servidor, y luego asignándola a una variable gracias a la función usePathname, así: 'const pathname = usePathname();'.",
+    linkName: "Next.JS docs",
+    linkUrl: "https://nextjs.org/docs/app/api-reference/functions/revalidatePath",
+  },
+  {
     url: "viewport-condicionales-react",
     date: "Nov 29, 2023",
     title: "Condicionales de Viewport en React",

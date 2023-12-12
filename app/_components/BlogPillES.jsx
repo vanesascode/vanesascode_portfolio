@@ -93,13 +93,15 @@ export default function BlogPillES({ pill }) {
                 <Gist gistId={pill.gistIdIn} />
               </div>
 
+              {pill.gistIdIn && <br />}
+
               {/*PARAGRAPH 2*/}
               <p className="text-secondary dark:text-primary">
                 {pill.paragraph2}
               </p>
-              {!pill.gistIdIn2 ? <br /> : ""}
+
               {/*IMAGE 2*/}
-              {pill.gistIdIn2 ? (
+              {pill.gistIdIn2 && (
                 <div
                   className={`
               mt-[10px] md:mt-[20px] xl:mt-[40px] 2xl:w-[900px] 1xl:w-[800px] xl:w-[650px] 1md:w-[550px] md:w-[500px] w-full mx-auto ${
@@ -108,9 +110,8 @@ export default function BlogPillES({ pill }) {
                 >
                   <Gist gistId={pill.gistIdIn2} />
                 </div>
-              ) : (
-                ""
               )}
+              <br />
               {/*PARAGRAPH 3*/}
               <p className="text-secondary dark:text-primary">
                 {pill.paragraph3}

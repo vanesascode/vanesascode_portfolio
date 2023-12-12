@@ -13,12 +13,12 @@ export default function SocialmediaShareIcons({ pill }) {
         ? `https://twitter.com/intent/tweet?url=${encodeURIComponent(
             window.location.href //returns the full URL of the current page
           )}&text=${encodeURIComponent(
-            `"${pill.subtitle}"\n\nArticle written by vanesascode)`
+            `"${pill.subtitle}"\n\nArticle written by vanesascode`
           )}`
         : `https://twitter.com/intent/tweet?url=${encodeURIComponent(
             window.location.href //returns the full URL of the current page
           )}&text=${encodeURIComponent(
-            `"${pill.subtitle}"\n\nArtículo escrito por vanesascode)`
+            `"${pill.subtitle}"\n\nArtículo escrito por vanesascode`
           )}`;
     window.open(url, "_blank");
   };

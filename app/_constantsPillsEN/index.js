@@ -1,4 +1,20 @@
 export const blogPillsEN = [
+
+
+  {
+    url: "revalidate-path-next",
+    date: "Dec 12, 2023",
+    title: "Revalidate a url path in Next.js",
+    subtitle: "How to retrieve fresh data on-demand for a specific path in Next.js",
+    paragraph1: "The 'revalidatePath' function in Next.js allows you to purge cached data on-demand for a specific path. Purging cached data for a specific path typically involves removing the cached data from the cache storage or marking it as invalid. This forces the application to retrieve fresh data for that path the next time it is accessed. Instead of relying solely on automatic background revalidation processes, you have the control to initiate the revalidation process explicitly and immediately",
+
+    paragraph2: "See the following code, which is part of my app 'Fils' (a microblogging and networking platform). It is a server action that creates a new thread document, updates the User model with the created thread ID, and then, calls the revalidatePath() function with the url path of the page where the new thread is created (accessed as a parameter).",
+    gistIdIn2: "fefdad24aebbadbb56ad9bea51fcdee2",
+    paragraph3: "When the thread is created, the page redirects you to the home page, where all threads creasted so far are. If the revalidate function was not called, you would not see the new thread. But by calling it, the changes to the database are seen automatically on the client side without having to refresh the page.",
+    paragraph4: "You can easily get the path by importing 'usePathname' from 'next/navigation' in the component where the server action is being called, and so assigning it to a variable  thanks to the usePathname function, like this: 'const pathname = usePathname();'.",
+    linkName: "Next.JS docs",
+    linkUrl: "https://nextjs.org/docs/app/api-reference/functions/revalidatePath",
+  },
   {
     url: "viewport-conditionals-react",
     date: "Nov 29, 2023",
