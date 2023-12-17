@@ -1,5 +1,20 @@
 export const blogPillsEN = [
-
+  {
+    url: "mismatch-react-onclick-typescript",
+    date: "Dec 17, 2023",
+    title: "Type error with onClick using TypeScript",
+    subtitle: "How to solve the type mismatch in React's onClick Event Handler when using TypeScript",
+    paragraph1: "In TypeScript development with React, it's common to encounter issues related to type mismatches when working with event handlers. One such issue is the type mismatch in the onClick event handler, which occurs specifically when using TypeScript. ",
+    gistIdIn: "",
+    paragraph2: "The onClick event handler in React expects a function that takes a MouseEvent as a parameter. However, when using TypeScript, it's easy to inadvertently pass a function that doesn't match this signature, resulting in a type mismatch error. One example is when using a function provided by a library or API, such as SpeechRecognition.startListening",
+    gistIdIn2: "7c1a144d01158466466f3c0d9ae17ad2",
+    paragraph3: "To resolve the type mismatch error in TypeScript, we can use an arrow function to wrap the function that doesn't match the expected signature. This ways, we create a new function that doesn't take any parameters. This new function matches the expected signature for the onClick event handler in TypeScript, resolving the type mismatch error.",
+    gistIdIn3: "",
+    paragraph4: "So, in the snippet above, in JavaScript, this code would work without any issues. However, when using TypeScript, the SpeechRecognition.startListening function doesn't match the expected signature for the onClick event handler, causing a type mismatch error. But by using the arrow function, we can invoke the desired functionality without causing a TypeScript error.",
+    linkUrl: "https://nextjs.org/docs/app/api-reference/functions/revalidatePath",
+    linkName: "",
+    linkUrl: "",
+  },
 
   {
     url: "revalidate-path-next",

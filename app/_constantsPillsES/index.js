@@ -1,5 +1,20 @@
 export const blogPillsES = [
   {
+    url: "mismatch-react-onclick-typescript",
+    date: "Dec 17, 2023",
+    title: "Error de tipo con el onClick usando TypeScript",
+    subtitle: "Cómo resolver la incompatibilidad de tipos en el Event Handler del onClick en React usando TypeScript",
+    paragraph1: "En el desarrollo de TypeScript con React, es común encontrar problemas relacionados con incompatibilidades de tipos al trabajar con controladores de eventos o Event Handlers. Uno de estos problemas es la incompatibilidad de tipos en el controlador de eventos onClick, que ocurre específicamente al usar TypeScript.",
+    gistIdIn: "",
+    paragraph2: "El controlador de eventos onClick en React espera una función que tome un MouseEvent como parámetro. Sin embargo, al usar TypeScript, es fácil pasar inadvertidamente una función que no coincide con esta firma o signature, lo que resulta en un error de incompatibilidad de tipos. Un ejemplo de esto es cuando se utiliza una función proporcionada por una biblioteca o API, como SpeechRecognition.startListening.",
+    gistIdIn2: "7c1a144d01158466466f3c0d9ae17ad2",
+    paragraph3: "Para resolver el error de incompatibilidad de tipos en TypeScript, podemos utilizar una función de flecha o arrow function para envolver la función que no coincide con la firma esperada. De esta manera, creamos una nueva función que no toma ningún parámetro. Esta nueva función coincide con la firma esperada para el controlador de eventos onClick en TypeScript, resolviendo así el error de incompatibilidad de tipos.",
+    gistIdIn3: "",
+    paragraph4: "Entonces, en el fragmento de código anterior, en JavaScript, este código funcionaría sin problemas. Sin embargo, al usar TypeScript, la función SpeechRecognition.startListening no coincide con la firma esperada para el controlador de eventos onClick, lo que provoca un error de incompatibilidad de tipos. Pero al utilizar la función de flecha, podemos invocar la funcionalidad deseada sin causar un error de TypeScript.",
+    linkName: "",
+    linkUrl: "",
+  },
+  {
     url: "revalidate-path-next",
     date: "Dec 12, 2023",
     title: "Revalidar una ruta de URL en Next.js",
