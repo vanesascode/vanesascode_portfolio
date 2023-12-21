@@ -1,8 +1,38 @@
 export const blogPillsES = [
+  // {
+  //   url: "inline-fold-extension-es",
+  //   date: "Dec 26, 2023",
+  //   title: "Extension de VS Code 'Inline Fold'",
+  //   subtitle: "Cómo mantener tu código más limpio mientras desarrollas, cuando tienes muchas líneas de CSS",
+  //   paragraph1: "Si estás utilizando un framework como TailwindCSS y usas muchas utility classes, a veces puedes encontrar que estas líneas tan extensas eliminan la legibilidad y dificultan ver claramente la lógica del código para seguir implementando lo que estás construyendo. En ese caso, puedes usar una extensión de VS Code llamada 'Inline Fold'",
+  //   gistIdIn: "",
+  //   paragraph2: "La extensión Inline Fold imita la experiencia de plegado/folding de código en línea de VS Code. Puedes expandir los pliegues haciendo clic en ellos. También puedes configurar la extensión para que se aplique a atributos específicos en tu marcado. Los caracteres utilizados para emmascarar se pueden configurar en la configuración y puedes actualizar la expresión regex para que coincida con cualquier patrón de código que desees. La extensión también permite plegar los valores de los atributos dentro de etiquetas HTML/JSX. Esto hace que tu código esté ordenado y sea más fácil de navegar.",
+  //   gistIdIn2: "d6b9ca84d3935636e67660fcc50f95aa",
+  //   linkUrl: "https://marketplace.visualstudio.com/items?itemName=moalamri.inline-fold",
+  //   linkName: "Inline fold site",
+
+  // },
+  {
+    url: "react-speech-recognition-es",
+    date: "Dec 21, 2023",
+    title: "Reconocimiento de voz en React",
+    subtitle: "Cómo agregar la función de reconocimiento de voz a tu aplicación React",
+    paragraph1: "Es posible que tengas un input de texto en tu aplicación que quieras llevar al siguiente nivel. Una forma de hacerlo es agregando el reconocimiento de voz para que el usuario ni siquiera tenga que escribir lo que quiere decir. Piensa en cualquier barra de búsqueda en una plataforma grande como Google o YouTube. Presionas el micrófono, dices algo y el texto aparece en la barra de búsqueda. Luego puedes modificarlo si no sale exactamente lo que querías decir o agregar información adicional.",
+    gistIdIn: "",
+    paragraph2: "Muy útil. Pero, ¿cómo se agrega en React? y ¿cómo se utiliza en TypeScript? Existe una librería llamada 'react-speech-recognition' que puede ayudarte a hacerlo. Esta librería gestiona el estado global de la API de reconocimiento de voz en el navegador, exponiendo funciones para activar y desactivar el micrófono.",
+    gistIdIn2: "20a69680232449cb8d9ee87287f39a38",
+    paragraph3: "Después de instalar la librería, si estás utilizando funciones generadoras de ECMAScript 6, la sintaxis async/await y otras características de ECMAScript que requieren transformación o polyfills, es posible que también necesites instalar 'regenerator-runtime'. Si estás trabajando con TypeScript, también necesitarás la librería de tipos: @types/react-speech-recognition. Luego, puedes comenzar con el código mostrado arriba y construir a partir de ahí para implementarlo en tu aplicación.",
+    gistIdIn3: "",
+    paragraph4: "Sin embargo, sin un polyfill, la API de reconocimiento de voz en el navegador solo es compatible con los navegadores de Google. Un polyfill es algo más complicado de manejar, ya que debes encontrar o crear un servicio de reconocimiento de voz y combinarlo con react-speech-recognition. Ten en cuenta que la API de reconocimiento de voz en Chrome utiliza los servidores de reconocimiento de voz de Google, por lo que si deseas utilizar esta librería en otros navegadores, deberías replicar este servicio de reconocimiento de voz en otro lugar.",
+    linkUrl: "https://www.npmjs.com/package/react-speech-recognition",
+    linkName: "react-speech-recognition docs",
+
+  },
+
   {
     url: "mismatch-react-onclick-typescript",
     date: "Dec 17, 2023",
-    title: "Error de tipo con el onClick usando TypeScript",
+    title: "Error de Typescript con el onClick",
     subtitle: "Cómo resolver la incompatibilidad de tipos en el Event Handler del onClick en React usando TypeScript",
     paragraph1: "En el desarrollo de TypeScript con React, es común encontrar problemas relacionados con incompatibilidades de tipos al trabajar con controladores de eventos o Event Handlers. Uno de estos problemas es la incompatibilidad de tipos en el controlador de eventos onClick, que ocurre específicamente al usar TypeScript.",
     gistIdIn: "",

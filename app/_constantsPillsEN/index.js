@@ -1,8 +1,39 @@
 export const blogPillsEN = [
+  // {
+  //   url: "inline-fold-extension",
+  //   date: "Dec 26, 2023",
+  //   title: "VS Code Inline Fold extension",
+  //   subtitle: "How to keep your code cleaner while developing when you have a lot of CSS lines",
+  //   paragraph1: "If you are using a framework such as TailwindCSS and you use a lot of utility classes, sometimes you may find that such thick lines may remove readability and make it difficult to see the code logic clearly in order to continue implementing what you are building. Then, you can use a VS Code extension called 'Inline Fold'",
+  //   gistIdIn: "",
+  //   paragraph2: "Inline Fold extension mimics VS Code's folding experience for inline code. You can expand the folds by clicking on them. You can also configure the extension to target specific attributes in your markup. The characters used as a mask can be configured in the settings and you can update the regex expression to match any code pattern you want. The extension also enables folding of attribute values within HTML/JSX tags. It makes your code tidy and easier to navigate.",
+  //   gistIdIn2: "d6b9ca84d3935636e67660fcc50f95aa",
+  //   linkUrl: "https://marketplace.visualstudio.com/items?itemName=moalamri.inline-fold",
+  //   linkName: "Inline fold site",
+
+  // },
+
+  {
+    url: "react-speech-recognition",
+    date: "Dec 21, 2023",
+    title: "Speech recognition in React",
+    subtitle: "How to add the speech recognition feature your React app",
+    paragraph1: "You may have a text input in your app you want to take to the next level. One way is adding speech recognition so the user doesn't even have to type what the want to say. Think of any search bar in a big platform such as Google or Youtube. You press the microphone, say something, and the text appears in the search bar. Then you can modify it if it didn't get exactly what you wanted to say or to add extra info",
+    gistIdIn: "",
+    paragraph2: "Really handy. But how to add it in React? and how to use it in TypeScript? There is a cool library called 'react-speech-recognition' that can help you do it. It manages the global state of the Web Speech API, exposing functions to turn the microphone on and off. ",
+    gistIdIn2: "20a69680232449cb8d9ee87287f39a38",
+    paragraph3: "After installing the library, if you are using ECMAScript 6 generator functions, async/await syntax, and other ECMAScript features that require transformation or polyfills, you may also need to install 'regenerator-runtime'. If you are working with Typescript, you will need this types library too: @types/react-speech-recognition. Then, you can start with code above and build from there to implement it in your app",
+    gistIdIn3: "",
+    paragraph4: "However, without a polyfill, the Web Speech API is only supported by Google browsers. A polyfill is something more complicated to handle, since you have to find or create a speech recognition service and combine it with react-speech-recognition. Think that Web Speech API in Chrome uses Google's speech recognition servers, so if you want to use this library with other browsers, you should have to replicate this speech recognition service elsewhere.",
+    linkUrl: "https://www.npmjs.com/package/react-speech-recognition",
+    linkName: "react-speech-recognition docs",
+
+  },
+
   {
     url: "mismatch-react-onclick-typescript",
     date: "Dec 17, 2023",
-    title: "Type error with onClick using TypeScript",
+    title: "Typescript error with onClick",
     subtitle: "How to solve the type mismatch in React's onClick Event Handler when using TypeScript",
     paragraph1: "In TypeScript development with React, it's common to encounter issues related to type mismatches when working with event handlers. One such issue is the type mismatch in the onClick event handler, which occurs specifically when using TypeScript. ",
     gistIdIn: "",
@@ -11,9 +42,7 @@ export const blogPillsEN = [
     paragraph3: "To resolve the type mismatch error in TypeScript, we can use an arrow function to wrap the function that doesn't match the expected signature. This ways, we create a new function that doesn't take any parameters. This new function matches the expected signature for the onClick event handler in TypeScript, resolving the type mismatch error.",
     gistIdIn3: "",
     paragraph4: "So, in the snippet above, in JavaScript, this code would work without any issues. However, when using TypeScript, the SpeechRecognition.startListening function doesn't match the expected signature for the onClick event handler, causing a type mismatch error. But by using the arrow function, we can invoke the desired functionality without causing a TypeScript error.",
-    linkUrl: "https://nextjs.org/docs/app/api-reference/functions/revalidatePath",
-    linkName: "",
-    linkUrl: "",
+
   },
 
   {

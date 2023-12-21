@@ -142,7 +142,7 @@ export default function BlogPillEN({ pill }) {
               {pill.linkUrl && !pill.paragraph4 && !pill.gistIdIn3 && <br />}
               {pill.linkUrl && (
                 <>
-                  <a href={pill.linkUrl}>
+                  <a href={pill.linkUrl} target="_blank">
                     <p className="text-secondary dark:text-primary underline">
                       {pill.linkName}
                     </p>
