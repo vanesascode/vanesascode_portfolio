@@ -128,7 +128,7 @@ export default function BlogPillEN({ pill }) {
                   <Gist gistId={pill.gistIdIn3} />
                 </div>
               )}
-              {!pill.gistIdIn3 && pill.paragraph4 && <br />}
+              {pill.paragraph4 && <br />}
               {/*PARAGRAPH 4*/}
               {pill.paragraph4 && (
                 <>

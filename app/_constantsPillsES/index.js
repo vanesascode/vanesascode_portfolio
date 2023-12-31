@@ -1,7 +1,22 @@
 export const blogPillsES = [
   {
+    url: "enviar-emails-con-resend",
+    date: "Dic 31, 2023",
+    title: "Enviando emails con Next.js y Resend",
+    subtitle: "Cómo enviar correos electrónicos desde Next.js usando 'Resend' y server actions",
+    paragraph1: "En algún momento, en una de tus aplicaciones, querrás enviar correos electrónicos cuando el usuario realice alguna acción. No me refiero sólo al típico email que te envías a ti mism@ cuando tienes un formulario de contacto, sino también al email que envías a tus clientes cuando han comprado algo, o cuando se han suscrito a una newsletter, o en mi caso ( y verás el ejemplo a continuación), para avisar a tu usuario que otro ha comentado una de sus publicaciones. Voy a mostrarte cómo enviar correos electrónicos desde tu código en Next.js usando la API de correo electrónico 'Resend'.",
+    gistIdIn: "",
+    paragraph2: "Primero debes crear una cuenta en resend.com y obtener tu clave API. Luego, los docs de la web te mostrarán cómo crear un API endpoint para que los correos electrónicos puedan enviarse desde tu código. En lugar de eso, te mostraré cómo lo configuré yo en Fils, una aplicación de redes sociales que creé, usando una server action:",
+    gistIdIn2: "02c6e8f533c0779a476c5a084b0b526f",
+    paragraph3: 'En los documentos no te muestran la propiedad "text", pero es necesaria, incluso si está vacía. Lo notarás porque de lo contrario obtendrás un error en el código. Luego, dentro de la misma función asíncrona que publica el comentario, simplemente agregué la función: "await postEmail(email, firstName);". La plantilla del email se puede poner en otro componente:',
+    gistIdIn3: "54b9b582d4c818c7ca11e2fe5293b756",
+    paragraph4: "Como puedes ver, no tengo las direcciones de email codificadas, sino en una variable dinámica. Puedes enviar correos electrónicos a diferentes direcciones así solo cuando tienes un dominio propio vinculado a tu cuenta de Reenvío. Luego, puedes cambiar el correo electrónico del remitente como quieras, siempre y cuando este termine con el final de tu dominio (por ejemplo, si mi dominio es 'fils.com, entonces puedo usar 'no-reply@fils.com' o ' fils@fils.com', etc.). De esta forma, podrás enviar tus correos electrónicos a cualquier dirección y totalmente gratis. Para obtener más información, consulta los documentos oficiales:",
+    linkUrl: "https://resend.com/docs/send-with-nextjs",
+    linkName: "Resend docs",
+  },
+  {
     url: "nullish-coalescing-operator-es",
-    date: "Dec 29, 2023",
+    date: "Dic 29, 2023",
     title: "El 'nullish coalescing operator'",
     subtitle: "Qué es y cómo se utiliza el 'nullish coalescing operator' en JavaScript",
     paragraph1: "El operador '??' es el 'nullish coalescing operator'. Este proporciona una forma concisa de verificar valores nulos o indefinidos y utilizar un valor predeterminado si el operando del lado izquierdo es nulo o indefinido. Sin embargo, no considera los valores 'falsy' como nulos o indefinidos.",
@@ -16,7 +31,7 @@ export const blogPillsES = [
   },
   {
     url: "inline-fold-extension-es",
-    date: "Dec 26, 2023",
+    date: "Dic 26, 2023",
     title: "Extension de VS Code 'Inline Fold'",
     subtitle: "Cómo mantener tu código más limpio mientras desarrollas, cuando tienes muchas líneas de CSS",
     paragraph1: "Si estás utilizando un framework como TailwindCSS y usas muchas utility classes, a veces puedes encontrar que estas líneas tan extensas eliminan la legibilidad y dificultan ver claramente la lógica del código para seguir implementando lo que estás construyendo. En ese caso, puedes usar una extensión de VS Code llamada 'Inline Fold'",
@@ -29,7 +44,7 @@ export const blogPillsES = [
   },
   {
     url: "react-speech-recognition-es",
-    date: "Dec 21, 2023",
+    date: "Dic 21, 2023",
     title: "Reconocimiento de voz en React",
     subtitle: "Cómo agregar la función de reconocimiento de voz a tu aplicación React",
     paragraph1: "Es posible que tengas un input de texto en tu aplicación que quieras llevar al siguiente nivel. Una forma de hacerlo es agregando el reconocimiento de voz para que el usuario ni siquiera tenga que escribir lo que quiere decir. Piensa en cualquier barra de búsqueda en una plataforma grande como Google o YouTube. Presionas el micrófono, dices algo y el texto aparece en la barra de búsqueda. Luego puedes modificarlo si no sale exactamente lo que querías decir o agregar información adicional.",
@@ -46,7 +61,7 @@ export const blogPillsES = [
 
   {
     url: "mismatch-react-onclick-typescript",
-    date: "Dec 17, 2023",
+    date: "Dic 17, 2023",
     title: "Error de Typescript con el onClick",
     subtitle: "Cómo resolver la incompatibilidad de tipos en el Event Handler del onClick en React usando TypeScript",
     paragraph1: "En el desarrollo de TypeScript con React, es común encontrar problemas relacionados con incompatibilidades de tipos al trabajar con controladores de eventos o Event Handlers. Uno de estos problemas es la incompatibilidad de tipos en el controlador de eventos onClick, que ocurre específicamente al usar TypeScript.",
@@ -61,7 +76,7 @@ export const blogPillsES = [
   },
   {
     url: "revalidate-path-next",
-    date: "Dec 12, 2023",
+    date: "Dic 12, 2023",
     title: "Revalidar una ruta de URL en Next.js",
     subtitle: "Cómo obtener datos actualizados bajo demanda para una ruta específica en Next.js",
     paragraph1: "La función 'revalidatePath' en Next.js te permite purgar datos en caché bajo demanda para una ruta específica. La purga de datos en caché para una ruta específica generalmente implica eliminar los datos en caché del almacenamiento de caché o marcarlos como inválidos. Esto obliga a la aplicación a obtener datos actualizados para esa ruta la próxima vez que se acceda a ella. En lugar de depender únicamente de los procesos automáticos de revalidación en segundo plano, tienes el control para iniciar explícitamente y de inmediato el proceso de revalidación.",

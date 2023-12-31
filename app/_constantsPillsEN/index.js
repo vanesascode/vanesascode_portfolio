@@ -1,5 +1,20 @@
 export const blogPillsEN = [
   {
+    url: "sending-emails-with-resend",
+    date: "Dec 31, 2023",
+    title: "Sending emails with Next.js and Resend",
+    subtitle: "How to send emails from Next.js using 'Resend' and a server action",
+    paragraph1: "At some point, in one of your apps, you are going to want to send emails when the user takes some action. I am not just talking about the typical email you send to yourself when you have a contact form, but also about the email you send to your customers when they have purchased something, or when they have subscribed to a newsletter, or in my case (and you will see the example below), to let know to your user that another has commented one of their posts. I am going to show you how to send emails from your code in Next.js using the email API 'Resend'.",
+    gistIdIn: "",
+    paragraph2: "First you have to create an account at resend.com and get your API key. Then, the docs in the website will show you how to build an API endpoint so the emails can be sent from your code. Instead I will show you how I configured it in Fils, a social media app I built, using a server action:",
+    gistIdIn2: "02c6e8f533c0779a476c5a084b0b526f",
+    paragraph3: 'In the docs, they do not show you the "text" property, but it is necessary, even if it is empty. You will notice because otherwise you will get an error in the code. Then, inside the same async function that is posting the comment, I just added the function: "await postEmail(email, firstName);". The template of the email can be added into another component: ',
+    gistIdIn3: "54b9b582d4c818c7ca11e2fe5293b756",
+    paragraph4: "As you can see, I don't have the emails hardcoded but in a dynamic variable. You are able to send emails to different addresses like this only when you have a domain that you have linked to your Resend account. Then, you can change the sender email address as you like, as long as it ends with your domain ending (for example, if my domain is 'fils.com, then I can use 'no-reply@fils.com', or 'fils@fils.com', etc.). This way, you can send your emails to any address and for free. For more information, check the official docs: ",
+    linkUrl: "https://resend.com/docs/send-with-nextjs",
+    linkName: "Resend docs",
+  },
+  {
     url: "nullish-coalescing-operator",
     date: "Dec 29, 2023",
     title: "The nullish coalescing operator",
